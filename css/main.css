@@ -1,0 +1,435 @@
+/* ==========================================================================
+   AYOMIDE / PRAISE TECHY - HANDCRAFTED DESIGN SYSTEM & DESIGN TOKENS
+   Inspired by: "Design that feels like it was made by hand, because it was."
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Caveat:wght@600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Manrope:wght@400;500;600;700&display=swap');
+
+@font-face {
+  font-family: 'tiemposHeadline';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/TiemposFine-Light.woff') format('woff'),
+       url('https://praisetechy.com/wp-content/uploads/2025/09/TiemposFine-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('../fonts/Manrope-Medium.ttf') format('truetype');
+}
+
+:root,
+[data-theme="linen"],
+[data-theme="emerald"] {
+  /* Palette: Clean White Canvas & Vibrant Signature Green (#02A855) */
+  --theme-id: "emerald";
+  --bg-canvas: #FFFFFF;
+  --bg-surface: #F5FAF7;
+  --bg-hero: #FFFFFF;
+  --bg-section-green: #F5FAF7;
+  --bg-card: #FFFFFF;
+  --bg-card-alt: #FAFCFB;
+  --bg-card-hover: #FFFFFF;
+  --bg-glass: rgba(255, 255, 255, 0.88);
+  --bg-glass-heavy: rgba(255, 255, 255, 0.96);
+
+  /* Text Hierarchy: Vibrant Brand Green Headline & Crisp Forest Slate Copy */
+  --text-primary: #0F3B22;
+  --text-heading: #02A855;
+  --text-secondary: #215939;
+  --text-muted: #3D6B50;
+  --text-dim: #608F74;
+
+  /* Borders & Dividers */
+  --border-subtle: rgba(2, 168, 85, 0.12);
+  --border-medium: rgba(2, 168, 85, 0.22);
+  --border-highlight: rgba(2, 168, 85, 0.42);
+
+  /* Buttons & CTAs */
+  --btn-primary-bg: #02A855;
+  --btn-primary-text: #FFFFFF;
+  --btn-primary-hover: #018c46;
+  --btn-secondary-bg: rgba(2, 168, 85, 0.10);
+  --btn-secondary-text: #02A855;
+  --btn-secondary-border: rgba(2, 168, 85, 0.30);
+  --btn-secondary-hover: rgba(2, 168, 85, 0.18);
+
+  /* Accents & Brand Badges */
+  --accent-badge-bg: rgba(2, 168, 85, 0.14);
+  --accent-badge-text: #018c46;
+  --accent-highlight: #02A855;
+  --accent-tag-bg: rgba(2, 168, 85, 0.14);
+  --accent-tag-text: #018c46;
+
+  /* Brushstroke Colors: Toned-up Emerald & Mint Modern Artistry */
+  --brush-color-1: #02A855;
+  --brush-color-2: #10B981;
+  --brush-color-3: #34D399;
+  --brush-opacity: 0.32;
+
+  /* Shadows: Soft Forest Depth */
+  --shadow-sm: 0 2px 8px rgba(10, 35, 22, 0.05);
+  --shadow-md: 0 8px 24px rgba(10, 35, 22, 0.07);
+  --shadow-lg: 0 16px 40px -8px rgba(10, 35, 22, 0.10);
+  --shadow-xl: 0 24px 56px -12px rgba(10, 35, 22, 0.14);
+  --shadow-card: 0 14px 34px -8px rgba(10, 35, 22, 0.07), 0 2px 6px rgba(10, 35, 22, 0.03);
+}
+
+/* --------------------------------------------------------------------------
+   Meeko-Style Rolling Text Swap on Links & Buttons
+   -------------------------------------------------------------------------- */
+.roll-link {
+  display: inline-block;
+  overflow: hidden;
+  text-decoration: none;
+  vertical-align: middle;
+  height: 1.4em;
+  line-height: 1.4em;
+  position: relative;
+}
+
+.roll-link-inner {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+  transform: translateY(0);
+}
+
+.roll-text {
+  display: block;
+  height: 1.4em;
+  line-height: 1.4em;
+  white-space: nowrap;
+}
+
+.roll-link:hover .roll-link-inner,
+.roll-link:focus-visible .roll-link-inner,
+.hero-btn-primary:hover .roll-link-inner,
+.hero-btn-secondary:hover .roll-link-inner,
+.header-cta-btn:hover .roll-link-inner {
+  transform: translateY(-50%);
+}
+
+[data-theme="ochre"] {
+  /* Palette 2: Warm Golden Ochre & Umber (Reference Frame 17) */
+  --theme-id: "ochre";
+  --bg-canvas: #C99A45;
+  --bg-surface: #B88937;
+  --bg-card: #FAF6EF;
+  --bg-card-alt: #F3ECE0;
+  --bg-card-hover: #FFFFFF;
+  --bg-glass: rgba(201, 154, 69, 0.9);
+  --bg-glass-heavy: rgba(184, 137, 55, 0.97);
+
+  /* Text Hierarchy */
+  --text-primary: #FFFFFF;
+  --text-heading: #FFFFFF;
+  --text-secondary: rgba(255, 255, 255, 0.9);
+  --text-muted: rgba(255, 255, 255, 0.72);
+  --text-dim: rgba(255, 255, 255, 0.5);
+
+  /* For text inside cards */
+  --card-text-primary: #2D2319;
+  --card-text-secondary: #5E4E3D;
+
+  /* Borders & Dividers */
+  --border-subtle: rgba(255, 255, 255, 0.22);
+  --border-medium: rgba(255, 255, 255, 0.38);
+  --border-highlight: rgba(255, 255, 255, 0.6);
+
+  /* Buttons & CTAs */
+  --btn-primary-bg: #3E2B17;
+  --btn-primary-text: #FFFFFF;
+  --btn-primary-hover: #281B0D;
+  --btn-secondary-bg: rgba(255, 255, 255, 0.22);
+  --btn-secondary-text: #FFFFFF;
+  --btn-secondary-border: rgba(255, 255, 255, 0.36);
+  --btn-secondary-hover: rgba(255, 255, 255, 0.32);
+
+  /* Accents & Brand Badges */
+  --accent-badge-bg: rgba(255, 255, 255, 0.18);
+  --accent-badge-text: #FFFFFF;
+  --accent-highlight: #FFE28A;
+  --accent-tag-bg: rgba(255, 255, 255, 0.2);
+  --accent-tag-text: #FFFFFF;
+
+  /* Brushstroke Colors */
+  --brush-color-1: #382613;
+  --brush-color-2: #543B21;
+  --brush-color-3: #FAF5EB;
+  --brush-opacity: 0.95;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.16);
+  --shadow-lg: 0 16px 40px -8px rgba(0, 0, 0, 0.22);
+  --shadow-xl: 0 24px 56px -12px rgba(0, 0, 0, 0.3);
+  --shadow-card: 0 18px 36px -10px rgba(0, 0, 0, 0.2), 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="cobalt"] {
+  /* Palette 3: Crisp Alabaster & Electric Royal Cobalt (Reference Frame 18) */
+  --theme-id: "cobalt";
+  --bg-canvas: #F6F8FC;
+  --bg-surface: #FFFFFF;
+  --bg-card: #FFFFFF;
+  --bg-card-alt: #F0F4FA;
+  --bg-card-hover: #FFFFFF;
+  --bg-glass: rgba(246, 248, 252, 0.9);
+  --bg-glass-heavy: rgba(255, 255, 255, 0.97);
+
+  /* Text Hierarchy */
+  --text-primary: #172554;
+  --text-heading: #1A56DB; /* Signature electric blue headline from Frame 18 */
+  --text-secondary: #475569;
+  --text-muted: #94A3B8;
+  --text-dim: #CBD5E1;
+
+  /* Borders & Dividers */
+  --border-subtle: rgba(26, 86, 219, 0.14);
+  --border-medium: rgba(26, 86, 219, 0.26);
+  --border-highlight: rgba(26, 86, 219, 0.45);
+
+  /* Buttons & CTAs */
+  --btn-primary-bg: #1A56DB;
+  --btn-primary-text: #FFFFFF;
+  --btn-primary-hover: #1243B3;
+  --btn-secondary-bg: rgba(26, 86, 219, 0.08);
+  --btn-secondary-text: #1A56DB;
+  --btn-secondary-border: rgba(26, 86, 219, 0.22);
+  --btn-secondary-hover: rgba(26, 86, 219, 0.15);
+
+  /* Accents & Brand Badges */
+  --accent-badge-bg: rgba(26, 86, 219, 0.08);
+  --accent-badge-text: #1A56DB;
+  --accent-highlight: #2563EB;
+  --accent-tag-bg: #EFF4FE;
+  --accent-tag-text: #1A56DB;
+
+  /* Brushstroke Colors */
+  --brush-color-1: #1A56DB;
+  --brush-color-2: #3B82F6;
+  --brush-color-3: #93C5FD;
+  --brush-opacity: 0.95;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(26, 86, 219, 0.06);
+  --shadow-md: 0 8px 24px rgba(26, 86, 219, 0.1);
+  --shadow-lg: 0 16px 40px -8px rgba(26, 86, 219, 0.16);
+  --shadow-xl: 0 24px 56px -12px rgba(26, 86, 219, 0.22);
+  --shadow-card: 0 18px 36px -10px rgba(26, 86, 219, 0.12), 0 4px 12px rgba(26, 86, 219, 0.04);
+}
+
+:root {
+  /* Global Typography */
+  --font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-display: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-serif: 'Fraunces', Georgia, serif;
+  --font-tiempos: 'tiemposHeadline', 'Fraunces', Georgia, serif;
+  --font-body: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-manrope: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-hand: 'Caveat', cursive;
+
+  /* Spacing */
+  --container-max: 1280px;
+  --container-narrow: 1060px;
+  --section-spacing: 110px;
+  --header-height: 76px;
+
+  /* Radii */
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-full: 9999px;
+
+  /* Smooth Transitions */
+  --ease-spring: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Reset & Base Elements */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-canvas);
+  color: var(--text-primary);
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* GSAP + Lenis Smooth Scroll Engine Compatibility */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-canvas);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+::selection {
+  background-color: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-canvas);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-medium);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--btn-primary-bg);
+}
+
+/* Containers */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 32px;
+  padding-right: 32px;
+  position: relative;
+  z-index: 2;
+}
+
+.container-narrow {
+  width: 100%;
+  max-width: var(--container-narrow);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 32px;
+  padding-right: 32px;
+  position: relative;
+  z-index: 2;
+}
+
+.section {
+  padding-top: var(--section-spacing);
+  padding-bottom: var(--section-spacing);
+  position: relative;
+  scroll-margin-top: calc(var(--header-height) + 16px);
+}
+
+/* Typography Utilities */
+.font-heading { font-family: var(--font-heading); }
+.font-display { font-family: var(--font-display); }
+.font-serif { font-family: var(--font-serif); }
+.font-body { font-family: var(--font-body); }
+.font-hand { font-family: var(--font-hand); }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--text-heading);
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: clamp(2.8rem, 6vw, 4.8rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+}
+
+h2 {
+  font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+h3 {
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+p {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.25s ease, opacity 0.25s ease;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

@@ -109,11 +109,21 @@ function initInteractions() {
   // 7. Hero Deck Card Interactions & Expansion Controls
   const heroDeck = document.querySelector('.hero-base-cards-wrap, .hero-deck-wrap');
   const deckCards = document.querySelectorAll('.deck-card');
+  const heroTrack = document.querySelector('.hero-showcase-track');
+
+  if (heroTrack && deckCards.length > 0) {
+    const originalCards = Array.from(heroTrack.children);
+    originalCards.forEach(card => {
+      const clone = card.cloneNode(true);
+      clone.setAttribute('aria-hidden', 'true');
+      heroTrack.appendChild(clone);
+    });
+  }
 
   if (heroDeck) {
     heroDeck.addEventListener('mouseenter', () => {
       deckCards.forEach(card => {
-        card.style.animationPlayState = 'paused';
+        card.style.animationPlayState = 'running';
       });
     });
     heroDeck.addEventListener('mouseleave', () => {

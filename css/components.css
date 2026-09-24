@@ -2679,7 +2679,9 @@
 .section-faqs {
   position: relative;
   overflow: hidden;
-  border-bottom: 1px solid var(--border-subtle);
+  background-color: #C6E0D0;
+  border-top: 1px solid rgba(2, 168, 85, 0.22);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   scroll-margin-top: calc(var(--header-height) + 16px);
 }
 

@@ -1171,7 +1171,7 @@
    Marquee Ticker Ribbon
    -------------------------------------------------------------------------- */
 .marquee-ribbon {
-  background: var(--bg-surface);
+  background: #FFFFFF;
   border-top: 1px solid var(--border-subtle);
   border-bottom: 1px solid var(--border-subtle);
   padding: 18px 0;
@@ -1495,6 +1495,7 @@
 .services-pinned-section {
   position: relative;
   background-color: var(--bg-surface);
+  border-bottom: 1px solid var(--border-subtle);
   padding-bottom: var(--section-spacing);
   overflow: visible !important;
 }
@@ -2557,6 +2558,9 @@
    -------------------------------------------------------------------------- */
 .testimonials-section {
   position: relative;
+  background-color: var(--bg-surface);
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
   scroll-margin-top: calc(var(--header-height) + 16px);
 }
 
@@ -2837,7 +2841,7 @@
 }
 
 /* --------------------------------------------------------------------------
-   Site Footer
+   Site Footer (praisetechy.com Clean Sharp Design)
    -------------------------------------------------------------------------- */
 .site-footer {
   background: #FFFFFF;
@@ -2845,6 +2849,12 @@
   padding: 96px 0 36px 0;
   position: relative;
   overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .site-footer {
+    padding: 48px 0 24px 0;
+  }
 }
 
 .footer-praise-top {
@@ -2865,119 +2875,76 @@
   font-family: 'tiemposHeadline', var(--font-serif), Georgia, serif;
   font-size: clamp(3.2rem, 7.6vw, 7.5rem);
   font-weight: 700;
-  -webkit-text-stroke: 1.2px #000000;
   line-height: 0.98;
   letter-spacing: -0.025em;
-  color: #000000;
+  color: #0E1712;
   margin-bottom: 22px;
-}
-
-.footer-praise-title-highlight {
-  color: #000000;
-  font-style: normal;
-  font-family: inherit;
-  font-weight: inherit;
-  -webkit-text-stroke: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .footer-praise-subtitle {
   font-family: 'Manrope', var(--font-body), sans-serif;
-  font-size: clamp(1.15rem, 1.8vw, 1.4rem);
-  font-weight: 500;
+  font-size: clamp(1.1rem, 1.6vw, 1.35rem);
+  font-weight: 600;
   color: #4B5563;
-  line-height: 1.4;
+  line-height: 1.5;
   margin: 0;
 }
 
 .footer-praise-cta {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 
+/* Button style matching website aesthetic & reference screenshot */
 .footer-praise-btn {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
-  padding: 18px 34px;
-  background-color: var(--btn-primary-bg);
-  color: #FFFFFF !important;
+  gap: 14px;
+  padding: 14px 28px;
+  background-color: #FFFFFF;
+  color: #0E1712;
   font-family: var(--font-heading);
-  font-size: 1.05rem;
-  font-weight: 700;
+  font-size: 0.96rem;
+  font-weight: 600;
+  border: 1.5px solid #0E1712;
   border-radius: var(--radius-full);
-  box-shadow: 0 12px 32px rgba(2, 168, 85, 0.22);
-  transition: transform 0.3s var(--ease-spring), box-shadow 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s var(--ease-spring);
   text-decoration: none;
+  cursor: pointer;
 }
 
 .footer-praise-btn:hover {
-  transform: translateY(-3px) scale(1.02);
-  background-color: var(--btn-primary-hover);
-  box-shadow: 0 16px 40px rgba(2, 168, 85, 0.34);
+  background-color: var(--btn-primary-bg);
+  border-color: var(--btn-primary-bg);
+  color: #FFFFFF;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(2, 168, 85, 0.28);
 }
 
 .footer-praise-btn-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.22);
-  transition: transform 0.25s ease;
+  width: 22px;
+  height: 22px;
+  color: #0E1712;
+  transition: transform 0.25s var(--ease-spring), color 0.25s ease;
 }
 
 .footer-praise-btn:hover .footer-praise-btn-icon {
-  transform: translateX(3px);
+  color: #FFFFFF;
+  transform: translateX(4px);
 }
 
-.footer-praise-nav-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 24px;
-  padding: 28px 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
-}
-
-.footer-praise-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  list-style: none;
-}
-
-.footer-praise-links a {
-  font-family: 'Manrope', var(--font-body), sans-serif;
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: #4B5563;
-  transition: color 0.2s ease;
-  text-decoration: none;
-}
-
-.footer-praise-links a:hover {
-  color: #02A855;
-}
-
-.footer-praise-socials {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.footer-praise-socials a {
-  font-family: 'Manrope', var(--font-body), sans-serif;
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: #111827;
-  transition: color 0.2s ease;
-  text-decoration: none;
-}
-
-.footer-praise-socials a:hover {
-  color: #02A855;
+.footer-praise-divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 0;
+  border: none;
 }
 
 /* Signature Monumental Typographic Watermark (praisetechy.com style - Edge-to-Edge Full Width) */
@@ -3010,19 +2977,17 @@
   width: 100%;
   text-transform: capitalize;
   pointer-events: none;
-}
-
-.gradient-text {
   background: linear-gradient(270deg, #02A855, #0A2316, #059669, #56ba79, #047857, #02A855);
   background-size: 500% 500%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: gradientWave 10s ease infinite;
+  background-clip: text;
+  animation: gradientWave 8s ease infinite;
 }
 
 @keyframes gradientWave {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
 
@@ -3041,7 +3006,21 @@
 .footer-bottom-actions {
   display: flex;
   align-items: center;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-bottom-actions a {
+  font-family: var(--font-body), sans-serif;
+  font-weight: 600;
+  font-size: 0.88rem;
+  color: #111827;
+  transition: color 0.2s ease;
+  text-decoration: none;
+}
+
+.footer-bottom-actions a:hover {
+  color: #02A855;
 }
 
 .back-to-top,
@@ -3068,12 +3047,6 @@
   .footer-praise-btn {
     width: 100%;
     justify-content: center;
-  }
-
-  .footer-praise-nav-row {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
   }
 
   .footer-praise-bottom {
@@ -3569,6 +3542,9 @@
    ========================================================================== */
 .skills-section {
   position: relative;
+  background-color: var(--bg-surface);
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
   scroll-margin-top: calc(var(--header-height) + 16px);
 }
 

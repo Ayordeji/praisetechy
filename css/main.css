@@ -359,6 +359,40 @@ body {
   scroll-margin-top: calc(var(--header-height) + 16px);
 }
 
+@media (max-width: 768px) {
+  :root {
+    --section-spacing: 50px;
+  }
+
+  .container,
+  .container-narrow {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --section-spacing: 40px;
+  }
+
+  .container,
+  .container-narrow {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
 /* Typography Utilities */
 .font-heading { font-family: var(--font-heading); }
 .font-display { font-family: var(--font-display); }

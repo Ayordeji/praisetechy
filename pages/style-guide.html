@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="emerald">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Style Guide — Praise Techy</title>
+  <meta name="description" content="Praise Techy's design system: typography, colors, spacing, buttons, cards, and interaction patterns.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2302A855'/><text x='50%' y='68%' font-size='60' font-weight='800' fill='white' font-family='sans-serif' text-anchor='middle'>P</text></svg>">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body id="top">
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="../index.html" class="brand-logo" aria-label="Praise Techy home">Praise Techy<span class="dot">.</span></a>
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="work.html" class="nav-link">Works</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="style-guide.html" class="nav-link active">Style Guide</a>
+      </nav>
+      <div class="header-actions">
+        <a href="https://cal.com/praisetechy/30min" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Book a call</a>
+        <button class="menu-toggle" aria-label="Open mobile menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="style-guide-page">
+    <section class="page-hero style-guide-hero">
+      <div class="container">
+        <div class="page-hero-content">
+          <div class="page-breadcrumb"><a href="../index.html">Home</a><span class="page-breadcrumb-sep">/</span><span>Style Guide</span></div>
+          <h1 class="page-title">Praise Techy design system.</h1>
+          <p class="page-subtitle">The visual rules behind the portfolio: measured spacing, expressive type, emerald accents, and interaction with purpose.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="style-guide-section">
+      <div class="container">
+        <div class="style-guide-section-heading"><span class="section-num-badge">01</span><h2>Typography</h2></div>
+        <div class="style-guide-type-grid">
+          <div class="style-guide-type-sample"><span class="style-guide-label">Heading / var(--font-heading)</span><h3>Websites that start with a question.</h3><p>Hero and interface headings use the site heading family with strong weight and tight display rhythm.</p></div>
+          <div class="style-guide-type-sample"><span class="style-guide-label">Body / var(--font-body)</span><p class="style-guide-body-sample">Clear, useful copy should feel calm, readable, and direct. Body text supports the hierarchy without competing with the main idea.</p><span class="style-guide-label">Small label / uppercase tracking</span><p class="style-guide-small">AVAILABLE FOR FREELANCE &amp; FULL-TIME</p></div>
+        </div>
+        <div class="style-guide-heading-specimens">
+          <div><span class="style-guide-label">H1 / display statement</span><h1>I build digital experiences that make businesses easier to choose.</h1></div>
+          <div><span class="style-guide-label">H2 / section statement</span><h2>Websites designed around how people decide.</h2></div>
+          <div><span class="style-guide-label">H3 / supporting heading</span><h3>A faster, clearer way to move from interest to action.</h3></div>
+          <div><span class="style-guide-label">H4 / card heading</span><h4>Clear structure creates better decisions.</h4></div>
+          <div><span class="style-guide-label">H5 / compact heading</span><h5>Built for clarity, speed, and growth.</h5></div>
+          <div><span class="style-guide-label">H6 / micro heading</span><h6>Details that keep the experience considered.</h6></div>
+        </div>
+        <div class="style-guide-type-scale-wrap">
+          <span class="style-guide-label">Current responsive type scale</span>
+          <div class="style-guide-type-scale">
+            <div><strong>H1</strong><code>clamp(2.8rem, 3.8vw, 6rem)</code><span>Desktop 6rem · Tablet 3.8vw · Mobile 2.8rem</span></div>
+            <div><strong>H2</strong><code>clamp(2.2rem, 3.2vw, 4.8rem)</code><span>Desktop 4.8rem · Tablet 3.2vw · Mobile 2.2rem</span></div>
+            <div><strong>H3</strong><code>clamp(1.5rem, 2.4vw, 3.2rem)</code><span>Desktop 3.2rem · Tablet 2.4vw · Mobile 1.5rem</span></div>
+            <div><strong>H4</strong><code>clamp(1.2rem, 1.8vw, 2.2rem)</code><span>Desktop 2.2rem · Tablet 1.8vw · Mobile 1.2rem</span></div>
+            <div><strong>H5</strong><code>clamp(1.05rem, 1.3vw, 1.5rem)</code><span>Desktop 1.5rem · Tablet 1.3vw · Mobile 1.05rem</span></div>
+            <div><strong>H6</strong><code>clamp(0.9rem, 1vw, 1.125rem)</code><span>Desktop 1.125rem · Tablet 1vw · Mobile 0.9rem</span></div>
+            <div><strong>Paragraph</strong><code>1.05rem / 1.65</code><span>Base size on desktop, tablet, and mobile; component-specific copy may use a responsive clamp</span></div>
+            <div><strong>Span</strong><code>inherit</code><span>Inherits its parent size; labels add their own tracking and weight</span></div>
+            <div><strong>Div</strong><code>inherit</code><span>Inherits its parent size; layout wrappers do not set a competing type size</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="style-guide-section style-guide-section-alt">
+      <div class="container">
+        <div class="style-guide-section-heading"><span class="section-num-badge">02</span><h2>Color</h2></div>
+        <div class="style-guide-color-grid">
+          <div class="style-guide-swatch swatch-green"><strong>#02A855</strong><span>Primary emerald</span></div>
+          <div class="style-guide-swatch swatch-forest"><strong>#0F3B22</strong><span>Primary text</span></div>
+          <div class="style-guide-swatch swatch-surface"><strong>#F5FAF7</strong><span>Surface</span></div>
+          <div class="style-guide-swatch swatch-canvas"><strong>#FFFFFF</strong><span>Canvas</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="style-guide-section">
+      <div class="container">
+        <div class="style-guide-section-heading"><span class="section-num-badge">03</span><h2>Buttons &amp; states</h2></div>
+        <div class="style-guide-button-row">
+          <a href="#" class="btn btn-primary">Primary action <span aria-hidden="true">→</span></a>
+          <a href="#" class="btn btn-secondary">Secondary action <span aria-hidden="true">↗</span></a>
+          <a href="#" class="style-guide-outline-button">Outline action</a>
+        </div>
+        <p class="style-guide-note">Buttons use compact dimensions, clear hierarchy, rounded geometry, and a restrained lift or color change on hover.</p>
+      </div>
+    </section>
+
+    <section class="style-guide-section style-guide-section-alt">
+      <div class="container">
+        <div class="style-guide-section-heading"><span class="section-num-badge">04</span><h2>Cards &amp; spacing</h2></div>
+        <div class="style-guide-card-grid">
+          <article class="style-guide-card"><span class="style-guide-label">Card / project</span><h3>Project showcase</h3><p>Cards use a clean white surface, subtle emerald border, and enough breathing room for scanning.</p><span class="style-guide-card-arrow">↗</span></article>
+          <article class="style-guide-card"><span class="style-guide-label">Spacing / section</span><h3>80px rhythm</h3><p>Standard sections use 80px top and bottom spacing, with smaller internal gaps for related content.</p><span class="style-guide-card-arrow">↗</span></article>
+          <article class="style-guide-card"><span class="style-guide-label">Motion / hover</span><h3>Purposeful movement</h3><p>Hover states lift cards slightly, reveal emerald emphasis, and keep the interaction quiet.</p><span class="style-guide-card-arrow">↗</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="style-guide-section">
+      <div class="container">
+        <div class="style-guide-section-heading"><span class="section-num-badge">05</span><h2>Layout rules</h2></div>
+        <div class="style-guide-rules">
+          <div><strong>Container</strong><span>Centered max-width layout with responsive horizontal padding.</span></div>
+          <div><strong>Alignment</strong><span>Editorial sections use clear left labels and a wider content column.</span></div>
+          <div><strong>Responsive</strong><span>Desktop grids collapse into readable single-column flows below tablet widths.</span></div>
+          <div><strong>Accessibility</strong><span>Interactive controls retain visible labels, focusable targets, and meaningful image alt text.</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container"><div class="footer-bottom"><span>© 2026 Praise Techy</span><a href="#top">Back to top ↑</a></div></div></footer>
+  <script src="../js/main.js"></script>
+  <script src="../js/interactions.js"></script>
+</body>
+</html>

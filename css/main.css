@@ -238,7 +238,7 @@
   /* Spacing */
   --container-max: 1280px;
   --container-narrow: 1060px;
-  --section-spacing: 110px;
+  --section-spacing: 80px;
   --header-height: 76px;
 
   /* Radii */
@@ -375,26 +375,36 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: clamp(2.8rem, 6vw, 4.8rem);
+  font-size: clamp(2.8rem, 3.8vw, 6rem);
   font-weight: 800;
-  letter-spacing: -0.03em;
-  line-height: 1.05;
+  letter-spacing: -0.065em;
+  line-height: 1.12;
 }
 
 h2 {
-  font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+  font-size: clamp(2.2rem, 3.2vw, 4.8rem);
   font-weight: 700;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.05em;
 }
 
 h3 {
-  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  font-size: clamp(1.5rem, 2.4vw, 3.2rem);
   font-weight: 700;
 }
 
 h4 {
-  font-size: 1.25rem;
+  font-size: clamp(1.2rem, 1.8vw, 2.2rem);
   font-weight: 600;
+}
+
+h5 {
+  font-size: clamp(1.05rem, 1.3vw, 1.5rem);
+  font-weight: 600;
+}
+
+h6 {
+  font-size: clamp(0.9rem, 1vw, 1.125rem);
+  font-weight: 700;
 }
 
 p {

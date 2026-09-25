@@ -33,12 +33,6 @@
             <span class="roll-text">Works</span>
           </span>
         </a>
-        <a href="services.html" class="nav-link roll-link">
-          <span class="roll-link-inner">
-            <span class="roll-text">Services</span>
-            <span class="roll-text">Services</span>
-          </span>
-        </a>
         <a href="about.html" class="nav-link roll-link active">
           <span class="roll-link-inner">
             <span class="roll-text">About</span>
@@ -100,7 +94,6 @@
       <ul class="offcanvas-nav">
         <li><a href="../index.html">Home</a></li>
         <li><a href="work.html">Selected Works</a></li>
-        <li><a href="services.html">Services</a></li>
         <li><a href="about.html" class="active">About</a></li>
         <li><a href="../index.html#skills">Skills</a></li>
         <li><a href="../index.html#approach">Process</a></li>
@@ -120,33 +113,70 @@
   </aside>
 
   <main>
-    <!-- Page Hero Banner -->
-    <section class="page-hero">
+    <!-- About Hero — Dark, full-width, heading + portrait -->
+    <section class="about-hero">
       <div class="container">
-        <div class="page-hero-content reveal">
-          <div class="page-breadcrumb">
-            <a href="../index.html">Home</a>
-            <span class="page-breadcrumb-sep">/</span>
-            <span>About</span>
+        <div class="about-hero-inner">
+          <div class="about-hero-content reveal">
+            <span class="about-hero-label">About Praise</span>
+            <h1 class="about-hero-title">Design that feels<br>made by hand,<br><em>because it was.</em></h1>
+            <p class="about-hero-desc">I'm Ayodeji Praise Eluyemi — a web designer and developer building high-speed, conversion-driven websites for businesses and founders worldwide.</p>
+            <div class="about-hero-actions">
+              <a href="https://cal.com/praisetechy/30min" target="_blank" rel="noopener" class="btn-pill-primary">Book a Discovery Call</a>
+              <a href="work.html" class="btn-pill-secondary">View My Work</a>
+            </div>
           </div>
-          <h1 class="page-title">Design that feels made by hand, because it was.</h1>
-          <p class="page-subtitle">I'm Ayodeji Praise Eluyemi (Praise Techy). A web designer and developer building high-speed, conversion-driven websites for businesses and founders worldwide.</p>
+          <div class="about-hero-portrait reveal">
+            <div class="about-portrait-wrap">
+              <img src="../images/ayodeji-eluyemi.jpg" alt="Ayodeji Praise Eluyemi" class="about-portrait-img">
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Page Content Section -->
-    <section class="section" id="about-details">
+    <!-- Stats Strip -->
+    <section class="about-stats-section">
       <div class="container">
-        <div class="about-grid">
-          <div class="about-story reveal">
+        <div class="about-stats-row reveal">
+          <div class="about-stat-item">
+            <span class="about-stat-num">5+</span>
+            <span class="about-stat-label">Years of Web Craftsmanship</span>
+          </div>
+          <div class="about-stat-divider" aria-hidden="true"></div>
+          <div class="about-stat-item">
+            <span class="about-stat-num">40+</span>
+            <span class="about-stat-label">Projects Delivered</span>
+          </div>
+          <div class="about-stat-divider" aria-hidden="true"></div>
+          <div class="about-stat-item">
+            <span class="about-stat-num">< 3s</span>
+            <span class="about-stat-label">Avg. Core Load Time</span>
+          </div>
+          <div class="about-stat-divider" aria-hidden="true"></div>
+          <div class="about-stat-item">
+            <span class="about-stat-num">100%</span>
+            <span class="about-stat-label">Client Satisfaction Rate</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Story Section -->
+    <section class="section about-story-section" id="about-story">
+      <div class="container">
+        <div class="about-story-grid">
+          <div class="about-story-head reveal">
             <div class="section-num-tag">
               <span class="section-num-badge">01</span>
               <span class="section-tag-label">The Story</span>
             </div>
-            <h3>Building digital tools that convert, not just look pretty.</h3>
-            <p>I solve business problems, and not only with code. I work across UI/UX design, branding, WordPress, Framer, and custom development so you get the right solution for your stage, budget, and revenue goals.</p>
+            <h2>Building digital tools<br>that convert, not just<br>look pretty.</h2>
+          </div>
+          <div class="about-story-body reveal">
+            <p class="about-story-lead">I solve business problems — not only with code. I work across UI/UX design, branding, WordPress, Framer, and custom development so you get the right solution for your stage, budget, and revenue goals.</p>
             <p>Every website I craft is treated as a strategic asset — designed for sub-3-second load speeds, seamless mobile responsiveness, and high conversion rates.</p>
+            <p>From a luxury e-commerce brand clearing cart abandonment bottlenecks to a healthcare non-profit building trust with global donors — the thread is always the same: understand the business first, then build something that works.</p>
             <div class="about-pillars">
               <div class="pillar-item">
                 <span class="pillar-bullet">✓</span>
@@ -171,24 +201,107 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="about-stats-panel reveal">
-            <div class="stat-card">
-              <span class="stat-number">5+</span>
-              <span class="stat-label">Years of Web Craftsmanship</span>
+    <!-- Skills Deep-Dive Section -->
+    <section class="section about-skills-section page-section-alt" id="about-skills">
+      <div class="container">
+        <div class="about-skills-head reveal">
+          <div class="section-num-tag">
+            <span class="section-num-badge">02</span>
+            <span class="section-tag-label">Expertise</span>
+          </div>
+          <h2>What I bring<br>to the table</h2>
+        </div>
+        <div class="about-skills-grid reveal">
+          <div class="about-skill-card">
+            <div class="about-skill-icon">🎨</div>
+            <h3>UI/UX Design</h3>
+            <p>User-centred interfaces that are beautiful, intuitive, and optimized for conversion. From wireframes to high-fidelity prototypes.</p>
+          </div>
+          <div class="about-skill-card">
+            <div class="about-skill-icon">⚡</div>
+            <h3>Web Performance</h3>
+            <p>Deep performance engineering — Core Web Vitals, image optimization, code splitting, and CDN strategy for sub-3s load times.</p>
+          </div>
+          <div class="about-skill-card">
+            <div class="about-skill-icon">🛒</div>
+            <h3>E-Commerce</h3>
+            <p>End-to-end WooCommerce and Shopify builds — custom product configurators, payment gateways, and high-converting checkout flows.</p>
+          </div>
+          <div class="about-skill-card">
+            <div class="about-skill-icon">🔍</div>
+            <h3>SEO & Growth</h3>
+            <p>Technical SEO audits, structured data, content architecture, and keyword strategy that drives organic traffic and authority.</p>
+          </div>
+          <div class="about-skill-card">
+            <div class="about-skill-icon">🖥</div>
+            <h3>Custom Development</h3>
+            <p>Bespoke WordPress themes, React/Next.js web apps, Framer sites, and custom plugin development tailored to your workflows.</p>
+          </div>
+          <div class="about-skill-card">
+            <div class="about-skill-icon">📱</div>
+            <h3>Mobile-First Builds</h3>
+            <p>Every project is designed mobile-first — pixel-perfect responsive layouts that convert across all screen sizes and devices.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values & Approach -->
+    <section class="section about-values-section" id="about-values">
+      <div class="container">
+        <div class="about-values-head reveal">
+          <div class="section-num-tag">
+            <span class="section-num-badge">03</span>
+            <span class="section-tag-label">How I Work</span>
+          </div>
+          <h2>The principles<br>behind every build</h2>
+        </div>
+        <div class="about-values-list reveal">
+          <div class="about-value-row">
+            <span class="about-value-num">01</span>
+            <div class="about-value-content">
+              <h3>Strategy before aesthetics</h3>
+              <p>Beautiful design that doesn't convert is just decoration. Every visual decision is backed by user psychology and business intent.</p>
             </div>
-            <div class="stat-card">
-              <span class="stat-number">99.8%</span>
-              <span class="stat-label">On-Time Delivery Rate</span>
+          </div>
+          <div class="about-value-row">
+            <span class="about-value-num">02</span>
+            <div class="about-value-content">
+              <h3>Speed is a feature</h3>
+              <p>Page load time directly impacts bounce rate and revenue. Performance engineering isn't optional — it's built into every project from day one.</p>
             </div>
-            <div class="stat-card">
-              <span class="stat-number">&lt; 3s</span>
-              <span class="stat-label">Average Core Page Load Time</span>
+          </div>
+          <div class="about-value-row">
+            <span class="about-value-num">03</span>
+            <div class="about-value-content">
+              <h3>Transparency & ownership</h3>
+              <p>You own your site, your data, and your code. I communicate clearly at every stage and deliver handover documentation that empowers you.</p>
             </div>
-            <div class="stat-card">
-              <span class="stat-number">100%</span>
-              <span class="stat-label">Client Satisfaction Score</span>
+          </div>
+          <div class="about-value-row">
+            <span class="about-value-num">04</span>
+            <div class="about-value-content">
+              <h3>Long-term thinking</h3>
+              <p>I architect for scale — not quick fixes. Every project is built to grow with your business, not need a rebuild in 12 months.</p>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section about-cta-section page-section-alt">
+      <div class="container">
+        <div class="about-cta-inner reveal">
+          <h2>Ready to build<br>something great?</h2>
+          <p>Whether you have a full brief or just a rough idea, let's find out if we're a good fit.</p>
+          <div class="about-cta-actions">
+            <a href="https://cal.com/praisetechy/30min" target="_blank" rel="noopener" class="btn-pill-primary">Schedule a Free Call ↗</a>
+            <a href="work.html" class="btn-pill-secondary">See My Work First</a>
           </div>
         </div>
       </div>
@@ -201,7 +314,7 @@
       <div class="footer-praise-top reveal">
         <div class="footer-praise-headings">
           <h2 class="footer-praise-title">
-            Don’t settle for<br>
+            Don't settle for<br>
             second-best
           </h2>
           <h4 class="footer-praise-subtitle">When You Have Praise By Your Side.</h4>
@@ -210,8 +323,8 @@
           <a href="https://cal.com/praisetechy/30min" target="_blank" rel="noopener" class="footer-praise-btn roll-btn">
             <span class="roll-link">
               <span class="roll-link-inner">
-                <span class="roll-text">Let’s discuss your expectations</span>
-                <span class="roll-text">Let’s discuss your expectations</span>
+                <span class="roll-text">Let's discuss your expectations</span>
+                <span class="roll-text">Let's discuss your expectations</span>
               </span>
             </span>
             <span class="footer-praise-btn-icon" aria-hidden="true">

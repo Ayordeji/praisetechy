@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Selected Works & Case Studies — Ayodeji Praise Eluyemi (Praise Techy)</title>
-  <meta name="description" content="Explore live case studies, e-commerce overhauls, and brand architectures built by Ayodeji Praise Eluyemi (Praise Techy).">
+  <title>All Can Thrive Foundation — Case Study · Praise Techy</title>
+  <meta name="description" content="How Praise Techy engineered a 142% mobile conversion increase for Collxx — a luxury fashion e-commerce brand. Full case study.">
   <!-- Favicon -->
   <link rel="icon" href="../images/favicon-32x32.png" sizes="32x32">
   <link rel="icon" href="../images/favicon-192x192.png" sizes="192x192">
@@ -14,9 +14,9 @@
   <link rel="stylesheet" href="../css/pages.css">
   <link rel="stylesheet" href="../css/animations.css">
 </head>
-<body id="top">
+<body id="top" data-project-id="all-can-thrive">
 
-  <!-- Wide Floating Header (Original Frosted Light Theme & Roll-Link Effects) -->
+  <!-- Wide Floating Header -->
   <header class="site-header" id="site-header">
     <div class="header-lumon-bar header-container">
       <a href="../index.html" class="lumon-logo brand-logo" aria-label="Praise Techy Home">
@@ -89,7 +89,6 @@
       <span class="brand-logo">Praise Techy<span class="dot">.</span></span>
       <button class="modal-close-btn offcanvas-close-btn" aria-label="Close menu">✕</button>
     </div>
-
     <nav>
       <ul class="offcanvas-nav">
         <li><a href="../index.html">Home</a></li>
@@ -103,57 +102,139 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-
     <div style="margin-top: auto; padding-top: 24px;">
-      <a href="https://cal.com/praisetechy/30min" target="_blank" rel="noopener" class="btn-pill-primary"
-        style="width: 100%; text-align: center;">
-        Book a call →
-      </a>
+      <a href="https://cal.com/praisetechy/30min" target="_blank" rel="noopener" class="btn-pill-primary" style="width: 100%; text-align: center;">Book a call →</a>
     </div>
   </aside>
 
   <main>
-    <!-- Work Page Hero — Dark with large heading -->
-    <section class="work-hero">
+    <!-- Project Hero — Dark with full-width image -->
+    <section class="project-hero">
+      <div class="project-hero-img-wrap">
+        <img src="../images/all-can-thrive.png" alt="All Can Thrive Foundation" class="project-hero-img" id="project-hero-img">
+        <div class="project-hero-overlay"></div>
+      </div>
       <div class="container">
-        <div class="work-hero-inner reveal">
-          <div class="work-hero-meta">
-            <span class="work-hero-label">Selected Works</span>
+        <div class="project-hero-content reveal">
+          <div class="project-breadcrumb">
+            <a href="work.html">Works</a>
+            <span class="project-breadcrumb-sep">/</span>
+            <span>All Can Thrive Foundation</span>
           </div>
-          <h1 class="work-hero-title">Work that<br>moves the needle</h1>
-          <p class="work-hero-desc">Real clients. Measurable outcomes. Every project here represents strategy, craft, and speed working together.</p>
+          <span class="project-cat-badge" id="project-cat-badge">E-Commerce & Fashion</span>
+          <h1 class="project-hero-title" id="project-hero-title">All Can Thrive Foundation</h1>
+          <p class="project-hero-tagline" id="project-hero-tagline">Empowering communities through life-course health, dignity, and sustainable development</p>
+          <div class="project-hero-actions">
+            <a href="https://allcanthrive.com/" target="_blank" rel="noopener" class="btn-pill-primary" id="project-live-link">View Live Site ↗</a>
+            <a href="https://cal.com/praisetechy/30min" target="_blank" rel="noopener" class="btn-pill-secondary">Discuss Similar Project</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Projects List -->
-    <section class="section work-list-section" id="works-catalog">
+    <!-- Project Metrics Strip -->
+    <section class="project-metrics-section">
       <div class="container">
-        <div class="work-projects-list" id="work-projects-container">
-          <!-- Projects rendered by JS -->
+        <div class="project-metrics-row reveal" id="project-metrics-row">
+          <div class="project-metric-item">
+            <span class="project-metric-val">100%</span>
+            <span class="project-metric-label">Community Owned</span>
+          </div>
+          <div class="project-metric-divider"></div>
+          <div class="project-metric-item">
+            <span class="project-metric-val">< 1.4s</span>
+            <span class="project-metric-label">Global Load Speed</span>
+          </div>
+          <div class="project-metric-divider"></div>
+          <div class="project-metric-item">
+            <span class="project-metric-val">4 Pillars</span>
+            <span class="project-metric-label">Integrated Impact</span>
+          </div>
+          
+      </div>
+      </div>
+    </section>
+
+    <!-- Project Details -->
+    <section class="section project-details-section">
+      <div class="container">
+        <div class="project-details-grid">
+          <!-- Left: Overview -->
+          <div class="project-overview reveal">
+            <div class="section-num-tag">
+              <span class="section-num-badge">01</span>
+              <span class="section-tag-label">Overview</span>
+            </div>
+            <h2 id="project-overview-heading">About the Project</h2>
+            <p class="project-overview-body" id="project-overview-body">Collxx required a sophisticated, high-performance digital storefront capable of blending luxury brand storytelling with ultra-fast, frictionless mobile checkout.</p>
+          </div>
+
+          <!-- Right: Meta info -->
+          <div class="project-meta-panel reveal">
+            <div class="project-meta-item">
+              <span class="project-meta-label">Category</span>
+              <span class="project-meta-val" id="pm-category">E-Commerce & Fashion</span>
+            </div>
+            <div class="project-meta-item">
+              <span class="project-meta-label">Stack</span>
+              <div class="project-tech-tags" id="pm-stack"><span class="work-tag">WordPress</span><span class="work-tag">Custom UI/UX</span><span class="work-tag">SEO Optimization</span><span class="work-tag">Responsive Architecture</span></div>
+            </div>
+            <div class="project-meta-item">
+              <span class="project-meta-label">Live Site</span>
+              <a href="https://allcanthrive.com/" target="_blank" rel="noopener" class="project-meta-link" id="pm-live">allcanthrive.com ↗</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Work CTA Banner -->
-    <section class="section work-cta-section">
+    <!-- Challenge & Solution -->
+    <section class="section project-cs-section page-section-alt">
       <div class="container">
-        <div class="work-cta-inner reveal">
-          <div class="work-cta-text">
-            <span class="section-label">Start a Project</span>
-            <h2>Have a project in mind?</h2>
-            <p>Let's talk about how I can help you build something that actually converts.</p>
+        <div class="project-cs-grid">
+          <div class="project-challenge reveal">
+            <div class="section-num-tag">
+              <span class="section-num-badge">02</span>
+              <span class="section-tag-label">The Challenge</span>
+            </div>
+            <h2>What needed to change</h2>
+            <p id="project-challenge-body">Needed a trustworthy, world-class advocacy and fundraising platform with interactive initiative pillars, launch countdowns, and seamless partner onboarding systems.</p>
           </div>
-          <div class="work-cta-actions">
-            <a href="https://cal.com/praisetechy/30min" target="_blank" rel="noopener" class="btn-pill-primary">Book a Discovery Call ↗</a>
-            <a href="contact.html" class="btn-pill-secondary">Send a Message</a>
+          <div class="project-solution reveal">
+            <div class="section-num-tag">
+              <span class="section-num-badge">03</span>
+              <span class="section-tag-label">The Solution</span>
+            </div>
+            <h2>How we fixed it</h2>
+            <p id="project-solution-body">Designed and engineered an authoritative, human-centric web platform with multi-pillar navigation, strategic milestone tracking, and seamless partner onboarding.</p>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Gallery (second image showcase) -->
+    <section class="section project-gallery-section">
+      <div class="container">
+        <div class="project-gallery-wrap reveal">
+          <img src="../images/all-can-thrive.png" alt="All Can Thrive Foundation Site Preview" class="project-gallery-img" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- Next Project CTA -->
+    <section class="section project-next-section page-section-alt">
+      <div class="container">
+        <div class="project-next-inner reveal">
+          <span class="project-next-label">Up Next</span>
+          <h2>Codex Property Buyers Agent</h2>
+          
+          <a href="project-codex-property.html" class="btn-pill-primary">View Case Study →</a>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Site Footer (praisetechy.com Signature Design) -->
+  <!-- Site Footer -->
   <footer class="site-footer" id="contact">
     <div class="container">
       <div class="footer-praise-top reveal">
@@ -180,16 +261,10 @@
           </a>
         </div>
       </div>
-
-      <!-- Clean Divider Line -->
       <hr class="footer-praise-divider">
-
-      <!-- Signature Monumental Brand Watermark -->
       <div class="footer-monumental-wrap" aria-hidden="true">
         <h2 class="footer-monumental-text">Praise Techy</h2>
       </div>
-
-      <!-- Bottom Meta / Copyright Strip -->
       <div class="footer-praise-bottom">
         <p>© 2026 Ayodeji Praise Eluyemi (Praise Techy). All rights reserved.</p>
         <div class="footer-bottom-actions">
@@ -210,61 +285,5 @@
   <script src="../js/projects.js"></script>
   <script src="../js/interactions.js"></script>
   <script src="../js/main.js"></script>
-  <script>
-    // Render work list from project data
-    document.addEventListener('DOMContentLoaded', function () {
-      const container = document.getElementById('work-projects-container');
-      if (!container || typeof portfolioProjects === 'undefined') return;
-
-      portfolioProjects.forEach((project, index) => {
-        const isEven = index % 2 === 0;
-        const num = String(index + 1).padStart(2, '0');
-
-        // Resolve image path (pages/ subfolder needs ../ prefix for local images)
-        let imgSrc = project.image;
-        if (imgSrc.startsWith('images/')) {
-          imgSrc = '../' + imgSrc;
-        }
-
-        const item = document.createElement('article');
-        item.className = 'work-project-item reveal' + (isEven ? '' : ' work-project-item--alt');
-        item.setAttribute('data-project-id', project.id);
-
-        item.innerHTML = `
-          <div class="work-project-img-wrap">
-            <a href="project-${project.id}.html" class="work-project-img-link">
-              <img src="${imgSrc}" alt="${project.title}" class="work-project-img" loading="lazy"
-                onerror="this.src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80'">
-            </a>
-          </div>
-          <div class="work-project-info">
-            <div class="work-project-num">${num}</div>
-            <div class="work-project-cat">${project.category}</div>
-            <h2 class="work-project-title">
-              <a href="project-${project.id}.html">${project.title}</a>
-            </h2>
-            <p class="work-project-tagline">${project.tagline}</p>
-            <div class="work-project-metrics">
-              ${project.metrics.map(m => `
-                <div class="work-metric">
-                  <span class="work-metric-val">${m.value}</span>
-                  <span class="work-metric-label">${m.label}</span>
-                </div>
-              `).join('')}
-            </div>
-            <div class="work-project-tags">
-              ${project.techStack.slice(0, 3).map(t => `<span class="work-tag">${t}</span>`).join('')}
-            </div>
-            <div class="work-project-actions">
-              <a href="project-${project.id}.html" class="work-view-btn">View Case Study →</a>
-              <a href="${project.liveUrl}" target="_blank" rel="noopener" class="work-live-btn">Live Site ↗</a>
-            </div>
-          </div>
-        `;
-
-        container.appendChild(item);
-      });
-    });
-  </script>
 </body>
 </html>

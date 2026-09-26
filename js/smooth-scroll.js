@@ -32,15 +32,26 @@
     // Expose globally
     window.lenis = lenis;
 
-    // Sync Lenis scroll events with GSAP ScrollTrigger
-    if (typeof ScrollTrigger !== 'undefined') {
-      lenis.on('scroll', ScrollTrigger.update);
+    // Sync Lenis scroll events with GSAP ScrollTrigger & Site Header Shrink
+    lenis.on('scroll', (e) => {
+      if (typeof ScrollTrigger !== 'undefined') {
+        ScrollTrigger.update();
+      }
+      const scrollPos = (e && typeof e.scroll === 'number') ? e.scroll : window.scrollY;
+      const header = document.querySelector('.site-header');
+      if (scrollPos > 30) {
+        header?.classList.add('scrolled');
+        header?.classList.add('is-scrolled');
+      } else {
+        header?.classList.remove('scrolled');
+        header?.classList.remove('is-scrolled');
+      }
+    });
 
-      // Use GSAP's high-precision internal RAF ticker
+    if (typeof ScrollTrigger !== 'undefined') {
       gsap.ticker.add((time) => {
         lenis.raf(time * 1000);
       });
-
       gsap.ticker.lagSmoothing(0);
     } else {
       function raf(time) {

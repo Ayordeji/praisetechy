@@ -156,93 +156,27 @@ const portfolioProjects = [
     techStack: ['WordPress', 'Booking Engine', 'Custom UI/UX', 'Performance Optimization'],
     image: 'images/pearlwood-hotels.png',
     liveUrl: 'https://pearlwoodhotelsikeja.com/'
+  },
+  {
+    id: 'emily-sparkles',
+    title: 'Emily Sparkles',
+    category: 'E-Commerce & Fashion',
+    tagline: 'High-converting luxury fashion & apparel storefront with bespoke brand storytelling',
+    description: 'A contemporary fashion and lifestyle apparel brand delivering bespoke collections to style-conscious customers worldwide.',
+    challenge: 'Needed a high-performance, mobile-first shopping experience that highlights seasonal lookbooks, streamlines variant selection, and reduces mobile cart abandonment.',
+    solution: 'Engineered a lightweight, ultra-responsive e-commerce architecture with instant search, fluid product galleries, optimized variant selectors, and a streamlined 1-click checkout flow.',
+    metrics: [
+      { value: '96/100', label: 'Performance Score' },
+      { value: '< 1.3s', label: 'Average Load Time' },
+      { value: '+135%', label: 'Mobile Add-to-Cart' }
+    ],
+    techStack: ['WordPress', 'WooCommerce', 'Custom CSS/JS', 'Performance Optimization'],
+    image: 'images/emily-sparkles.jpg',
+    liveUrl: 'https://emilysparkles.com/'
   }
 ];
 
-function initProjectModals() {
-  const modal = document.getElementById('project-modal');
-  if (!modal) return;
-
-  const modalBackdrop = modal.querySelector('.modal-backdrop');
-  const modalCloseBtn = modal.querySelector('.modal-close-btn');
-  const modalContainer = modal.querySelector('.modal-body');
-
-  function openProject(projectId) {
-    const project = portfolioProjects.find(p => p.id === projectId);
-    if (!project) return;
-
-    modalContainer.innerHTML = `
-      <div class="modal-banner-wrap">
-        <img src="${project.image}" alt="${project.title}" class="modal-banner-img" onerror="this.src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80'" />
-      </div>
-      
-      <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px; margin: 20px 0 16px;">
-        <div>
-          <span style="font-family: var(--font-display); font-size: 0.85rem; font-weight: 700; color: var(--accent-amber); text-transform: uppercase; letter-spacing: 0.1em;">${project.category}</span>
-          <h2 style="font-family: var(--font-serif); font-size: 2.3rem; margin-top: 4px; color: var(--text-primary);">${project.title}</h2>
-        </div>
-        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-          <a href="https://cal.com/praisetechy/30min" target="_blank" rel="noopener" class="btn btn-primary" style="padding: 10px 18px; font-size: 0.85rem;">Discuss Similar Project</a>
-          <a href="${project.liveUrl}" target="_blank" rel="noopener" class="btn btn-secondary" style="padding: 10px 18px; font-size: 0.85rem;">View Live Site ↗</a>
-        </div>
-      </div>
-
-      <p style="font-size: 1.1rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 24px;">${project.tagline}</p>
-
-      <div class="modal-grid-stats">
-        ${project.metrics.map(m => `
-          <div class="modal-stat-box">
-            <span>${m.value}</span>
-            <p>${m.label}</p>
-          </div>
-        `).join('')}
-      </div>
-
-      <div style="margin-bottom: 20px; background: rgba(255,255,255,0.02); padding: 18px; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
-        <h4 style="margin-bottom: 8px; font-family: var(--font-display); font-size: 1.05rem; color: var(--text-primary);">The Challenge</h4>
-        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">${project.challenge}</p>
-      </div>
-
-      <div style="margin-bottom: 24px; background: rgba(255,255,255,0.02); padding: 18px; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
-        <h4 style="margin-bottom: 8px; font-family: var(--font-display); font-size: 1.05rem; color: var(--text-primary);">The Solution & Architecture</h4>
-        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">${project.solution}</p>
-      </div>
-
-      <div>
-        <h5 style="font-family: var(--font-display); font-size: 0.8rem; font-weight: 700; color: var(--text-muted); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.12em;">Technologies & Services</h5>
-        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-          ${project.techStack.map(t => `<span class="tech-badge" style="background: rgba(255,255,255,0.06); color: var(--text-primary); padding: 6px 14px; border: 1px solid var(--border-subtle);">${t}</span>`).join('')}
-        </div>
-      </div>
-    `;
-
-    modal.classList.add('open');
-    document.body.style.overflow = 'hidden';
-  }
-
-  function closeModal() {
-    modal.classList.remove('open');
-    document.body.style.overflow = '';
-  }
-
-  // Event Listeners
-  document.addEventListener('click', (e) => {
-    const card = e.target.closest('[data-project-id]');
-    if (card) {
-      e.preventDefault();
-      const id = card.getAttribute('data-project-id');
-      openProject(id);
-    }
-  });
-
-  if (modalBackdrop) modalBackdrop.addEventListener('click', closeModal);
-  if (modalCloseBtn) modalCloseBtn.addEventListener('click', closeModal);
-  
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modal.classList.contains('open')) {
-      closeModal();
-    }
-  });
+// Export portfolio data for application usage
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = { portfolioProjects };
 }
-
-document.addEventListener('DOMContentLoaded', initProjectModals);

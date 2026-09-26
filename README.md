@@ -12,9 +12,11 @@ PORTFOLIO/
 │
 ├── pages/                # Dedicated Website Subpages
 │   ├── about.html        # Dedicated About Praise Page
-│   ├── services.html     # Dedicated Services & Capabilities Page
 │   ├── work.html         # Dedicated Selected Works & Case Studies Page
-│   └── contact.html      # Dedicated Contact & 30-min Strategy Call Page
+│   ├── contact.html      # Dedicated Contact & 30-min Strategy Call Page
+│   ├── pricing.html      # Dedicated Transparent Pricing Page
+│   ├── project-template.html # Master Case Study Template Component
+│   └── project-*.html    # Individual Case Studies (Collxx, Tobams Colors, etc.)
 │
 ├── css/
 │   ├── main.css          # Design tokens, color palette, @font-face rules, typography & resets

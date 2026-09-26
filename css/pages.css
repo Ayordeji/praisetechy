@@ -72,11 +72,15 @@ body#top {
 }
 
 .section-title-wrap h2 em,
-.section-title-wrap h2 .services-glance-accent {
+.section-title-wrap h2 .services-glance-accent,
+.cs-heading-left h2 em,
+.cs-heading-left h2 .services-glance-accent,
+.about-serif-headline .services-glance-accent,
+.services-glance-accent {
   font-style: italic !important;
   font-family: var(--font-serif, 'tiemposHeadline', Georgia, serif) !important;
   font-weight: 400 !important;
-  color: #FFFFFF !important;
+  color: #02A855 !important;
 }
 
 .section-title-wrap p {
@@ -2023,7 +2027,7 @@ body#top {
   font-style: italic;
   font-family: var(--font-serif, 'tiemposHeadline', Georgia, serif);
   font-weight: 400;
-  color: #FFFFFF;
+  color: #02A855 !important;
 }
 
 .cs-heading-left p {

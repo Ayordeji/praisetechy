@@ -174,7 +174,7 @@ function generateTestimonialsHTML(options = {}) {
   const subtitle = options.subtitle || 'Unedited reviews from global brands and founders who trusted Praise Techy with their digital presence.';
   const hideHeader = options.hideHeader === 'true' || options.hideHeader === true;
 
-  const headerHTML = hideHeader ? '' : `
+  const headerHTML = hideHeader ? '' : (options.showTag === 'true' || options.showTag === true ? `
     <div class="section-header-block reveal">
       <div class="section-num-tag">
         <span class="section-num-badge">${badgeNum}</span>
@@ -185,7 +185,12 @@ function generateTestimonialsHTML(options = {}) {
         <p>${subtitle}</p>
       </div>
     </div>
-  `;
+  ` : `
+    <div class="cs-heading-left reveal" style="margin-bottom: 44px;">
+      <h2 id="testimonials-heading" style="font-family: var(--font-heading, 'Manrope', sans-serif); font-size: clamp(2.2rem, 3.6vw, 4rem); font-weight: 800; color: #FFFFFF; letter-spacing: -0.04em; margin: 0 0 12px; line-height: 1.15;">${title}</h2>
+      <p style="font-family: var(--font-body, 'DM Sans', sans-serif); font-size: 1.1rem; color: rgba(255, 255, 255, 0.72); max-width: 680px; margin: 0; line-height: 1.6;">${subtitle}</p>
+    </div>
+  `);
 
   const cardsHTML = items.map((t, idx) => {
     const delayClass = `reveal-delay-${(idx % 3) + 1}`;

@@ -2,16 +2,21 @@
    AYOMIDE / PRAISE TECHY - INNER PAGES STYLING (Multi-Page System)
    ========================================================================== */
 
-/* Apply dark grey #181818 theme to all subpages */
+/* Apply Portavia-inspired dark #0f0f0f theme with dot mesh & ambient glow to all pages */
 body:not(.home-dark-theme),
 body#top {
-  background-color: #181818 !important;
+  background-color: #0f0f0f !important;
   color: #FFFFFF !important;
-  --bg-canvas: #181818;
-  --bg-surface: #1f1f1f;
-  --bg-card: #1f1f1f;
-  --bg-card-alt: #262626;
-  --bg-card-hover: #2a2a2a;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(2, 168, 85, 0.09) 0%, transparent 65%),
+    radial-gradient(rgba(255, 255, 255, 0.055) 1px, transparent 1px) !important;
+  background-size: 100% 100%, 28px 28px !important;
+  background-attachment: fixed !important;
+  --bg-canvas: #0f0f0f;
+  --bg-surface: #171717;
+  --bg-card: #171717;
+  --bg-card-alt: #1f1f1f;
+  --bg-card-hover: #242424;
   --text-primary: #FFFFFF;
   --text-heading: #FFFFFF;
   --text-secondary: rgba(255, 255, 255, 0.75);

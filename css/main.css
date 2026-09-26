@@ -299,13 +299,17 @@ html.lenis, html.lenis body {
 
 body {
   font-family: var(--font-body);
-  background-color: var(--bg-canvas);
-  color: var(--text-primary);
+  background-color: #0f0f0f !important;
+  color: #FFFFFF !important;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(2, 168, 85, 0.09) 0%, transparent 65%),
+    radial-gradient(rgba(255, 255, 255, 0.055) 1px, transparent 1px) !important;
+  background-size: 100% 100%, 28px 28px !important;
+  background-attachment: fixed !important;
   line-height: 1.6;
   overflow-x: hidden;
   position: relative;
   min-height: 100vh;
-  transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 ::selection {

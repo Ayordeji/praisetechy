@@ -17,7 +17,17 @@
   justify-content: center;
   padding: 0 28px;
   pointer-events: none;
-  transition: all 0.3s ease;
+.site-header {
+  position: fixed;
+  top: 18px;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  padding: 0 24px;
+  pointer-events: none;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .header-lumon-bar,
@@ -25,70 +35,137 @@
   pointer-events: auto;
   width: 100%;
   max-width: var(--container-max, 1280px);
-  height: 64px;
-  background: rgba(255, 255, 255, 0.92);
-  border: 1px solid rgba(2, 168, 85, 0.18);
+  height: 56px;
+  background: rgba(18, 18, 18, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 9999px;
-  padding: 0 14px 0 22px;
+  padding: 0 10px 0 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0 10px 30px -4px rgba(10, 35, 22, 0.08), 0 0 0 1px rgba(2, 168, 85, 0.08);
+  box-shadow: 0 16px 36px -8px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+/* Portavia-Inspired Shrunken Header: Shrinks to just 'Available for work' on scroll */
 .site-header.scrolled .header-lumon-bar,
 .site-header.scrolled .header-container {
-  background: rgba(255, 255, 255, 0.98);
-  box-shadow: 0 14px 38px -6px rgba(10, 35, 22, 0.12), 0 0 0 1px rgba(2, 168, 85, 0.15);
+  max-width: 255px;
+  padding: 0 10px 0 14px;
+  background: rgba(15, 15, 15, 0.92);
+  border-color: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(2, 168, 85, 0.2);
+}
+
+.site-header.scrolled .lumon-nav,
+.site-header.scrolled .header-nav-links {
+  max-width: 0;
+  opacity: 0;
+  pointer-events: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  transform: scale(0.92);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.site-header.scrolled .lumon-cta-btn,
+.site-header.scrolled .header-actions .lumon-cta-btn {
+  display: none !important;
+}
+
+/* Hover expansion when scrolled */
+.site-header.scrolled:hover .header-lumon-bar,
+.site-header.scrolled:hover .header-container {
+  max-width: var(--container-max, 1280px);
+  padding: 0 10px 0 16px;
+}
+
+.site-header.scrolled:hover .lumon-nav,
+.site-header.scrolled:hover .header-nav-links {
+  max-width: 800px;
+  opacity: 1;
+  pointer-events: auto;
+  overflow: visible;
+  transform: scale(1);
+}
+
+.site-header.scrolled:hover .lumon-cta-btn,
+.site-header.scrolled:hover .header-actions .lumon-cta-btn {
+  display: inline-flex !important;
 }
 
 .lumon-logo,
 .brand-logo {
-  font-family: var(--font-heading);
-  font-size: 1.12rem;
-  font-weight: 800;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #0E1712;
+  font-family: var(--font-body, 'DM Sans', sans-serif);
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
   text-decoration: none;
   display: flex;
   align-items: center;
   gap: 10px;
   transition: opacity 0.2s ease;
+  white-space: nowrap;
 }
 
 .lumon-avatar-wrap {
-  width: 34px;
-  height: 34px;
+  position: relative;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
-  overflow: hidden;
-  border: 1.5px solid rgba(2, 168, 85, 0.3);
+  overflow: visible;
   flex-shrink: 0;
-  transition: transform 0.25s var(--ease-spring);
-}
-
-.lumon-logo:hover .lumon-avatar-wrap {
-  transform: scale(1.08);
 }
 
 .lumon-avatar-img {
   width: 100%;
   height: 100%;
+  border-radius: 50%;
   object-fit: cover;
   display: block;
+  border: 1.5px solid rgba(2, 168, 85, 0.4);
 }
 
-.lumon-logo .dot,
-.brand-logo .dot {
-  color: #02A855;
+.header-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
 
-.lumon-logo:hover,
-.brand-logo:hover {
-  opacity: 0.9;
+.header-status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #0bde66;
+  box-shadow: 0 0 10px #0bde66;
+  display: inline-block;
+  animation: pulseLiveDot 2s infinite ease-in-out;
+  flex-shrink: 0;
+}
+
+@keyframes pulseLiveDot {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+    box-shadow: 0 0 10px #0bde66;
+  }
+  50% {
+    transform: scale(1.35);
+    opacity: 0.8;
+    box-shadow: 0 0 16px #0bde66;
+  }
+}
+
+.header-status-text {
+  font-family: var(--font-body, 'DM Sans', sans-serif);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  white-space: nowrap;
 }
 
 .lumon-nav,
@@ -97,17 +174,18 @@
   display: flex;
   align-items: center;
   gap: 4px;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .lumon-link,
 .header-nav-links .nav-link,
 .nav-menu .nav-link {
-  font-family: var(--font-body);
+  font-family: var(--font-body, 'DM Sans', sans-serif);
   font-size: 0.88rem;
-  font-weight: 600;
-  color: #134E2E;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.78);
   text-decoration: none;
-  padding: 6px 12px;
+  padding: 6px 14px;
   border-radius: 9999px;
   transition: color 0.2s ease, background 0.2s ease;
   position: relative;
@@ -116,23 +194,23 @@
 .lumon-link:hover,
 .header-nav-links .nav-link:hover,
 .nav-menu .nav-link:hover {
-  color: #02A855;
-  background: rgba(2, 168, 85, 0.08);
+  color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .lumon-link.active,
 .header-nav-links .nav-link.active,
 .nav-menu .nav-link.active {
-  color: #02A855;
-  font-weight: 700;
-  background: rgba(2, 168, 85, 0.1);
+  color: #FFFFFF;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.12);
 }
 
 .lumon-actions,
 .header-actions {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 }
 
 /* Fix: nav-link + roll-link class combo in header — clip properly without losing vertical rhythm */
@@ -2981,15 +3059,16 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 22px;
-  height: 22px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1;
   color: #0E1712;
   transition: transform 0.25s var(--ease-spring), color 0.25s ease;
 }
 
 .footer-praise-btn:hover .footer-praise-btn-icon {
   color: #FFFFFF;
-  transform: translateX(4px);
+  transform: translate(3px, -3px);
 }
 
 .footer-praise-divider {
@@ -3363,26 +3442,30 @@
   }
 
   .site-header {
-    top: 14px;
-    padding: 0 16px;
+    top: 12px;
+    padding: 0 14px;
   }
 
   .header-lumon-bar,
   .header-container {
-    height: 56px;
-    padding: 0 10px 0 18px;
+    height: 48px;
+    padding: 0 10px 0 12px;
+    max-width: 100% !important;
+    background: rgba(15, 15, 15, 0.92) !important;
+    border: 1px solid rgba(255, 255, 255, 0.14) !important;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
   }
 
-  .lumon-logo,
-  .brand-logo {
-    font-size: 1rem;
+  .lumon-nav {
+    display: none !important;
   }
 
-  .lumon-cta-btn,
-  .header-actions .btn {
-    height: 38px;
-    padding: 0 16px;
-    font-size: 0.78rem;
+  .header-actions .lumon-cta-btn {
+    display: none !important;
+  }
+
+  .lumon-menu-toggle {
+    display: inline-flex !important;
   }
 
   .hero-container {

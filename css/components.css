@@ -439,22 +439,32 @@
 }
 
 /* --------------------------------------------------------------------------
-   Hero Section — Clean Dark Minimalist Canvas (Seamless Portavia Backdrop)
+   Hero Section — Atmospheric Landscape Backdrop
    -------------------------------------------------------------------------- */
 .hero-handcrafted {
   position: relative;
-  min-height: 90vh;
+  min-height: 92vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-top: 110px;
-  padding-bottom: 40px;
+  padding-bottom: 24px;
   overflow: hidden;
-  background: transparent;
+  background-color: #0b1b17;
+  background-image: linear-gradient(rgba(6, 9, 12, 0.62), rgba(6, 9, 12, 0.42)),
+    url('../images/hero-landscape.webp');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .hero-handcrafted::before {
-  display: none;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(2, 6, 8, 0.24) 0%, rgba(2, 6, 8, 0.62) 100%);
+  pointer-events: none;
+  z-index: 0;
 }
 
 /* Wavy brush backdrops completely deleted */

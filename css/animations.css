@@ -96,3 +96,54 @@
 .reveal-delay-2 { transition-delay: 0.2s; }
 .reveal-delay-3 { transition-delay: 0.3s; }
 .reveal-delay-4 { transition-delay: 0.4s; }
+
+/* ==========================================================================
+   AJIDE VICTOR-INSPIRED HEADING ENTRANCE & KINETIC REVEAL SYSTEM
+   ========================================================================== */
+.heading-entrance,
+h1:not(.no-anim),
+h2:not(.no-anim),
+.hero-handcrafted-headline,
+.section-title-wrap h2,
+.footer-praise-title,
+.service-praise-card-title,
+.faq-heading,
+.about-proof-quote,
+.pricing-card-name {
+  opacity: 0;
+  transform: translateY(44px) rotate(1.2deg);
+  filter: blur(4px);
+  transition: opacity 0.95s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.95s cubic-bezier(0.16, 1, 0.3, 1),
+              filter 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform, filter;
+  transform-origin: left bottom;
+}
+
+.heading-entrance.active,
+.heading-entrance.is-revealed,
+h1.active,
+h1.is-revealed,
+h2.active,
+h2.is-revealed,
+.hero-handcrafted-headline.active,
+.hero-handcrafted-headline.is-revealed,
+.section-title-wrap h2.active,
+.section-title-wrap h2.is-revealed,
+.footer-praise-title.active,
+.footer-praise-title.is-revealed,
+.service-praise-card-title.active,
+.service-praise-card-title.is-revealed,
+.faq-heading.active,
+.faq-heading.is-revealed,
+.about-proof-quote.active,
+.about-proof-quote.is-revealed,
+.pricing-card-name.active,
+.pricing-card-name.is-revealed,
+.reveal.active h1,
+.reveal.active h2,
+.reveal.active h3 {
+  opacity: 1;
+  transform: translateY(0) rotate(0deg);
+  filter: blur(0);
+}

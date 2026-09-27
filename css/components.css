@@ -199,8 +199,10 @@
 
 .header-status-text {
   font-family: var(--font-body, 'DM Sans', sans-serif);
-  font-size: 0.82rem;
-  font-weight: 500;
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
   color: #FFFFFF;
   white-space: nowrap;
 }

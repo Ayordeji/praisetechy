@@ -147,3 +147,131 @@ h2.is-revealed,
   transform: translateY(0) rotate(0deg);
   filter: blur(0);
 }
+
+/* ==========================================================================
+   CONSISTENT SITE-WIDE MICRO-ENTRANCE ANIMATION SYSTEM
+   ========================================================================== */
+
+/* 1. Cards, Containers, and Feature Blocks */
+.deck-card,
+.service-praise-card,
+.skill-card-modern,
+.approach-card,
+.pricing-card,
+.testimonial-card,
+.faq-item,
+.contact-card,
+.contact-channel-card,
+.hero-stat-box,
+.stat-box {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.85s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.3s ease,
+              border-color 0.3s ease,
+              background-color 0.3s ease;
+  will-change: opacity, transform;
+}
+
+.deck-card.is-revealed,
+.deck-card.active,
+.service-praise-card.is-revealed,
+.service-praise-card.active,
+.skill-card-modern.is-revealed,
+.skill-card-modern.active,
+.approach-card.is-revealed,
+.approach-card.active,
+.pricing-card.is-revealed,
+.pricing-card.active,
+.testimonial-card.is-revealed,
+.testimonial-card.active,
+.faq-item.is-revealed,
+.faq-item.active,
+.contact-card.is-revealed,
+.contact-card.active,
+.contact-channel-card.is-revealed,
+.contact-channel-card.active,
+.hero-stat-box.is-revealed,
+.hero-stat-box.active,
+.stat-box.is-revealed,
+.stat-box.active,
+.reveal.active .deck-card,
+.reveal.active .service-praise-card,
+.reveal.active .skill-card-modern,
+.reveal.active .approach-card,
+.reveal.active .pricing-card,
+.reveal.active .testimonial-card,
+.reveal.active .faq-item,
+.reveal.active .hero-stat-box {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 2. Subtitles, Paragraphs & Body Descriptions */
+.hero-handcrafted-subtext,
+.section-title-wrap p,
+.footer-praise-subtitle,
+.service-praise-subtitle,
+.approach-desc {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.1s,
+              transform 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.1s;
+  will-change: opacity, transform;
+}
+
+.hero-handcrafted-subtext.is-revealed,
+.hero-handcrafted-subtext.active,
+.section-title-wrap p.is-revealed,
+.section-title-wrap p.active,
+.footer-praise-subtitle.is-revealed,
+.footer-praise-subtitle.active,
+.service-praise-subtitle.is-revealed,
+.service-praise-subtitle.active,
+.approach-desc.is-revealed,
+.approach-desc.active,
+.reveal.active .hero-handcrafted-subtext,
+.reveal.active .section-title-wrap p,
+.reveal.active .footer-praise-subtitle {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 3. Badges, Tag Labels & Action Button Containers */
+.section-num-tag,
+.hero-availability-pill,
+.hero-actions,
+.hero-stats-panel,
+.footer-praise-cta {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.section-num-tag.is-revealed,
+.section-num-tag.active,
+.hero-availability-pill.is-revealed,
+.hero-availability-pill.active,
+.hero-actions.is-revealed,
+.hero-actions.active,
+.hero-stats-panel.is-revealed,
+.hero-stats-panel.active,
+.footer-praise-cta.is-revealed,
+.footer-praise-cta.active,
+.reveal.active .section-num-tag,
+.reveal.active .hero-availability-pill,
+.reveal.active .hero-actions,
+.reveal.active .hero-stats-panel,
+.reveal.active .footer-praise-cta {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger Delays for Multi-Item Grids */
+.skills-grid > *:nth-child(1), .pricing-grid > *:nth-child(1), .faq-grid > *:nth-child(1), .hero-stats-panel > *:nth-child(1) { transition-delay: 0.05s; }
+.skills-grid > *:nth-child(2), .pricing-grid > *:nth-child(2), .faq-grid > *:nth-child(2), .hero-stats-panel > *:nth-child(2) { transition-delay: 0.12s; }
+.skills-grid > *:nth-child(3), .pricing-grid > *:nth-child(3), .faq-grid > *:nth-child(3), .hero-stats-panel > *:nth-child(3) { transition-delay: 0.19s; }
+.skills-grid > *:nth-child(4), .pricing-grid > *:nth-child(4), .faq-grid > *:nth-child(4), .hero-stats-panel > *:nth-child(4) { transition-delay: 0.26s; }

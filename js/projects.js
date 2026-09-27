@@ -8,7 +8,7 @@ const portfolioProjects = [
     id: 'collxx',
     title: 'Collxx Studio',
     category: 'E-Commerce & Fashion',
-    tagline: 'High-converting luxury e-commerce experience with sub-2s load times',
+    tagline: 'High-converting luxury e-commerce experience with sub-3s load times',
     description: 'Collxx required a sophisticated, high-performance digital storefront capable of blending luxury brand storytelling with ultra-fast, frictionless mobile checkout.',
     challenge: 'The original store suffered from high cart abandonment, bloated legacy scripts, and slow mobile render speeds exceeding 6.4 seconds.',
     solution: 'Engineered an ultra-lean custom architecture with optimized asset pipelines, instant predictive search, and high-converting, mobile-first product pages.',

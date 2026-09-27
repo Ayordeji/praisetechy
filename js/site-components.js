@@ -92,7 +92,7 @@ const SITE_TESTIMONIALS_DATA = [
     source: 'Direct Client',
     avatar: 'D',
     rating: 5,
-    quote: '"Working with Praise on this project was an extremely positive experience. From the start, he demonstrated great technical expertise and a clear understanding of how to implement high-converting, sub-2s performance platforms."',
+    quote: '"Working with Praise on this project was an extremely positive experience. From the start, he demonstrated great technical expertise and a clear understanding of how to implement high-converting, sub-3s performance platforms."',
     metric: '💡 +142% Conversion Boost'
   },
   {

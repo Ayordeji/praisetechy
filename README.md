@@ -15,28 +15,29 @@ PORTFOLIO/
 │   ├── work.html         # Dedicated Selected Works & Case Studies Page
 │   ├── contact.html      # Dedicated Contact & 30-min Strategy Call Page
 │   ├── pricing.html      # Dedicated Transparent Pricing Page
-│   ├── project-template.html # Master Case Study Template Component
+│   ├── style-guide.html  # Design tokens and style preview
+│   ├── project-template.html # Master Case Study Template Blueprint
 │   └── project-*.html    # Individual Case Studies (Collxx, Tobams Colors, etc.)
 │
 ├── css/
 │   ├── main.css          # Design tokens, color palette, @font-face rules, typography & resets
 │   ├── components.css    # Header, navigation, cards, footer, accordion, modal & buttons
 │   ├── pages.css         # Inner subpage heroes, breadcrumbs, and subpage layout grids
-│   └── animations.css    # Keyframe animations, ambient wave pulses, and scroll reveals
+│   └── animations.css    # Masked heading reveals, keyframes, and micro-interactions
 │
 ├── js/
 │   ├── main.js           # DOM orchestrator & scroll intersection observer
 │   ├── interactions.js   # Mobile drawer, active link spy, currency switch, FAQ accordions
+│   ├── site-components.js# Universal Testimonials & FAQ components manager
+│   ├── smooth-scroll.js  # GSAP + Lenis butter-smooth momentum scrolling
 │   ├── projects.js       # Case study catalog data & dynamic interactive modal viewer
-│   └── clock.js          # Live Lagos (WAT) timezone clock & availability status engine
+│   └── vendor/           # GSAP, ScrollTrigger & Lenis smooth scroll libraries
 │
 ├── fonts/
-│   ├── TiemposFine-Light.woff   # Authentic editorial serif headline font from praisetechy.com
-│   └── Manrope-Medium.ttf       # Clean modern body & UI font from praisetechy.com
+│   ├── TiemposFine-Light.woff   # Editorial serif headline font
+│   └── Manrope-Medium.ttf       # Modern body & UI font
 │
-└── images/
-    ├── collxx-mockup.png        # Collxx case study featured mockup
-    └── shopafricanbrands-mockup.png # Shopafricanbrands marketplace mockup
+└── images/               # Optimized WebP/PNG project case studies & portrait assets
 ```
 
 ---

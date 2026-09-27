@@ -415,24 +415,43 @@ body#top {
 }
 
 /* FAQs Section */
+.dark-section .faq-accordion {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
 .dark-section .faq-item {
-  background: #1f1f1f;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: var(--radius-md);
-  margin-bottom: 14px;
+  background: #1c1c1c;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 18px;
+  margin-bottom: 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.dark-section .faq-item:hover {
+  border-color: rgba(2, 168, 85, 0.35);
+  background: #202020;
+  transform: translateY(-1px);
 }
 .dark-section .faq-item.open {
-  border-color: #02A855;
-  background: rgba(2, 168, 85, 0.06);
+  border-color: rgba(2, 168, 85, 0.55);
+  background: #1b221e;
+  box-shadow: 0 10px 32px rgba(2, 168, 85, 0.1), 0 4px 18px rgba(0, 0, 0, 0.35);
 }
 .dark-section .faq-question {
-  color: #FFFFFF;
+  color: #FFFFFF !important;
+  font-size: clamp(1.15rem, 1.35vw, 1.32rem);
+  font-weight: 700;
+  padding: 26px 32px;
 }
 .dark-section .faq-icon {
   color: #02A855;
 }
 .dark-section .faq-answer {
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.90) !important;
+  font-size: clamp(1.04rem, 1.15vw, 1.14rem);
+  line-height: 1.8;
+  padding: 18px 32px 28px 32px;
 }
 
 /* About Page Elements in dark sections */

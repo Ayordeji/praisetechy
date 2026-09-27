@@ -130,33 +130,28 @@ const SITE_TESTIMONIALS_DATA = [
 const SITE_FAQS_DATA = [
   {
     id: 'speed-guarantee',
-    question: 'What is your sub-3-second speed guarantee?',
-    answer: 'Every website I build or optimize is engineered to achieve a sub-3-second load time and a 90%+ Google Lighthouse score on standard connections. If your core pages do not meet this benchmark upon launch, I continue tuning and optimizing at no extra cost until they do.'
+    question: 'How fast will my website be?',
+    answer: 'I build with speed in mind and test key pages before launch. Load times and performance scores depend on your content, hosting, and site features.'
   },
   {
     id: 'framer-vs-wordpress',
-    question: 'Should I build on Framer or WordPress?',
-    answer: 'It depends on your business model. If you need complex e-commerce (WooCommerce), custom user accounts, blogging scalability, and multi-currency checkouts, <strong>WordPress</strong> is ideal. If you want a hyper-fast, design-led marketing site or landing page with zero server maintenance, <strong>Framer</strong> is unbeatable. We’ll choose the right tool on our discovery call.'
-  },
-  {
-    id: 'seo-rankings',
-    question: 'Will a redesign or migration hurt my Google rankings?',
-    answer: 'No. When executing platform migrations or redesigns, I perform a comprehensive URL inventory, implement 1-to-1 301 redirects, preserve meta titles and schema structures, and submit updated XML sitemaps to Google Search Console to protect your search equity.'
+    question: 'Should I choose WordPress, Framer, or custom code?',
+    answer: 'It depends on what you need. WordPress works well for content-heavy sites and online stores, Framer for design-led websites, and custom code or React for features that need more flexibility. I’ll recommend the right fit.'
   },
   {
     id: 'timeline',
-    question: 'What is your typical project timeline?',
-    answer: 'A standard Corporate Business website typically launches within 7 to 14 business days. Comprehensive e-commerce storefronts and custom enterprise builds range from 2 to 4 weeks depending on variant catalog size and custom integrations.'
+    question: 'How long does a project take?',
+    answer: 'Most business websites take around 2–4 weeks. Larger stores and custom projects may take longer. I’ll confirm the timeline once we agree on the scope.'
   },
   {
     id: 'payment-process',
-    question: 'How does payment and onboarding work?',
-    answer: 'Projects typically run on a structured 50/50 split (50% deposit to initiate architecture & design sprints, and 50% upon final sign-off and deployment). For ongoing retainers and growth sprints, monthly invoicing is available with direct bank or card payments.'
+    question: 'How do payments work?',
+    answer: 'Projects typically start with a 60% deposit, with the remaining 40% due at completion. You’ll receive a clear scope and payment schedule before work begins.'
   },
   {
     id: 'post-launch-support',
-    question: 'Do you provide post-launch support and maintenance?',
-    answer: 'Yes! All custom builds include up to 30 days of dedicated post-launch support covering bug fixes, speed audits, and CMS training. Monthly care and maintenance retainers are also available for continuous security updates, speed audits, and conversion tweaks.'
+    question: 'Do you offer support after launch?',
+    answer: 'Yes. I provide support for issues related to the build. Ongoing maintenance is also available if you need it.'
   }
 ];
 
@@ -170,7 +165,7 @@ function generateTestimonialsHTML(options = {}) {
   const items = SITE_TESTIMONIALS_DATA.slice(0, limit);
   const badgeNum = options.badgeNum || '05';
   const badgeLabel = options.badgeLabel || 'Client Reviews';
-  const title = options.title || 'What founders actually <span class="services-glance-accent">say.</span>';
+  const title = options.title || 'What clients <span class="services-glance-accent">actually say.</span>';
   const subtitle = options.subtitle || 'Unedited reviews from global brands and founders who trusted Praise Techy with their digital presence.';
   const hideHeader = options.hideHeader === 'true' || options.hideHeader === true;
 
@@ -238,8 +233,8 @@ function generateFaqsHTML(options = {}) {
   const items = SITE_FAQS_DATA.slice(0, limit);
   const badgeNum = options.badgeNum || '06';
   const badgeLabel = options.badgeLabel || 'FAQs';
-  const title = options.title || 'Frequently asked <span class="services-glance-accent">questions.</span>';
-  const subtitle = options.subtitle || 'Everything you need to know about timelines, speed guarantees, platforms, and maintenance.';
+  const title = options.title || 'Your questions, <span class="services-glance-accent">answered.</span>';
+  const subtitle = options.subtitle || 'Answers to common questions about timelines, the tools I use, website performance, and support after launch.';
   const hideHeader = options.hideHeader === 'true' || options.hideHeader === true;
 
   const headerHTML = hideHeader ? '' : `

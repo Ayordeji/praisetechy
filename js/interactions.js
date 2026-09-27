@@ -92,19 +92,7 @@ function initInteractions() {
     });
   });
 
-  // 6. FAQ Accordion Toggle
-  const faqItems = document.querySelectorAll('.faq-item');
-  faqItems.forEach(item => {
-    const questionBtn = item.querySelector('.faq-question');
-    questionBtn?.addEventListener('click', () => {
-      const isOpen = item.classList.contains('open');
-      // Close all others for a clean single-open accordion
-      faqItems.forEach(otherItem => otherItem.classList.remove('open'));
-      if (!isOpen) {
-        item.classList.add('open');
-      }
-    });
-  });
+  // 6. FAQ Accordions are managed universally by site-components.js initFaqAccordion()
 
   // 7. Hero Deck Card Interactions & Expansion Controls
   const heroDeck = document.querySelector('.hero-base-cards-wrap, .hero-deck-wrap');

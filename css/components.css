@@ -3321,14 +3321,17 @@
 @media (max-width: 1100px) {
 
   .lumon-nav,
-  .nav-menu {
+  .nav-menu,
+  .lumon-cta-btn,
+  .header-cta-btn,
+  .header-actions .lumon-cta-btn {
     display: none !important;
   }
 
-  .lumon-menu-toggle,
-  .header-actions .menu-toggle,
-  .menu-toggle {
-    display: flex !important;
+  .site-header:not(.scrolled) .lumon-menu-toggle,
+  .site-header:not(.scrolled) .header-actions .menu-toggle,
+  .site-header:not(.scrolled) .menu-toggle {
+    display: inline-flex !important;
   }
 
   .hero-container {
@@ -3604,10 +3607,10 @@
   }
 
   .lumon-cta-btn,
+  .header-cta-btn,
+  .header-actions .lumon-cta-btn,
   .header-actions .btn {
-    height: 34px;
-    padding: 0 12px;
-    font-size: 0.72rem;
+    display: none !important;
   }
 
   .lumon-menu-toggle,

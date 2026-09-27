@@ -3008,7 +3008,7 @@
   font-family: 'tiemposHeadline', var(--font-serif), Georgia, serif;
   font-size: clamp(3.2rem, 7.6vw, 7.5rem);
   font-weight: 700;
-  line-height: 0.98;
+  line-height: 0.88;
   letter-spacing: -0.025em;
   color: #0E1712;
   margin-bottom: 22px;

@@ -104,9 +104,9 @@
   display: inline-block;
   overflow: hidden;
   vertical-align: top;
-  line-height: 1.25;
+  line-height: inherit;
   margin-right: 0.15em;
-  padding-bottom: 0.08em;
+  padding-bottom: 0.03em;
 }
 
 .split-word-inner {

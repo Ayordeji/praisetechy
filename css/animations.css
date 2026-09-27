@@ -98,54 +98,53 @@
 .reveal-delay-4 { transition-delay: 0.4s; }
 
 /* ==========================================================================
-   AJIDE VICTOR-INSPIRED HEADING ENTRANCE & KINETIC REVEAL SYSTEM
+   AJIDE VICTOR-INSPIRED MASKED SPLIT HEADING ENTRANCE SYSTEM
    ========================================================================== */
-.heading-entrance,
-h1:not(.no-anim),
-h2:not(.no-anim),
-.hero-handcrafted-headline,
-.section-title-wrap h2,
-.footer-praise-title,
-.service-praise-card-title,
-.faq-heading,
-.about-proof-quote,
-.pricing-card-name {
-  opacity: 0;
-  transform: translateY(44px) rotate(1.2deg);
-  filter: blur(4px);
-  transition: opacity 0.95s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.95s cubic-bezier(0.16, 1, 0.3, 1),
-              filter 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-  will-change: opacity, transform, filter;
-  transform-origin: left bottom;
+.split-word-mask {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  line-height: 1.25;
+  margin-right: 0.15em;
+  padding-bottom: 0.08em;
 }
 
-.heading-entrance.active,
-.heading-entrance.is-revealed,
-h1.active,
-h1.is-revealed,
-h2.active,
-h2.is-revealed,
-.hero-handcrafted-headline.active,
-.hero-handcrafted-headline.is-revealed,
-.section-title-wrap h2.active,
-.section-title-wrap h2.is-revealed,
-.footer-praise-title.active,
-.footer-praise-title.is-revealed,
-.service-praise-card-title.active,
-.service-praise-card-title.is-revealed,
-.faq-heading.active,
-.faq-heading.is-revealed,
-.about-proof-quote.active,
+.split-word-inner {
+  display: inline-block;
+  transform: translateY(115%) rotate(4deg);
+  opacity: 0;
+  transform-origin: 0% 100%;
+  will-change: transform, opacity;
+  transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+              opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.is-revealed .split-word-inner,
+.active .split-word-inner,
+.is-revealed > .split-word-inner,
+.active > .split-word-inner {
+  transform: translateY(0%) rotate(0deg);
+  opacity: 1;
+}
+
+/* Fallback for un-split headings or proof quotes */
+.about-proof-quote,
+.service-praise-card-title,
+.pricing-card-name {
+  opacity: 0;
+  transform: translateY(32px) rotate(1.2deg);
+  transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
 .about-proof-quote.is-revealed,
-.pricing-card-name.active,
+.about-proof-quote.active,
+.service-praise-card-title.is-revealed,
+.service-praise-card-title.active,
 .pricing-card-name.is-revealed,
-.reveal.active h1,
-.reveal.active h2,
-.reveal.active h3 {
+.pricing-card-name.active {
   opacity: 1;
   transform: translateY(0) rotate(0deg);
-  filter: blur(0);
 }
 
 /* ==========================================================================

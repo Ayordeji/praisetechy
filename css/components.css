@@ -60,6 +60,7 @@
 }
 
 .site-header.scrolled .header-status-badge {
+  display: inline-flex;
   background: transparent;
   border: none;
   padding: 0;
@@ -96,10 +97,7 @@
 
 .site-header.scrolled .header-lumon-bar:hover .header-status-badge,
 .site-header.scrolled:hover .header-status-badge {
-  display: inline-flex;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  padding: 4px 10px;
+  display: none;
 }
 
 .site-header.scrolled .header-lumon-bar:hover .lumon-nav,
@@ -163,8 +161,9 @@
   color: #02A855;
 }
 
+/* Hide Available for work on wide header — only appears when shrunk on scroll */
 .header-status-badge {
-  display: inline-flex;
+  display: none;
   align-items: center;
   gap: 7px;
   padding: 4px 10px;

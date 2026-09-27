@@ -33,6 +33,7 @@
     window.lenis = lenis;
 
     // Sync Lenis scroll events with GSAP ScrollTrigger & Site Header Shrink
+    let lastLenisScroll = window.scrollY;
     lenis.on('scroll', (e) => {
       if (typeof ScrollTrigger !== 'undefined') {
         ScrollTrigger.update();
@@ -42,10 +43,15 @@
       if (scrollPos > 30) {
         header?.classList.add('scrolled');
         header?.classList.add('is-scrolled');
+        if (Math.abs(scrollPos - lastLenisScroll) > 6 && header?.classList.contains('mobile-expanded')) {
+          header?.classList.remove('mobile-expanded');
+        }
       } else {
         header?.classList.remove('scrolled');
         header?.classList.remove('is-scrolled');
+        header?.classList.remove('mobile-expanded');
       }
+      lastLenisScroll = scrollPos;
     });
 
     if (typeof ScrollTrigger !== 'undefined') {

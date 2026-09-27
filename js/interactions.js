@@ -11,15 +11,22 @@ function initInteractions() {
   // 2. Full-Width Floating Header Scroll Effect (Lumon Studio Style)
   const header = document.querySelector('.site-header');
 
+  let lastScrollY = window.scrollY;
+
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 30) {
+    const currentScrollY = window.scrollY;
+    if (currentScrollY > 30) {
       header?.classList.add('scrolled');
       header?.classList.add('is-scrolled');
+      if (Math.abs(currentScrollY - lastScrollY) > 6 && header?.classList.contains('mobile-expanded')) {
+        header?.classList.remove('mobile-expanded');
+      }
     } else {
       header?.classList.remove('scrolled');
       header?.classList.remove('is-scrolled');
       header?.classList.remove('mobile-expanded');
     }
+    lastScrollY = currentScrollY;
   }, { passive: true });
 
   // On Mobile: Clicking the shrunk "Available for work" pill expands the header to reveal logo + hamburger

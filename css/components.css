@@ -448,6 +448,61 @@
   margin-bottom: 10px;
 }
 
+.offcanvas-footer-cta {
+  margin-top: auto;
+  padding-top: 28px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.offcanvas-cta-btn,
+.offcanvas-drawer .btn-primary,
+.offcanvas-drawer .btn {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 100% !important;
+  height: 50px !important;
+  padding: 0 24px !important;
+  border-radius: 9999px !important;
+  background: #02A855 !important;
+  color: #FFFFFF !important;
+  font-family: var(--font-body, 'DM Sans', sans-serif) !important;
+  font-size: 0.95rem !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+  border: 1px solid rgba(2, 168, 85, 0.7) !important;
+  box-shadow: 0 4px 18px rgba(2, 168, 85, 0.35) !important;
+  transition: all 0.25s var(--ease-spring) !important;
+  cursor: pointer;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.offcanvas-cta-btn:hover,
+.offcanvas-cta-btn:focus-visible,
+.offcanvas-drawer .btn-primary:hover,
+.offcanvas-drawer .btn-primary:focus-visible,
+.offcanvas-drawer .btn:hover,
+.offcanvas-drawer .btn:focus-visible {
+  background: #018F47 !important;
+  color: #FFFFFF !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(2, 168, 85, 0.48) !important;
+  border-color: #018F47 !important;
+}
+
+.offcanvas-cta-btn:active,
+.offcanvas-drawer .btn-primary:active,
+.offcanvas-drawer .btn:active {
+  transform: translateY(0);
+}
+
+.offcanvas-cta-btn:hover .roll-link-inner,
+.offcanvas-drawer .btn-primary:hover .roll-link-inner,
+.offcanvas-drawer .btn:hover .roll-link-inner {
+  transform: translateY(-50%);
+}
+
 /* --------------------------------------------------------------------------
    Hero Section — Atmospheric Landscape Backdrop
    -------------------------------------------------------------------------- */
@@ -1426,6 +1481,8 @@
   box-shadow: none;
   transition: transform 0.35s var(--ease-spring), border-color 0.35s ease;
   cursor: pointer;
+  text-decoration: none !important;
+  color: inherit !important;
 }
 
 .project-card:hover {

@@ -83,41 +83,43 @@
 }
 
 /* --------------------------------------------------------------------------
-   Hover on Scrolled Header: Smoothly Expands back to Full Navigation
+   Hover on Scrolled Header: Smoothly Expands back to Full Navigation (Desktop Only)
    -------------------------------------------------------------------------- */
-.site-header.scrolled .header-lumon-bar:hover,
-.site-header.scrolled .header-container:hover,
-.site-header.scrolled:hover .header-lumon-bar,
-.site-header.scrolled:hover .header-container {
-  max-width: var(--container-max, 1280px);
-  padding: 0 10px 0 16px;
-  justify-content: space-between;
-  background: rgba(18, 18, 18, 0.96);
-  border-color: rgba(255, 255, 255, 0.2);
-}
+@media (hover: hover) and (min-width: 1101px) {
+  .site-header.scrolled .header-lumon-bar:hover,
+  .site-header.scrolled .header-container:hover,
+  .site-header.scrolled:hover .header-lumon-bar,
+  .site-header.scrolled:hover .header-container {
+    max-width: var(--container-max, 1280px);
+    padding: 0 10px 0 16px;
+    justify-content: space-between;
+    background: rgba(18, 18, 18, 0.96);
+    border-color: rgba(255, 255, 255, 0.2);
+  }
 
-.site-header.scrolled .header-lumon-bar:hover .lumon-logo-text,
-.site-header.scrolled:hover .lumon-logo-text {
-  display: inline-block;
-}
+  .site-header.scrolled .header-lumon-bar:hover .lumon-logo-text,
+  .site-header.scrolled:hover .lumon-logo-text {
+    display: inline-block;
+  }
 
-.site-header.scrolled .header-lumon-bar:hover .header-status-badge,
-.site-header.scrolled:hover .header-status-badge {
-  display: none;
-}
+  .site-header.scrolled .header-lumon-bar:hover .header-status-badge,
+  .site-header.scrolled:hover .header-status-badge {
+    display: none;
+  }
 
-.site-header.scrolled .header-lumon-bar:hover .lumon-nav,
-.site-header.scrolled .header-lumon-bar:hover .header-nav-links,
-.site-header.scrolled:hover .lumon-nav,
-.site-header.scrolled:hover .header-nav-links {
-  display: flex;
-}
+  .site-header.scrolled .header-lumon-bar:hover .lumon-nav,
+  .site-header.scrolled .header-lumon-bar:hover .header-nav-links,
+  .site-header.scrolled:hover .lumon-nav,
+  .site-header.scrolled:hover .header-nav-links {
+    display: flex;
+  }
 
-.site-header.scrolled .header-lumon-bar:hover .lumon-cta-btn,
-.site-header.scrolled .header-lumon-bar:hover .header-actions .lumon-cta-btn,
-.site-header.scrolled:hover .lumon-cta-btn,
-.site-header.scrolled:hover .header-actions .lumon-cta-btn {
-  display: inline-flex !important;
+  .site-header.scrolled .header-lumon-bar:hover .lumon-cta-btn,
+  .site-header.scrolled .header-lumon-bar:hover .header-actions .lumon-cta-btn,
+  .site-header.scrolled:hover .lumon-cta-btn,
+  .site-header.scrolled:hover .header-actions .lumon-cta-btn {
+    display: inline-flex !important;
+  }
 }
 
 .lumon-logo,
@@ -3324,7 +3326,8 @@
   .nav-menu,
   .lumon-cta-btn,
   .header-cta-btn,
-  .header-actions .lumon-cta-btn {
+  .header-actions .lumon-cta-btn,
+  .header-actions .btn {
     display: none !important;
   }
 
@@ -3332,6 +3335,32 @@
   .site-header:not(.scrolled) .header-actions .menu-toggle,
   .site-header:not(.scrolled) .menu-toggle {
     display: inline-flex !important;
+  }
+
+  /* Scrolled header tapped/expanded on mobile */
+  .site-header.scrolled.mobile-expanded .header-lumon-bar,
+  .site-header.scrolled.mobile-expanded .header-container {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 12px 0 14px !important;
+    justify-content: space-between !important;
+  }
+
+  .site-header.scrolled.mobile-expanded .lumon-logo-text {
+    display: inline-block !important;
+  }
+
+  .site-header.scrolled.mobile-expanded .header-status-badge {
+    display: none !important;
+  }
+
+  .site-header.scrolled.mobile-expanded .lumon-menu-toggle {
+    display: inline-flex !important;
+  }
+
+  .site-header.scrolled.mobile-expanded .lumon-cta-btn,
+  .site-header.scrolled.mobile-expanded .header-cta-btn {
+    display: none !important;
   }
 
   .hero-container {

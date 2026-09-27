@@ -18,8 +18,25 @@ function initInteractions() {
     } else {
       header?.classList.remove('scrolled');
       header?.classList.remove('is-scrolled');
+      header?.classList.remove('mobile-expanded');
     }
   }, { passive: true });
+
+  // On Mobile: Clicking the shrunk "Available for work" pill expands the header to reveal logo + hamburger
+  const headerBar = document.querySelector('.header-lumon-bar');
+  if (headerBar) {
+    headerBar.addEventListener('click', (e) => {
+      if (window.innerWidth <= 1100 && header?.classList.contains('scrolled')) {
+        if (e.target.closest('.menu-toggle') || e.target.closest('.modal-close-btn')) {
+          return;
+        }
+        if (e.target.closest('.lumon-logo') || e.target.closest('.header-status-badge') || e.target.closest('.header-lumon-bar')) {
+          e.preventDefault();
+          header?.classList.toggle('mobile-expanded');
+        }
+      }
+    });
+  }
 
   // 3. Off-canvas Mobile Drawer Navigation
   const menuToggles = document.querySelectorAll('.menu-toggle');

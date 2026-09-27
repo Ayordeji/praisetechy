@@ -3111,8 +3111,11 @@
   width: 100%;
   text-transform: capitalize;
   pointer-events: none;
-  background: linear-gradient(270deg, #02A855, #0A2316, #059669, #56ba79, #047857, #02A855);
-  background-size: 500% 500%;
+  opacity: 1 !important;
+  visibility: visible !important;
+  color: #02A855;
+  background: linear-gradient(270deg, #02A855, #10B981, #059669, #34D399, #047857, #02A855);
+  background-size: 400% 400%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

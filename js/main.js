@@ -10,11 +10,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // Ajide Victor-Inspired Masked Typography & Heading Splitter
   function setupMaskedHeadings() {
     const headings = document.querySelectorAll(
-      'h1:not(.no-split), h2:not(.no-split), .hero-handcrafted-headline, .section-title-wrap h2, .footer-praise-title, .faq-heading'
+      'h1:not(.no-split):not(.footer-monumental-text), h2:not(.no-split):not(.footer-monumental-text), .hero-handcrafted-headline, .section-title-wrap h2, .footer-praise-title, .faq-heading'
     );
 
     headings.forEach((heading) => {
-      if (heading.dataset.splitDone) return;
+      if (heading.dataset.splitDone || heading.classList.contains('footer-monumental-text')) return;
       heading.dataset.splitDone = 'true';
 
       function splitTextNode(node) {
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Stagger words inside this heading
       const words = heading.querySelectorAll('.split-word-inner');
       words.forEach((word, i) => {
-        word.style.transitionDelay = `${(i * 0.038).toFixed(3)}s`;
+        word.style.transitionDelay = `${(i * 0.065).toFixed(3)}s`;
       });
     });
   }
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Entrance Observer for Headings, Cards, Subtext & Badges
     const animatedElements = document.querySelectorAll(
-      'h1, h2, h3, .hero-handcrafted-headline, .section-title-wrap h2, .footer-praise-title, .about-proof-quote, .service-praise-card-title, .faq-heading, .deck-card, .service-praise-card, .skill-card-modern, .approach-card, .pricing-card, .testimonial-card, .faq-item, .contact-card, .contact-channel-card, .hero-handcrafted-subtext, .section-title-wrap p, .footer-praise-subtitle, .section-num-tag, .hero-availability-pill, .hero-actions, .hero-stats-panel'
+      'h1:not(.footer-monumental-text), h2:not(.footer-monumental-text), h3, .hero-handcrafted-headline, .section-title-wrap h2, .footer-praise-title, .about-proof-quote, .service-praise-card-title, .faq-heading, .deck-card, .service-praise-card, .skill-card-modern, .approach-card, .pricing-card, .testimonial-card, .faq-item, .contact-card, .contact-channel-card, .hero-handcrafted-subtext, .section-title-wrap p, .footer-praise-subtitle, .section-num-tag, .hero-availability-pill, .hero-actions, .hero-stats-panel'
     );
 
     animatedElements.forEach(el => observer.observe(el));

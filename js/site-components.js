@@ -141,7 +141,7 @@ const SITE_FAQS_DATA = [
   {
     id: 'timeline',
     question: 'How long does a project take?',
-    answer: 'Most business websites take around 2–4 weeks. Larger stores and custom projects may take longer. I’ll confirm the timeline once we agree on the scope.'
+    answer: 'Most business websites take around 1 to 3 weeks. Larger stores and custom projects may take longer. I’ll confirm the timeline once we agree on the scope.'
   },
   {
     id: 'payment-process',

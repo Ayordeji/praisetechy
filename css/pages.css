@@ -1277,7 +1277,8 @@ body#top {
 }
 
 /* ==========================================================================
-   WHAT I CAN HELP YOU BUILD (4-Card Service Matrix)
+/* ==========================================================================
+   WHAT I CAN HELP YOU WITH & WHO I WORK WITH (Side-by-Side 2-Column Grid)
    ========================================================================== */
 .about-services-fit-section {
   padding: 80px 0;
@@ -1285,17 +1286,59 @@ body#top {
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.about-services-grid {
+.about-side-by-side-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.about-side-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-side-col-header {
+  margin-bottom: 24px;
+}
+
+.about-side-heading {
+  font-family: var(--font-heading, 'Manrope', sans-serif);
+  font-size: clamp(2rem, 3.2vw, 3.2rem);
+  font-weight: 800;
+  color: #FFFFFF;
+  letter-spacing: -0.04em;
+  margin: 0 0 10px;
+  line-height: 1.15;
+}
+
+.about-side-heading .services-glance-accent {
+  font-style: italic;
+  font-family: var(--font-serif, 'tiemposHeadline', Georgia, serif);
+  font-weight: 400;
+  color: #02A855 !important;
+}
+
+.about-side-subhead {
+  font-family: var(--font-body, 'DM Sans', sans-serif);
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.about-services-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex-grow: 1;
 }
 
 .about-service-card {
   background: #1f1f1f;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 16px;
-  padding: 32px 28px;
+  padding: 24px 26px;
   display: flex;
   flex-direction: column;
   transition: border-color 0.25s ease, transform 0.25s ease;
@@ -1303,100 +1346,45 @@ body#top {
 
 .about-service-card:hover {
   border-color: #02A855;
-  transform: translateY(-3px);
+  transform: translateY(-2px);
 }
 
 .about-service-card-num {
   font-family: var(--font-heading, 'Manrope', sans-serif);
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 700;
   color: #02A855;
   letter-spacing: 0.08em;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 
 .about-service-card h3 {
   font-family: 'tiemposHeadline', Georgia, serif;
-  font-size: 1.35rem;
+  font-size: 1.25rem;
   font-weight: 700;
   color: #FFFFFF !important;
-  margin: 0 0 12px;
+  margin: 0 0 8px;
   letter-spacing: -0.01em;
 }
 
 .about-service-card p {
   font-family: 'DM Sans', sans-serif;
-  font-size: 0.95rem;
-  color: rgba(255, 255, 255, 0.72);
-  line-height: 1.65;
-  margin: 0;
-}
-
-.about-matrix-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
-}
-
-.about-matrix-col {
-  display: flex;
-  flex-direction: column;
-}
-
-.about-matrix-tag {
-  display: inline-block;
-  font-family: 'Manrope', sans-serif;
-  font-size: 0.75rem;
-  font-weight: 800;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--accent-green, #02A855);
-  margin-bottom: 28px;
-}
-
-.about-service-item {
-  margin-bottom: 32px;
-  padding-bottom: 28px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-}
-
-.about-service-item:last-child {
-  border-bottom: none;
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
-.about-service-item h3 {
-  font-family: 'tiemposHeadline', Georgia, serif;
-  font-size: 1.28rem;
-  font-weight: 700;
-  color: #FFFFFF !important;
-  margin: 0 0 10px;
-  letter-spacing: -0.01em;
-}
-
-.about-service-item p {
   font-size: 0.92rem;
-  color: rgba(255, 255, 255, 0.7);
-  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.6;
   margin: 0;
-}
-
-/* ==========================================================================
-   ABOUT FIT / WHO I WORK WITH SECTION
-   ========================================================================== */
-.about-fit-section {
-  padding: 80px 0;
-  background: #181818 !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .about-fit-card {
   background: #1f1f1f;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 20px;
-  padding: 44px 48px;
-  max-width: 900px;
+  border-radius: 18px;
+  padding: 36px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  box-sizing: border-box;
   transition: border-color 0.25s ease;
 }
 
@@ -1406,38 +1394,38 @@ body#top {
 
 .about-fit-card-header h3 {
   font-family: var(--font-heading, 'Manrope', sans-serif);
-  font-size: 1.35rem;
+  font-size: 1.25rem;
   font-weight: 700;
   color: #FFFFFF;
-  margin: 0 0 24px;
+  margin: 0 0 20px;
   letter-spacing: -0.01em;
 }
 
 .about-fit-list {
   list-style: none;
   padding: 0;
-  margin: 0 0 36px 0;
+  margin: 0 0 28px 0;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 14px;
 }
 
 .about-fit-item {
   display: flex;
   align-items: flex-start;
-  gap: 16px;
+  gap: 14px;
   font-family: var(--font-body, 'DM Sans', sans-serif);
-  font-size: 1.05rem;
+  font-size: 0.96rem;
   color: rgba(255, 255, 255, 0.85);
-  line-height: 1.6;
+  line-height: 1.55;
 }
 
 .about-fit-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 26px;
-  height: 26px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
   background: rgba(2, 168, 85, 0.15);
   border: 1px solid rgba(2, 168, 85, 0.35);
@@ -1447,22 +1435,29 @@ body#top {
 }
 
 .about-fit-footer-box {
-  padding-top: 28px;
+  padding-top: 24px;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 32px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 18px;
 }
 
 .about-fit-footer-text {
   font-family: var(--font-body, 'DM Sans', sans-serif);
-  font-size: 1.05rem;
-  color: rgba(255, 255, 255, 0.88);
-  line-height: 1.65;
-  max-width: 520px;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.6;
   margin: 0;
+}
+
+.about-fit-footer-cta {
+  display: flex;
+  align-items: center;
+}
+
+.about-fit-footer-cta .btn-primary {
+  width: 100%;
+  text-align: center;
 }
 
 /* ==========================================================================
@@ -2315,8 +2310,14 @@ body#top {
     gap: 48px;
   }
 
-  .about-matrix-grid {
+  .about-side-by-side-grid {
+    grid-template-columns: 1fr;
     gap: 48px;
+  }
+
+  .about-side-col-header {
+    min-height: auto;
+    margin-bottom: 24px;
   }
 
   .about-proof-grid {
@@ -2372,26 +2373,12 @@ body#top {
     padding: 48px 0;
   }
 
-  .about-fit-section {
-    padding: 48px 0;
+  .about-side-by-side-grid {
+    gap: 40px;
   }
 
   .about-fit-card {
-    padding: 32px 24px;
-  }
-
-  .about-fit-footer-box {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-  }
-
-  .about-fit-footer-cta {
-    width: 100%;
-  }
-
-  .about-fit-footer-cta .btn-primary {
-    width: 100%;
+    padding: 30px 22px;
   }
 
   .about-hero-grid {

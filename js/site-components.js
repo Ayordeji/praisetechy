@@ -207,19 +207,6 @@ function generateTestimonialsHTML(options = {}) {
     </div>
   `);
 
-  const referralCount = items.filter(i => i.source.toLowerCase().includes('referral')).length;
-  const upworkCount = items.filter(i => i.source.toLowerCase().includes('upwork')).length;
-  const fiverrCount = items.filter(i => i.source.toLowerCase().includes('fiverr')).length;
-
-  const filterBarHTML = `
-    <div class="testimonials-filter-bar reveal" aria-label="Filter reviews by platform">
-      <button class="testimonials-filter-btn active" data-filter="all">All Reviews (${items.length})</button>
-      <button class="testimonials-filter-btn" data-filter="Client referral">Client Referral (${referralCount})</button>
-      <button class="testimonials-filter-btn" data-filter="Upwork">Upwork (${upworkCount})</button>
-      <button class="testimonials-filter-btn" data-filter="Fiverr">Fiverr (${fiverrCount})</button>
-    </div>
-  `;
-
   const cardsHTML = items.map((t, idx) => {
     const delayClass = `reveal-delay-${(idx % 3) + 1}`;
     const stars = '★'.repeat(t.rating || 5);
@@ -245,7 +232,6 @@ function generateTestimonialsHTML(options = {}) {
   return `
     <div class="container">
       ${headerHTML}
-      ${filterBarHTML}
       <div class="testimonials-grid">
         ${cardsHTML}
       </div>

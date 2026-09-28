@@ -15,17 +15,17 @@ const SITE_TESTIMONIALS_DATA = [
   },
   {
     id: 'upwork-seo',
-    name: 'SEO Optimization & Google Search Visibiliy client',
+    name: 'John-Dusabe',
     source: 'Upwork',
-    avatar: 'U',
+    avatar: 'J',
     rating: 5,
     quote: 'Great job on the documentation of SEO for the website. I have been working with this company for years now and we have built a great business relationship. I have...'
   },
   {
     id: 'upwork-web-upgrade',
-    name: 'Website Upgrade client',
+    name: 'Pakeena Richardson',
     source: 'Upwork',
-    avatar: 'U',
+    avatar: 'P',
     rating: 5,
     quote: 'Great web designer!'
   },
@@ -47,17 +47,17 @@ const SITE_TESTIMONIALS_DATA = [
   },
   {
     id: 'upwork-business-upgrade',
-    name: 'Business Website Upgrade client',
+    name: 'Pakeena Richardson',
     source: 'Upwork',
-    avatar: 'U',
+    avatar: 'P',
     rating: 5,
     quote: 'Praise is definitely the best choice when searching for a web developer. 10 out of 10!'
   },
   {
     id: 'upwork-web-dev',
-    name: 'Website Developer Business client',
+    name: 'Pakeena Richardson',
     source: 'Upwork',
-    avatar: 'U',
+    avatar: 'P',
     rating: 5,
     quote: 'The web developer Praise was highly skilled and professional, delivering a modern, user-friendly website that exceeded expectations. He was responsive, detail-oriented, and ensured everything functioned perfectly, making the entire process...'
   },

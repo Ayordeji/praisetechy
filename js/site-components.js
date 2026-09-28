@@ -7,163 +7,173 @@
 const SITE_TESTIMONIALS_DATA = [
   {
     id: 'dr-wandji-brigitte',
-    name: 'Dr. Wandji Brigitte',
+    name: 'Dr Wandji Brigitte',
     role: 'Client Referral',
-    source: 'Client Referral',
+    source: 'Client referral',
     avatar: 'W',
     rating: 5,
-    quote: '"Thank you so very much. It has been a very pleasant ride so far. I appreciate the professionalism and diligence and I\'ll recommend you anyday anytime."',
-    metric: '⭐ Highly Recommended Referral'
-  },
-  {
-    id: 'andersonbelz112',
-    name: 'andersonbelz112',
-    role: 'Framer Project Client',
-    source: 'Fiverr Verified',
-    avatar: 'A',
-    rating: 5,
-    quote: '"Great experience working with Praise. He communicated well throughout the project and completed all the Framer updates exactly as requested. He was quick with revisions, paid attention to the details, and made the whole process smooth. I\'d definitely recommend him and would happily work with him again."',
-    metric: '⚡ Fast Revisions & Smooth Process'
-  },
-  {
-    id: 'analyst-olad-wp',
-    name: 'analyst_olad',
-    role: 'WordPress & Framer Client',
-    source: 'Fiverr Verified',
-    avatar: 'O',
-    rating: 5,
-    quote: '"I had a clear idea of how I wanted my website to look and even had a Framer design to guide things. Praise not only improved the design but also recommended using WordPress to develop it, for better flexibility. He delivered a clean, mobile-friendly site that matched my vision perfectly. Great experience from start to finish."',
-    metric: '🎯 Perfect Design-to-Build Execution'
-  },
-  {
-    id: 'ibukunolami-fintech',
-    name: 'ibukunolami_d',
-    role: 'Fintech Founder',
-    source: 'Fiverr Verified',
-    avatar: 'I',
-    rating: 5,
-    quote: '"Great Guy. He delivered and designed a landing page for my fintech just as I had envisioned it, with just a little info shared with him. He is really creative as he made the project easy for me from start to finish. Will surely use Praise service again. PS: He was referred to me by my friend, and he didn\'t disappoint."',
-    metric: '🚀 High-Converting Landing Page'
-  },
-  {
-    id: 'busayomaxwell',
-    name: 'busayomaxwell',
-    role: 'Framer Client',
-    source: 'Fiverr Verified',
-    avatar: 'B',
-    rating: 5,
-    quote: '"Great experience working with praise. He was professional, communicative and delivered a clean, responsive Framer footer redesign exactly as requested. Fast turnaround, great attention to detail, and high-quality work. Highly recommended, and I would gladly work with him again."',
-    metric: '📱 Clean, Responsive Redesign'
-  },
-  {
-    id: 'upwork-web-business',
-    name: 'Website Developer Business client',
-    role: 'Business Website Client',
-    source: 'Upwork Verified',
-    avatar: 'U',
-    rating: 5,
-    quote: '"The web developer Praise was highly skilled and professional, delivering a modern, user-friendly website that exceeded expectations. He was responsive, detail-oriented, and ensured everything functioned perfectly, making the entire process seamless."',
-    metric: '✨ Exceeded All Expectations'
-  },
-  {
-    id: 'ibukunolami-coaching',
-    name: 'ibukunolami_d',
-    role: 'Coaching Landing Page Client',
-    source: 'Fiverr Verified',
-    avatar: 'I',
-    rating: 5,
-    quote: '"Great experience working with Praise on my coaching landing page. He kept me updated at every milestone with clear explanations of what was done and what was coming next, so there were never any surprises. On top of that, the layout itself came out clean and premium, exactly the vibe I was going for."',
-    metric: '💎 Premium Vibe & Clear Updates'
-  },
-  {
-    id: 'spectre-ad',
-    name: 'spectre_ad',
-    role: 'Digital Growth Client',
-    source: 'Fiverr Verified',
-    avatar: 'S',
-    rating: 5,
-    quote: '"It was great working with Praise. He delivered earlier than expected, was proactive with the task and he flawlessly made the changes I requested, he really helped me out with this, great guy."',
-    metric: '⚡ Delivered Earlier Than Expected'
+    quote: "Hey Ayo, Thank you so very much. It has been a very pleasant ride so far. I appreciate the professionalism and diligence and I'll recommend you anyday anytime.",
+    metric: 'Client Referral'
   },
   {
     id: 'upwork-seo',
-    name: 'SEO Optimization & Google Search client',
-    role: 'SEO & Search Visibility Client',
-    source: 'Upwork Verified',
-    avatar: 'S',
+    name: 'SEO Optimization & Google Search Visibility client',
+    role: 'SEO & Search Visibility',
+    source: 'Upwork',
+    avatar: 'U',
     rating: 5,
-    quote: '"Great job on the documentation of SEO for the website. I have been working with this company for years now and we have built a great business relationship."',
-    metric: '📈 Multi-Year Business Relationship'
-  },
-  {
-    id: 'analyst-olad-genius',
-    name: 'analyst_olad',
-    role: 'Web Platform Client',
-    source: 'Fiverr Verified',
-    avatar: 'O',
-    rating: 5,
-    quote: '"This guyyyyy here is a GENIUS. He is what he calls himself. Highly recommended. Thank you for the quick delivery and awesome delivery. I will surely be back for more project."',
-    metric: '🏆 Quick & Awesome Delivery'
-  },
-  {
-    id: 'upwork-business-upgrade',
-    name: 'Business Website Upgrade client',
-    role: 'Website Upgrade Client',
-    source: 'Upwork Verified',
-    avatar: 'B',
-    rating: 5,
-    quote: '"Praise is definitely the best choice when searching for a web developer. 10 out of 10!"',
-    metric: '🌟 10 out of 10 Web Developer'
-  },
-  {
-    id: 'upwork-logo-dev-1',
-    name: 'Logo Development client',
-    role: 'Design & Development Client',
-    source: 'Upwork Verified',
-    avatar: 'L',
-    rating: 5,
-    quote: '"Excellent developer. Great attention to detail. Well talented. Patient and extremely dedicated."',
-    metric: '🎯 Patient & Extremely Dedicated'
-  },
-  {
-    id: 'upwork-logo-dev-2',
-    name: 'Logo Development client',
-    role: 'IT & Development Client',
-    source: 'Upwork Verified',
-    avatar: 'L',
-    rating: 5,
-    quote: '"Excellent IT skills and quality work."',
-    metric: '💻 Quality IT Skills'
-  },
-  {
-    id: 'carlocor',
-    name: 'carlocor',
-    role: 'Web Design Client',
-    source: 'Fiverr Verified',
-    avatar: 'C',
-    rating: 5,
-    quote: '"Really professional, helpful and punctual. Extremely accurate, detail-oriented, helpful."',
-    metric: '⏱️ Punctual & Detail-Oriented'
+    quote: 'Great job on the documentation of SEO for the website. I have been working with this company for years now and we have built a great business relationship.',
+    metric: 'Upwork Verified'
   },
   {
     id: 'upwork-web-upgrade',
     name: 'Website Upgrade client',
-    role: 'Web Upgrade Client',
-    source: 'Upwork Verified',
-    avatar: 'W',
+    role: 'Web Design & Upgrade',
+    source: 'Upwork',
+    avatar: 'U',
     rating: 5,
-    quote: '"Great web designer!"',
-    metric: '🎨 Great Web Designer'
+    quote: 'Great web designer!',
+    metric: 'Upwork Verified'
   },
   {
-    id: 'yemeya',
+    id: 'upwork-logo-1',
+    name: 'Logo Development client',
+    role: 'Logo & Brand Development',
+    source: 'Upwork',
+    avatar: 'U',
+    rating: 5,
+    quote: 'Excellent developer. Great attention to detail. Well talented. Patient and extremely dedicated.',
+    metric: 'Upwork Verified'
+  },
+  {
+    id: 'upwork-logo-2',
+    name: 'Logo Development client',
+    role: 'IT & Logo Development',
+    source: 'Upwork',
+    avatar: 'U',
+    rating: 5,
+    quote: 'Excellent IT skills and quality work.',
+    metric: 'Upwork Verified'
+  },
+  {
+    id: 'upwork-business-upgrade',
+    name: 'Business Website Upgrade client',
+    role: 'Business Website Upgrade',
+    source: 'Upwork',
+    avatar: 'U',
+    rating: 5,
+    quote: 'Praise is definitely the best choice when searching for a web developer. 10 out of 10!',
+    metric: 'Upwork Verified'
+  },
+  {
+    id: 'upwork-web-dev',
+    name: 'Website Developer Business client',
+    role: 'Business Website Development',
+    source: 'Upwork',
+    avatar: 'U',
+    rating: 5,
+    quote: 'The web developer Praise was highly skilled and professional, delivering a modern, user-friendly website that exceeded expectations. He was responsive, detail-oriented, and ensured everything functioned perfectly.',
+    metric: 'Upwork Verified'
+  },
+  {
+    id: 'fiverr-andersonbelz112',
+    name: 'andersonbelz112',
+    role: 'Framer Project',
+    source: 'Fiverr',
+    avatar: 'A',
+    rating: 5,
+    quote: "Great experience working with Praise. He communicated well throughout the project and completed all the Framer updates exactly as requested. He was quick with revisions, paid attention to the details, and made the whole process smooth. I'd definitely recommend him and would happily work with him again.",
+    metric: 'Fiverr 5.0 ★'
+  },
+  {
+    id: 'fiverr-ibukunolami-coaching',
+    name: 'ibukunolami_d',
+    role: 'Coaching Landing Page',
+    source: 'Fiverr',
+    avatar: 'I',
+    rating: 5,
+    quote: 'Great experience working with Praise on my coaching landing page. He kept me updated at every milestone with clear explanations of what was done and what was coming next, so there were never any surprises. On top of that, the layout itself came out clean and premium, exactly the vibe I was going for.',
+    metric: 'Fiverr 5.0 ★'
+  },
+  {
+    id: 'fiverr-busayomaxwell',
+    name: 'busayomaxwell',
+    role: 'Framer Footer Redesign',
+    source: 'Fiverr',
+    avatar: 'B',
+    rating: 5,
+    quote: 'Great experience working with praise. He was professional, communicative and delivered a clean, responsive framer footer redesign exactly as requested. Fast turnaround, great attention to detail , and high-quality work. Highly recommended, and I would gladly work with him again .',
+    metric: 'Fiverr 5.0 ★'
+  },
+  {
+    id: 'fiverr-yemeya',
     name: 'yemeya',
-    role: 'Digital Client',
-    source: 'Fiverr Verified',
+    role: 'Web Project',
+    source: 'Fiverr',
     avatar: 'Y',
     rating: 5,
-    quote: '"Great work!!!"',
-    metric: '🚀 High Quality Work'
+    quote: 'Great work!!!',
+    metric: 'Fiverr 5.0 ★'
+  },
+  {
+    id: 'fiverr-carlocor-1',
+    name: 'carlocor',
+    role: 'Web Development',
+    source: 'Fiverr',
+    avatar: 'C',
+    rating: 5,
+    quote: 'Really professional, helpful and punctual',
+    metric: 'Fiverr 5.0 ★'
+  },
+  {
+    id: 'fiverr-carlocor-2',
+    name: 'carlocor',
+    role: 'Web Development',
+    source: 'Fiverr',
+    avatar: 'C',
+    rating: 5,
+    quote: 'Extremely accurate, detail-oriented, helpful.',
+    metric: 'Fiverr 5.0 ★'
+  },
+  {
+    id: 'fiverr-ibukunolami-fintech',
+    name: 'ibukunolami_d',
+    role: 'Fintech Landing Page',
+    source: 'Fiverr',
+    avatar: 'I',
+    rating: 5,
+    quote: "Great Guy. He delivered and designed a landing page for my fintech just as I had envisioned it, with just a little info shared with him. He is really creative as he made the project easy for me from start to finish. Will surely use Praise service again. PS: He was referred to me by my friend, and he didn't disappoint.",
+    metric: 'Fiverr 5.0 ★'
+  },
+  {
+    id: 'fiverr-analyst-olad-1',
+    name: 'analyst_olad',
+    role: 'Web Platform Delivery',
+    source: 'Fiverr',
+    avatar: 'A',
+    rating: 5,
+    quote: 'This guyyyyy here is a GENIUS. He is what he calls himself. Highly recommended. Thank you for the quick delivery and awesome delivery. I will surely be back for more project.',
+    metric: 'Fiverr 5.0 ★'
+  },
+  {
+    id: 'fiverr-analyst-olad-2',
+    name: 'analyst_olad',
+    role: 'WordPress & Framer Development',
+    source: 'Fiverr',
+    avatar: 'A',
+    rating: 5,
+    quote: 'I had a clear idea of how i wanted my website to look and even had a FRAMER design to guide things. Praise not only improved the design but also recommended using WORDPRESS to develop it, for better flexibility. He delivered a clean, mobile-friendly site that matched my vision perfectly. Great experience from start to finish.',
+    metric: 'Fiverr 5.0 ★'
+  },
+  {
+    id: 'fiverr-spectre-ad',
+    name: 'spectre_ad',
+    role: 'Digital Design & Code Changes',
+    source: 'Fiverr',
+    avatar: 'S',
+    rating: 5,
+    quote: 'It was great working with Praise. He delivered earlier than expected, was proactive with the task and he flawlessly made the changes I requested, he really helped me out with this, great guy.',
+    metric: 'Fiverr 5.0 ★'
   }
 ];
 
@@ -227,11 +237,21 @@ function generateTestimonialsHTML(options = {}) {
     </div>
   `);
 
+  const filterBarHTML = `
+    <div class="testimonials-filter-bar reveal" aria-label="Filter reviews by platform">
+      <button class="testimonials-filter-btn active" data-filter="all">All Reviews (${items.length})</button>
+      <button class="testimonials-filter-btn" data-filter="Client referral">Client Referral (1)</button>
+      <button class="testimonials-filter-btn" data-filter="Upwork">Upwork (6)</button>
+      <button class="testimonials-filter-btn" data-filter="Fiverr">Fiverr (10)</button>
+    </div>
+  `;
+
   const cardsHTML = items.map((t, idx) => {
     const delayClass = `reveal-delay-${(idx % 3) + 1}`;
     const stars = '★'.repeat(t.rating);
+    const platformCategory = t.source.toLowerCase().includes('upwork') ? 'Upwork' : (t.source.toLowerCase().includes('referral') ? 'Client referral' : 'Fiverr');
     return `
-      <div class="testimonial-card reveal ${delayClass}">
+      <div class="testimonial-card reveal ${delayClass}" data-platform="${platformCategory}">
         <div>
           <div class="testimonial-header">
             <div class="testimonial-client">
@@ -256,6 +276,7 @@ function generateTestimonialsHTML(options = {}) {
   return `
     <div class="container">
       ${headerHTML}
+      ${filterBarHTML}
       <div class="testimonials-grid">
         ${cardsHTML}
       </div>
@@ -354,6 +375,43 @@ function initFaqAccordion(root = document) {
 }
 
 /**
+ * Initialize Platform Filter Tabs for Testimonials
+ */
+function initTestimonialsFilters(root = document) {
+  const filterBars = root.querySelectorAll('.testimonials-filter-bar');
+  filterBars.forEach(bar => {
+    const parentSection = bar.closest('.testimonials-section') || bar.parentElement;
+    if (!parentSection) return;
+
+    const buttons = bar.querySelectorAll('.testimonials-filter-btn');
+    const cards = parentSection.querySelectorAll('.testimonial-card');
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        buttons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const selectedFilter = btn.getAttribute('data-filter');
+        cards.forEach(card => {
+          const cardPlatform = card.getAttribute('data-platform');
+          if (selectedFilter === 'all' || cardPlatform === selectedFilter) {
+            card.classList.remove('is-filtered-out');
+          } else {
+            card.classList.add('is-filtered-out');
+          }
+        });
+
+        // Trigger ScrollTrigger refresh if GSAP is loaded
+        if (typeof ScrollTrigger !== 'undefined') {
+          ScrollTrigger.refresh();
+        }
+      });
+    });
+  });
+}
+
+/**
  * Universal Auto-Hydration for Data Components
  */
 function initSiteComponents() {
@@ -374,6 +432,9 @@ function initSiteComponents() {
       container.classList.add('section', 'testimonials-section', 'dark-section');
     }
   });
+
+  // Initialize testimonial filter tabs
+  initTestimonialsFilters(document);
 
   // Hydrate FAQs
   const faqContainers = document.querySelectorAll('[data-component="faqs"], .site-faqs-component');

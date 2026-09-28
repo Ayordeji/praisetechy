@@ -287,49 +287,194 @@
       </div>
     </section>
 
-    <section class="section testimonials-section dark-section" id="reviews" data-component="testimonials" data-limit="6" data-title="What clients <span class='services-glance-accent'>actually say.</span>" data-subtitle="Unedited reviews from global brands and founders who trusted Praise Techy with their digital presence.">
+    <section class="section testimonials-section dark-section" id="reviews" data-component="testimonials" data-title="What clients <span class='services-glance-accent'>actually say.</span>" data-subtitle="Unedited reviews from global brands and founders who trusted Praise Techy with their digital presence.">
       <div class="container">
         <div class="cs-heading-left reveal" style="margin-bottom: 44px;">
           <h2 style="font-family: var(--font-heading, 'Manrope', sans-serif); font-size: clamp(2.2rem, 3.6vw, 4rem); font-weight: 800; color: #FFFFFF; letter-spacing: -0.04em; margin: 0 0 12px; line-height: 1.15;">What clients <span class="services-glance-accent">actually say.</span></h2>
           <p style="font-family: var(--font-body, 'DM Sans', sans-serif); font-size: 1.1rem; color: rgba(255, 255, 255, 0.72); max-width: 680px; margin: 0; line-height: 1.6;">Unedited reviews from global brands and founders who trusted Praise Techy with their digital presence.</p>
         </div>
 
+        <div class="testimonials-filter-bar reveal" aria-label="Filter reviews by platform">
+          <button class="testimonials-filter-btn active" data-filter="all">All Reviews (17)</button>
+          <button class="testimonials-filter-btn" data-filter="Client referral">Client Referral (1)</button>
+          <button class="testimonials-filter-btn" data-filter="Upwork">Upwork (6)</button>
+          <button class="testimonials-filter-btn" data-filter="Fiverr">Fiverr (10)</button>
+        </div>
+
         <div class="testimonials-grid">
-          <!-- Testimonial 1: Dr. Wandji Brigitte -->
-          <div class="testimonial-card reveal reveal-delay-1">
+          <!-- 1: Dr. Wandji Brigitte -->
+          <div class="testimonial-card reveal reveal-delay-1" data-platform="Client referral">
             <div>
               <div class="testimonial-header">
                 <div class="testimonial-client">
                   <div class="client-avatar-placeholder">W</div>
                   <div class="client-info">
-                    <h4>Dr. Wandji Brigitte</h4>
+                    <h4>Dr Wandji Brigitte</h4>
                     <span>Client Referral</span>
                   </div>
                 </div>
-                <span class="verified-source-pill">Client Referral</span>
+                <span class="verified-source-pill">Client referral</span>
               </div>
               <div class="star-rating">★★★★★</div>
               <p class="testimonial-quote">
-                "Thank you so very much. It has been a very pleasant ride so far. I appreciate the professionalism and diligence and I'll recommend you anyday anytime."
+                "Hey Ayo, Thank you so very much. It has been a very pleasant ride so far. I appreciate the professionalism and diligence and I'll recommend you anyday anytime."
               </p>
             </div>
             <div class="testimonial-metric-highlight">
-              ⭐ Highly Recommended Referral
+              Client Referral
             </div>
           </div>
 
-          <!-- Testimonial 2: andersonbelz112 -->
-          <div class="testimonial-card reveal reveal-delay-2">
+          <!-- 2: Upwork SEO -->
+          <div class="testimonial-card reveal reveal-delay-2" data-platform="Upwork">
+            <div>
+              <div class="testimonial-header">
+                <div class="testimonial-client">
+                  <div class="client-avatar-placeholder">U</div>
+                  <div class="client-info">
+                    <h4>SEO Optimization &amp; Google Search Visibility client</h4>
+                    <span>SEO &amp; Search Visibility</span>
+                  </div>
+                </div>
+                <span class="verified-source-pill">Upwork</span>
+              </div>
+              <div class="star-rating">★★★★★</div>
+              <p class="testimonial-quote">
+                "Great job on the documentation of SEO for the website. I have been working with this company for years now and we have built a great business relationship."
+              </p>
+            </div>
+            <div class="testimonial-metric-highlight">
+              Upwork Verified
+            </div>
+          </div>
+
+          <!-- 3: Upwork Web Upgrade -->
+          <div class="testimonial-card reveal reveal-delay-3" data-platform="Upwork">
+            <div>
+              <div class="testimonial-header">
+                <div class="testimonial-client">
+                  <div class="client-avatar-placeholder">U</div>
+                  <div class="client-info">
+                    <h4>Website Upgrade client</h4>
+                    <span>Web Design &amp; Upgrade</span>
+                  </div>
+                </div>
+                <span class="verified-source-pill">Upwork</span>
+              </div>
+              <div class="star-rating">★★★★★</div>
+              <p class="testimonial-quote">
+                "Great web designer!"
+              </p>
+            </div>
+            <div class="testimonial-metric-highlight">
+              Upwork Verified
+            </div>
+          </div>
+
+          <!-- 4: Upwork Logo Dev 1 -->
+          <div class="testimonial-card reveal reveal-delay-1" data-platform="Upwork">
+            <div>
+              <div class="testimonial-header">
+                <div class="testimonial-client">
+                  <div class="client-avatar-placeholder">U</div>
+                  <div class="client-info">
+                    <h4>Logo Development client</h4>
+                    <span>Logo &amp; Brand Development</span>
+                  </div>
+                </div>
+                <span class="verified-source-pill">Upwork</span>
+              </div>
+              <div class="star-rating">★★★★★</div>
+              <p class="testimonial-quote">
+                "Excellent developer. Great attention to detail. Well talented. Patient and extremely dedicated."
+              </p>
+            </div>
+            <div class="testimonial-metric-highlight">
+              Upwork Verified
+            </div>
+          </div>
+
+          <!-- 5: Upwork Logo Dev 2 -->
+          <div class="testimonial-card reveal reveal-delay-2" data-platform="Upwork">
+            <div>
+              <div class="testimonial-header">
+                <div class="testimonial-client">
+                  <div class="client-avatar-placeholder">U</div>
+                  <div class="client-info">
+                    <h4>Logo Development client</h4>
+                    <span>IT &amp; Logo Development</span>
+                  </div>
+                </div>
+                <span class="verified-source-pill">Upwork</span>
+              </div>
+              <div class="star-rating">★★★★★</div>
+              <p class="testimonial-quote">
+                "Excellent IT skills and quality work."
+              </p>
+            </div>
+            <div class="testimonial-metric-highlight">
+              Upwork Verified
+            </div>
+          </div>
+
+          <!-- 6: Upwork Business Upgrade -->
+          <div class="testimonial-card reveal reveal-delay-3" data-platform="Upwork">
+            <div>
+              <div class="testimonial-header">
+                <div class="testimonial-client">
+                  <div class="client-avatar-placeholder">U</div>
+                  <div class="client-info">
+                    <h4>Business Website Upgrade client</h4>
+                    <span>Business Website Upgrade</span>
+                  </div>
+                </div>
+                <span class="verified-source-pill">Upwork</span>
+              </div>
+              <div class="star-rating">★★★★★</div>
+              <p class="testimonial-quote">
+                "Praise is definitely the best choice when searching for a web developer. 10 out of 10!"
+              </p>
+            </div>
+            <div class="testimonial-metric-highlight">
+              Upwork Verified
+            </div>
+          </div>
+
+          <!-- 7: Upwork Web Dev Business -->
+          <div class="testimonial-card reveal reveal-delay-1" data-platform="Upwork">
+            <div>
+              <div class="testimonial-header">
+                <div class="testimonial-client">
+                  <div class="client-avatar-placeholder">U</div>
+                  <div class="client-info">
+                    <h4>Website Developer Business client</h4>
+                    <span>Business Website Development</span>
+                  </div>
+                </div>
+                <span class="verified-source-pill">Upwork</span>
+              </div>
+              <div class="star-rating">★★★★★</div>
+              <p class="testimonial-quote">
+                "The web developer Praise was highly skilled and professional, delivering a modern, user-friendly website that exceeded expectations. He was responsive, detail-oriented, and ensured everything functioned perfectly."
+              </p>
+            </div>
+            <div class="testimonial-metric-highlight">
+              Upwork Verified
+            </div>
+          </div>
+
+          <!-- 8: Fiverr andersonbelz112 -->
+          <div class="testimonial-card reveal reveal-delay-2" data-platform="Fiverr">
             <div>
               <div class="testimonial-header">
                 <div class="testimonial-client">
                   <div class="client-avatar-placeholder">A</div>
                   <div class="client-info">
                     <h4>andersonbelz112</h4>
-                    <span>Framer Project Client</span>
+                    <span>Framer Project</span>
                   </div>
                 </div>
-                <span class="verified-source-pill">Fiverr Verified</span>
+                <span class="verified-source-pill">Fiverr</span>
               </div>
               <div class="star-rating">★★★★★</div>
               <p class="testimonial-quote">
@@ -337,30 +482,214 @@
               </p>
             </div>
             <div class="testimonial-metric-highlight">
-              ⚡ Fast Revisions &amp; Smooth Process
+              Fiverr 5.0 ★
             </div>
           </div>
 
-          <!-- Testimonial 3: analyst_olad -->
-          <div class="testimonial-card reveal reveal-delay-3">
+          <!-- 9: Fiverr ibukunolami_d Coaching -->
+          <div class="testimonial-card reveal reveal-delay-3" data-platform="Fiverr">
             <div>
               <div class="testimonial-header">
                 <div class="testimonial-client">
-                  <div class="client-avatar-placeholder">O</div>
+                  <div class="client-avatar-placeholder">I</div>
                   <div class="client-info">
-                    <h4>analyst_olad</h4>
-                    <span>WordPress &amp; Framer Client</span>
+                    <h4>ibukunolami_d</h4>
+                    <span>Coaching Landing Page</span>
                   </div>
                 </div>
-                <span class="verified-source-pill">Fiverr Verified</span>
+                <span class="verified-source-pill">Fiverr</span>
               </div>
               <div class="star-rating">★★★★★</div>
               <p class="testimonial-quote">
-                "I had a clear idea of how I wanted my website to look and even had a Framer design to guide things. Praise not only improved the design but also recommended using WordPress to develop it, for better flexibility. He delivered a clean, mobile-friendly site that matched my vision perfectly. Great experience from start to finish."
+                "Great experience working with Praise on my coaching landing page. He kept me updated at every milestone with clear explanations of what was done and what was coming next, so there were never any surprises. On top of that, the layout itself came out clean and premium, exactly the vibe I was going for."
               </p>
             </div>
             <div class="testimonial-metric-highlight">
-              🎯 Perfect Design-to-Build Execution
+              Fiverr 5.0 ★
+            </div>
+          </div>
+
+          <!-- 10: Fiverr busayomaxwell -->
+          <div class="testimonial-card reveal reveal-delay-1" data-platform="Fiverr">
+            <div>
+              <div class="testimonial-header">
+                <div class="testimonial-client">
+                  <div class="client-avatar-placeholder">B</div>
+                  <div class="client-info">
+                    <h4>busayomaxwell</h4>
+                    <span>Framer Footer Redesign</span>
+                  </div>
+                </div>
+                <span class="verified-source-pill">Fiverr</span>
+              </div>
+              <div class="star-rating">★★★★★</div>
+              <p class="testimonial-quote">
+                "Great experience working with praise. He was professional, communicative and delivered a clean, responsive framer footer redesign exactly as requested. Fast turnaround, great attention to detail , and high-quality work. Highly recommended, and I would gladly work with him again ."
+              </p>
+            </div>
+            <div class="testimonial-metric-highlight">
+              Fiverr 5.0 ★
+            </div>
+          </div>
+
+          <!-- 11: Fiverr yemeya -->
+          <div class="testimonial-card reveal reveal-delay-2" data-platform="Fiverr">
+            <div>
+              <div class="testimonial-header">
+                <div class="testimonial-client">
+                  <div class="client-avatar-placeholder">Y</div>
+                  <div class="client-info">
+                    <h4>yemeya</h4>
+                    <span>Web Project</span>
+                  </div>
+                </div>
+                <span class="verified-source-pill">Fiverr</span>
+              </div>
+              <div class="star-rating">★★★★★</div>
+              <p class="testimonial-quote">
+                "Great work!!!"
+              </p>
+            </div>
+            <div class="testimonial-metric-highlight">
+              Fiverr 5.0 ★
+            </div>
+          </div>
+
+          <!-- 12: Fiverr carlocor 1 -->
+          <div class="testimonial-card reveal reveal-delay-3" data-platform="Fiverr">
+            <div>
+              <div class="testimonial-header">
+                <div class="testimonial-client">
+                  <div class="client-avatar-placeholder">C</div>
+                  <div class="client-info">
+                    <h4>carlocor</h4>
+                    <span>Web Development</span>
+                  </div>
+                </div>
+                <span class="verified-source-pill">Fiverr</span>
+              </div>
+              <div class="star-rating">★★★★★</div>
+              <p class="testimonial-quote">
+                "Really professional, helpful and punctual"
+              </p>
+            </div>
+            <div class="testimonial-metric-highlight">
+              Fiverr 5.0 ★
+            </div>
+          </div>
+
+          <!-- 13: Fiverr carlocor 2 -->
+          <div class="testimonial-card reveal reveal-delay-1" data-platform="Fiverr">
+            <div>
+              <div class="testimonial-header">
+                <div class="testimonial-client">
+                  <div class="client-avatar-placeholder">C</div>
+                  <div class="client-info">
+                    <h4>carlocor</h4>
+                    <span>Web Development</span>
+                  </div>
+                </div>
+                <span class="verified-source-pill">Fiverr</span>
+              </div>
+              <div class="star-rating">★★★★★</div>
+              <p class="testimonial-quote">
+                "Extremely accurate, detail-oriented, helpful."
+              </p>
+            </div>
+            <div class="testimonial-metric-highlight">
+              Fiverr 5.0 ★
+            </div>
+          </div>
+
+          <!-- 14: Fiverr ibukunolami_d Fintech -->
+          <div class="testimonial-card reveal reveal-delay-2" data-platform="Fiverr">
+            <div>
+              <div class="testimonial-header">
+                <div class="testimonial-client">
+                  <div class="client-avatar-placeholder">I</div>
+                  <div class="client-info">
+                    <h4>ibukunolami_d</h4>
+                    <span>Fintech Landing Page</span>
+                  </div>
+                </div>
+                <span class="verified-source-pill">Fiverr</span>
+              </div>
+              <div class="star-rating">★★★★★</div>
+              <p class="testimonial-quote">
+                "Great Guy. He delivered and designed a landing page for my fintech just as I had envisioned it, with just a little info shared with him. He is really creative as he made the project easy for me from start to finish. Will surely use Praise service again. PS: He was referred to me by my friend, and he didn't disappoint."
+              </p>
+            </div>
+            <div class="testimonial-metric-highlight">
+              Fiverr 5.0 ★
+            </div>
+          </div>
+
+          <!-- 15: Fiverr analyst_olad 1 -->
+          <div class="testimonial-card reveal reveal-delay-3" data-platform="Fiverr">
+            <div>
+              <div class="testimonial-header">
+                <div class="testimonial-client">
+                  <div class="client-avatar-placeholder">A</div>
+                  <div class="client-info">
+                    <h4>analyst_olad</h4>
+                    <span>Web Platform Delivery</span>
+                  </div>
+                </div>
+                <span class="verified-source-pill">Fiverr</span>
+              </div>
+              <div class="star-rating">★★★★★</div>
+              <p class="testimonial-quote">
+                "This guyyyyy here is a GENIUS. He is what he calls himself. Highly recommended. Thank you for the quick delivery and awesome delivery. I will surely be back for more project."
+              </p>
+            </div>
+            <div class="testimonial-metric-highlight">
+              Fiverr 5.0 ★
+            </div>
+          </div>
+
+          <!-- 16: Fiverr analyst_olad 2 -->
+          <div class="testimonial-card reveal reveal-delay-1" data-platform="Fiverr">
+            <div>
+              <div class="testimonial-header">
+                <div class="testimonial-client">
+                  <div class="client-avatar-placeholder">A</div>
+                  <div class="client-info">
+                    <h4>analyst_olad</h4>
+                    <span>WordPress &amp; Framer Development</span>
+                  </div>
+                </div>
+                <span class="verified-source-pill">Fiverr</span>
+              </div>
+              <div class="star-rating">★★★★★</div>
+              <p class="testimonial-quote">
+                "I had a clear idea of how i wanted my website to look and even had a FRAMER design to guide things. Praise not only improved the design but also recommended using WORDPRESS to develop it, for better flexibility. He delivered a clean, mobile-friendly site that matched my vision perfectly. Great experience from start to finish."
+              </p>
+            </div>
+            <div class="testimonial-metric-highlight">
+              Fiverr 5.0 ★
+            </div>
+          </div>
+
+          <!-- 17: Fiverr spectre_ad -->
+          <div class="testimonial-card reveal reveal-delay-2" data-platform="Fiverr">
+            <div>
+              <div class="testimonial-header">
+                <div class="testimonial-client">
+                  <div class="client-avatar-placeholder">S</div>
+                  <div class="client-info">
+                    <h4>spectre_ad</h4>
+                    <span>Digital Design &amp; Code Changes</span>
+                  </div>
+                </div>
+                <span class="verified-source-pill">Fiverr</span>
+              </div>
+              <div class="star-rating">★★★★★</div>
+              <p class="testimonial-quote">
+                "It was great working with Praise. He delivered earlier than expected, was proactive with the task and he flawlessly made the changes I requested, he really helped me out with this, great guy."
+              </p>
+            </div>
+            <div class="testimonial-metric-highlight">
+              Fiverr 5.0 ★
             </div>
           </div>
         </div>

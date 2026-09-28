@@ -31,17 +31,17 @@ const SITE_TESTIMONIALS_DATA = [
   },
   {
     id: 'upwork-logo-1',
-    name: 'Logo development client',
+    name: 'John-Dusabe',
     source: 'Upwork',
-    avatar: 'U',
+    avatar: 'J',
     rating: 5,
     quote: 'Excellent developer. Great attention to detail. Well talented. Patient and extremely dedicated.'
   },
   {
     id: 'upwork-logo-2',
-    name: 'Logo development client',
+    name: 'John-Dusabe',
     source: 'Upwork',
-    avatar: 'U',
+    avatar: 'J',
     rating: 5,
     quote: 'Excellent IT skills and quality work.'
   },

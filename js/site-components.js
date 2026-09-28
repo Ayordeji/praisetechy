@@ -6,136 +6,140 @@
 
 const SITE_TESTIMONIALS_DATA = [
   {
-    id: 'christacourt',
-    name: 'Christacourt',
-    role: 'E-Commerce Founder',
-    source: 'Fiverr Verified',
-    category: 'Fiverr Verified',
-    avatar: 'C',
+    id: 'dr-wandji-brigitte',
+    name: 'Dr Wandji Brigitte',
+    source: 'Client referral',
+    avatar: 'W',
     rating: 5,
-    quote: '"Praise did an exceptional job on our website project, demonstrating a high level of technical professionalism and incredible work quality. His cooperation and speed optimization made working with him seamless. Highly recommended!"',
-    metric: '⚡ Load time reduced from 6.2s to 1.3s'
+    quote: "Hey Ayo\n\nThank you so very much.\nIt has been a very pleasant ride so far.\nI appreciate the professionalism and diligence and I'll recommend you anyday anytime"
   },
   {
-    id: 'dr-shawn-boyd',
-    name: 'Dr. Shawn Boyd',
-    role: 'Educator & Consultant',
-    source: 'Direct Client',
-    category: 'Direct Client',
-    avatar: 'S',
+    id: 'upwork-seo',
+    name: 'SEO Optimization & Google Search Visibiliy client',
+    source: 'Upwork',
+    avatar: 'U',
     rating: 5,
-    quote: '"Working with Praise has been transformative for our digital platform. He answered every complex requirement promptly, restructured our layout for mobile users, and delivered well ahead of schedule."',
-    metric: '💎 +160% Online Document Downloads'
+    quote: 'Great job on the documentation of SEO for the website. I have been working with this company for years now and we have built a great business relationship. I have...'
   },
   {
-    id: 'tobams-media',
-    name: 'Tobams Media',
-    role: 'Creative Print Brand',
-    source: 'Agency Partner',
-    category: 'Agency Partner',
-    avatar: 'T',
+    id: 'upwork-web-upgrade',
+    name: 'Website Upgrade client',
+    source: 'Upwork',
+    avatar: 'U',
     rating: 5,
-    quote: '"Our previous store lagged terribly with hundreds of product variations. Praise re-engineered our platform with deferred asset loading and clean architecture. Our conversion rates spiked almost immediately after launch."',
-    metric: '📈 +85% Organic Search Traffic'
+    quote: 'Great web designer!'
   },
   {
-    id: 'david-bradley',
-    name: 'David Bradley',
-    role: 'Chief Technologist, SubRx',
-    source: 'Direct Client',
-    category: 'Direct Client',
-    avatar: 'D',
+    id: 'upwork-logo-1',
+    name: 'Logo development client',
+    source: 'Upwork',
+    avatar: 'U',
     rating: 5,
-    quote: '"It was our first time taking a B2B website from Figma to live build, and Praise nailed our project. His communication was clear, speed was outstanding, and the final result exceeded expectations."',
-    metric: '🚀 99/100 Lighthouse Performance'
+    quote: 'Excellent developer. Great attention to detail. Well talented. Patient and extremely dedicated.'
   },
   {
-    id: 'nicolas-villa',
-    name: 'Nicolas Villa',
-    role: 'Founder & CEO At Stayvera Inc.',
-    source: 'Fiverr Verified',
-    category: 'Fiverr Verified',
-    avatar: 'N',
+    id: 'upwork-logo-2',
+    name: 'Logo development client',
+    source: 'Upwork',
+    avatar: 'U',
     rating: 5,
-    quote: '"I had an excellent experience working with Praise for the Stayvera website! The communication was outstanding, he always kept me informed every step of the way. The final result was beyond my expectations."',
-    metric: '⚡ Sub-1.2s Page Response'
+    quote: 'Excellent IT skills and quality work.'
   },
   {
-    id: 'tai-owoka',
-    name: 'Tai Owoka',
-    role: 'Founder, ZenMomTribe',
-    source: 'Direct Client',
-    category: 'Direct Client',
-    avatar: 'T',
+    id: 'upwork-business-upgrade',
+    name: 'Business Website Upgrade client',
+    source: 'Upwork',
+    avatar: 'U',
     rating: 5,
-    quote: '"Working with Praise has been such a seamless experience. He revamped my website beautifully, handled all the updates with care, and even took the time to train my team so we could manage things confidently on our own."',
-    metric: '📱 100% Mobile Optimized'
+    quote: 'Praise is definitely the best choice when searching for a web developer. 10 out of 10!'
   },
   {
-    id: 'josh-kaplan',
-    name: 'Josh Kaplan',
-    role: 'Smooth Media CEO',
-    source: 'Agency Partner',
-    category: 'Agency Partner',
-    avatar: 'J',
+    id: 'upwork-web-dev',
+    name: 'Website Developer Business client',
+    source: 'Upwork',
+    avatar: 'U',
     rating: 5,
-    quote: '"Praise did a great job. He was communicative and delivered the webflow and custom edits in a timely fashion. If you\'re looking for a developer who is talented, reliable, and a pleasure to work with, Praise is your guy."',
-    metric: '🎯 Zero Layout Shifts (0.00 CLS)'
+    quote: 'The web developer Praise was highly skilled and professional, delivering a modern, user-friendly website that exceeded expectations. He was responsive, detail-oriented, and ensured everything functioned perfectly, making the entire process...'
   },
   {
-    id: 'shelley-kemmerer',
-    name: 'Shelley Kemmerer',
-    role: 'KIM Founder',
-    source: 'Direct Client',
-    category: 'Direct Client',
-    avatar: 'S',
-    rating: 5,
-    quote: '"Praise was very eager to support the requests and delivered in short time. What truly impressed me was his attention to every detail and his willingness to keep working until even the smallest imperfection was resolved. I was very pleased and will hire again."',
-    metric: '✨ 100% Pixel-Perfect Delivery'
-  },
-  {
-    id: 'daniel-delgado',
-    name: 'Daniel Delgado',
-    role: 'TradeSpace Founder',
-    source: 'Direct Client',
-    category: 'Direct Client',
-    avatar: 'D',
-    rating: 5,
-    quote: '"Working with Praise on this project was an extremely positive experience. From the start, he demonstrated great technical expertise and a clear understanding of how to implement high-converting, sub-3s performance platforms."',
-    metric: '💡 +142% Conversion Boost'
-  },
-  {
-    id: 'kofi-mensah',
-    name: 'Kofi Mensah',
-    role: 'Managing Director, All Can Thrive',
-    source: 'Non-Profit Director',
-    category: 'Direct Client',
-    avatar: 'K',
-    rating: 5,
-    quote: '"Praise gave our international foundation an authoritative, world-class web presence. Donors constantly commend our clear structure and rapid load times across mobile networks in West Africa."',
-    metric: '🌍 100% Community-Driven Engagement'
-  },
-  {
-    id: 'marcus-vance',
-    name: 'Marcus Vance',
-    role: 'Principal Buyers Agent, Codex Property',
-    source: 'Real Estate Executive',
-    category: 'Direct Client',
-    avatar: 'M',
-    rating: 5,
-    quote: '"Praise designed a high-converting property acquisition funnel that positioned us as leaders in the Australian market. Our qualified investor consultations surged within weeks of going live."',
-    metric: '🏢 +175% Qualified Consultations'
-  },
-  {
-    id: 'adeola-bakare',
-    name: 'Adeola Bakare',
-    role: 'GM, Pearlwood Hotels Ikeja',
-    source: 'Hospitality Leader',
-    category: 'Direct Client',
+    id: 'fiverr-andersonbelz112',
+    name: 'andersonbelz112',
+    source: 'Fiverr',
     avatar: 'A',
     rating: 5,
-    quote: '"Our direct bookings exceeded all forecasts after Praise launched the new portal. Guests love the streamlined mobile room reservation system, and our front desk workload dropped significantly."',
-    metric: '🏨 +220% Direct Booking Inquiries'
+    quote: "Great experience working with Praise. He communicated well throughout the project and completed all the Framer updates exactly as requested. He was quick with revisions, paid attention to the details, and made the whole process smooth. I'd definitely recommend him and would happily work with him again."
+  },
+  {
+    id: 'fiverr-ibukunolami-coaching',
+    name: 'ibukunolami_d',
+    source: 'Fiverr',
+    avatar: 'I',
+    rating: 5,
+    quote: 'Great experience working with Praise on my coaching landing page. He kept me updated at every milestone with clear explanations of what was done and what was coming next, so there were never any surprises. On top of that, the layout itself came out clean and premium, exactly the vibe I was going for....'
+  },
+  {
+    id: 'fiverr-busayomaxwell',
+    name: 'busayomaxwell',
+    source: 'Fiverr',
+    avatar: 'B',
+    rating: 5,
+    quote: 'Great experience working with praise. He was professional, communicative and delivered a clean, responsive framer footer redesign exactly as requested. Fast turnaround, great attention to detail , and high-quality work. Highly recommended, and I would gladly work with him again .'
+  },
+  {
+    id: 'fiverr-yemeya',
+    name: 'yemeya',
+    source: 'Fiverr',
+    avatar: 'Y',
+    rating: 5,
+    quote: 'Great work!!!'
+  },
+  {
+    id: 'fiverr-carlocor-1',
+    name: 'carlocor',
+    source: 'Fiverr',
+    avatar: 'C',
+    rating: 5,
+    quote: 'Really professional, helpful and punctual'
+  },
+  {
+    id: 'fiverr-carlocor-2',
+    name: 'carlocor',
+    source: 'Fiverr',
+    avatar: 'C',
+    rating: 5,
+    quote: 'Extremely accurate, detail-oriented, helpful.'
+  },
+  {
+    id: 'fiverr-ibukunolami-fintech',
+    name: 'ibukunolami_d',
+    source: 'Fiverr',
+    avatar: 'I',
+    rating: 5,
+    quote: "Great Guy. He delivered and designed a landing page for my fintech just as I had envisioned it, with just a little info shared with him. He is really creative as he made the project easy for me from start to finish. Will surely use Praise service again. PS: He was referred to me by my friend, and he didn't disappoint."
+  },
+  {
+    id: 'fiverr-analyst-olad-1',
+    name: 'analyst_olad',
+    source: 'Fiverr',
+    avatar: 'A',
+    rating: 5,
+    quote: 'This guyyyyy here is a GENIUS. He is what he calls himself. Highly recommended. Thank you for the quick delivery and awesome delivery. I will surely be back for more project.'
+  },
+  {
+    id: 'fiverr-analyst-olad-2',
+    name: 'analyst_olad',
+    source: 'Fiverr',
+    avatar: 'A',
+    rating: 5,
+    quote: 'I had a clear idea of how i wanted my website to look and even had a FRAMER design to guide things. Praise not only improved the design but also recommended using WORDPRESS to develop it, for better flexibility. He delivered a clean, mobile-friendly site that matched my vision perfectly. Great experience from start to finish.'
+  },
+  {
+    id: 'fiverr-spectre-ad',
+    name: 'spectre_ad',
+    source: 'Fiverr',
+    avatar: 'S',
+    rating: 5,
+    quote: 'It was great working with Praise. He delivered earlier than expected, was proactive with the task and he flawlessly made the changes I requested, he really helped me out with this, great guy.'
   }
 ];
 
@@ -203,42 +207,37 @@ function generateTestimonialsHTML(options = {}) {
     </div>
   `);
 
-  const directCount = items.filter(i => (i.category || i.source) === 'Direct Client').length;
-  const agencyCount = items.filter(i => (i.category || i.source) === 'Agency Partner').length;
-  const fiverrCount = items.filter(i => (i.category || i.source) === 'Fiverr Verified').length;
+  const referralCount = items.filter(i => i.source.toLowerCase().includes('referral')).length;
+  const upworkCount = items.filter(i => i.source.toLowerCase().includes('upwork')).length;
+  const fiverrCount = items.filter(i => i.source.toLowerCase().includes('fiverr')).length;
 
   const filterBarHTML = `
     <div class="testimonials-filter-bar reveal" aria-label="Filter reviews by platform">
       <button class="testimonials-filter-btn active" data-filter="all">All Reviews (${items.length})</button>
-      <button class="testimonials-filter-btn" data-filter="Direct Client">Direct Clients (${directCount})</button>
-      <button class="testimonials-filter-btn" data-filter="Agency Partner">Agency Partners (${agencyCount})</button>
-      <button class="testimonials-filter-btn" data-filter="Fiverr Verified">Fiverr Verified (${fiverrCount})</button>
+      <button class="testimonials-filter-btn" data-filter="Client referral">Client Referral (${referralCount})</button>
+      <button class="testimonials-filter-btn" data-filter="Upwork">Upwork (${upworkCount})</button>
+      <button class="testimonials-filter-btn" data-filter="Fiverr">Fiverr (${fiverrCount})</button>
     </div>
   `;
 
   const cardsHTML = items.map((t, idx) => {
     const delayClass = `reveal-delay-${(idx % 3) + 1}`;
-    const stars = '★'.repeat(t.rating);
-    const platformCategory = t.category || t.source;
+    const stars = '★'.repeat(t.rating || 5);
+    const platformCategory = t.source.toLowerCase().includes('upwork') ? 'Upwork' : (t.source.toLowerCase().includes('referral') ? 'Client referral' : 'Fiverr');
+    const formattedQuote = t.quote.replace(/\n/g, '<br>');
     return `
       <div class="testimonial-card reveal ${delayClass}" data-platform="${platformCategory}">
-        <div>
-          <div class="testimonial-header">
-            <div class="testimonial-client">
-              <div class="client-avatar-placeholder">${t.avatar}</div>
-              <div class="client-info">
-                <h4>${t.name}</h4>
-                <span>${t.role}</span>
-              </div>
+        <div class="testimonial-header">
+          <div class="testimonial-client">
+            <div class="client-avatar-placeholder">${t.avatar}</div>
+            <div class="client-info">
+              <h4 class="client-name">${t.name}</h4>
+              <span class="client-source">${t.source.toUpperCase()}</span>
             </div>
-            <span class="verified-source-pill">${t.source}</span>
           </div>
-          <div class="star-rating">${stars}</div>
-          <p class="testimonial-quote">${t.quote}</p>
         </div>
-        <div class="testimonial-metric-highlight">
-          ${t.metric}
-        </div>
+        <div class="star-rating" aria-label="5 out of 5 stars">${stars}</div>
+        <p class="testimonial-quote">${formattedQuote}</p>
       </div>
     `;
   }).join('');

@@ -948,7 +948,7 @@ body#top {
 
 /* Work Hero — Split Asymmetrical Layout */
 .work-hero-split {
-  padding: 160px 0 60px;
+  padding: 140px 0 50px;
   background: #181818 !important;
   position: relative;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -990,7 +990,7 @@ body#top {
 
 /* 2-Column Work Grid Section */
 .work-grid-section {
-  padding: 60px 0 100px;
+  padding: 50px 0 80px;
   background: #181818 !important;
 }
 
@@ -1185,7 +1185,7 @@ body#top {
 
 /* About Hero Header & Layout */
 .about-hero {
-  padding: 140px 0 80px;
+  padding: 140px 0 60px;
   background: #181818 !important;
   position: relative;
   overflow: hidden;
@@ -1277,12 +1277,59 @@ body#top {
 }
 
 /* ==========================================================================
-   SERVICES & WHO I WORK WITH (2-Column Strategic Matrix)
+   WHAT I CAN HELP YOU BUILD (4-Card Service Matrix)
    ========================================================================== */
 .about-services-fit-section {
-  padding: 100px 0;
+  padding: 80px 0;
   background: #181818 !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.about-services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.about-service-card {
+  background: #1f1f1f;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+
+.about-service-card:hover {
+  border-color: #02A855;
+  transform: translateY(-3px);
+}
+
+.about-service-card-num {
+  font-family: var(--font-heading, 'Manrope', sans-serif);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #02A855;
+  letter-spacing: 0.08em;
+  margin-bottom: 16px;
+}
+
+.about-service-card h3 {
+  font-family: 'tiemposHeadline', Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #FFFFFF !important;
+  margin: 0 0 12px;
+  letter-spacing: -0.01em;
+}
+
+.about-service-card p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.65;
+  margin: 0;
 }
 
 .about-matrix-grid {
@@ -1404,7 +1451,7 @@ body#top {
    TESTIMONIALS PROOF GRID ("I'VE HELPED 40+ COMPANIES DESIGN, SHIP, AND SCALE.")
    ========================================================================== */
 .about-proof-section {
-  padding: 100px 0 120px;
+  padding: 80px 0 90px;
   background: #181818 !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
@@ -1508,7 +1555,7 @@ body#top {
 
 /* Contact Hero Section */
 .contact-hero-section {
-  padding: 140px 0 60px;
+  padding: 140px 0 50px;
   background: #181818 !important;
   text-align: center;
   position: relative;
@@ -1594,7 +1641,7 @@ body#top {
 
 /* Alternative Direct Channels Strip */
 .contact-channels-section {
-  padding: 60px 0 100px;
+  padding: 50px 0 80px;
   background: #181818 !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
@@ -1761,7 +1808,7 @@ body#top {
 
 /* CS Hero Header & Mockup Container */
 .cs-hero-section {
-  padding: 140px 0 60px;
+  padding: 140px 0 50px;
   background: #181818 !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
@@ -2030,7 +2077,7 @@ body#top {
 
 /* Process Section */
 .cs-process-section {
-  padding: 80px 0;
+  padding: 70px 0;
   background: #181818 !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
@@ -2128,7 +2175,7 @@ body#top {
 .cs-results-cta-section {
   background: #181818 !important;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
-  padding: 88px 0;
+  padding: 70px 0;
   position: relative;
   overflow: hidden;
 }
@@ -2265,8 +2312,16 @@ body#top {
 }
 
 @media (max-width: 768px) {
+  .work-hero-split {
+    padding: 95px 0 32px;
+  }
+
   .work-hero {
-    padding: 140px 0 70px;
+    padding: 95px 0 36px;
+  }
+
+  .work-grid-section {
+    padding: 36px 0 50px;
   }
 
   .work-project-item,
@@ -2274,7 +2329,7 @@ body#top {
     grid-template-columns: 1fr;
     direction: ltr;
     gap: 28px;
-    padding: 48px 0;
+    padding: 40px 0;
   }
 
   .work-project-img {
@@ -2292,7 +2347,11 @@ body#top {
   }
 
   .about-hero {
-    padding: 120px 0 60px;
+    padding: 95px 0 36px;
+  }
+
+  .about-services-fit-section {
+    padding: 48px 0;
   }
 
   .about-hero-grid {
@@ -2318,7 +2377,16 @@ body#top {
 
   .about-matrix-grid {
     grid-template-columns: 1fr;
-    gap: 48px;
+    gap: 36px;
+  }
+
+  .about-services-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .about-proof-section {
+    padding: 48px 0 56px;
   }
 
   .about-proof-grid {
@@ -2331,9 +2399,33 @@ body#top {
     align-items: flex-start;
   }
 
+  .contact-hero-section {
+    padding: 95px 0 36px;
+  }
+
+  .contact-channels-section {
+    padding: 40px 0 50px;
+  }
+
+  .cs-hero-section {
+    padding: 95px 0 36px;
+  }
+
+  .cs-section {
+    padding: 48px 0;
+  }
+
+  .cs-process-section {
+    padding: 48px 0;
+  }
+
+  .cs-results-cta-section {
+    padding: 48px 0;
+  }
+
   .project-hero .container {
-    padding-top: 140px;
-    padding-bottom: 60px;
+    padding-top: 95px;
+    padding-bottom: 36px;
   }
 
   .project-metrics-row {
@@ -2356,6 +2448,61 @@ body#top {
   .project-cs-grid {
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .work-hero-split {
+    padding: 72px 0 24px;
+  }
+
+  .work-hero {
+    padding: 72px 0 24px;
+  }
+
+  .work-grid-section {
+    padding: 28px 0 40px;
+  }
+
+  .about-hero {
+    padding: 72px 0 24px;
+  }
+
+  .about-services-fit-section {
+    padding: 36px 0;
+  }
+
+  .about-proof-section {
+    padding: 36px 0 40px;
+  }
+
+  .contact-hero-section {
+    padding: 72px 0 24px;
+  }
+
+  .contact-channels-section {
+    padding: 30px 0 40px;
+  }
+
+  .cs-hero-section {
+    padding: 72px 0 24px;
+  }
+
+  .cs-section {
+    padding: 36px 0;
+  }
+
+  .cs-process-section {
+    padding: 36px 0;
+  }
+
+  .cs-results-cta-section {
+    padding: 36px 0;
+  }
+
+  .project-hero .container {
+    padding-top: 72px;
+    padding-bottom: 24px;
   }
 }
 

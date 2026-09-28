@@ -34,13 +34,20 @@ function initInteractions() {
   if (headerBar) {
     headerBar.addEventListener('click', (e) => {
       if (window.innerWidth <= 1100 && header?.classList.contains('scrolled')) {
-        if (e.target.closest('.menu-toggle') || e.target.closest('.modal-close-btn')) {
+        if (e.target.closest('.menu-toggle') || e.target.closest('.lumon-menu-toggle') || e.target.closest('.modal-close-btn')) {
           return;
         }
         if (e.target.closest('.lumon-logo') || e.target.closest('.header-status-badge') || e.target.closest('.header-lumon-bar')) {
           e.preventDefault();
+          e.stopPropagation();
           header?.classList.toggle('mobile-expanded');
         }
+      }
+    });
+
+    document.addEventListener('click', (e) => {
+      if (header?.classList.contains('mobile-expanded') && !header.contains(e.target)) {
+        header.classList.remove('mobile-expanded');
       }
     });
   }

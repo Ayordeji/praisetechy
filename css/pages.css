@@ -1382,69 +1382,87 @@ body#top {
   margin: 0;
 }
 
-.about-fit-lead {
-  font-size: 0.95rem;
-  color: rgba(255, 255, 255, 0.85);
-  line-height: 1.65;
-  margin-bottom: 24px;
+/* ==========================================================================
+   ABOUT FIT / WHO I WORK WITH SECTION
+   ========================================================================== */
+.about-fit-section {
+  padding: 80px 0;
+  background: #181818 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.about-fit-lead strong {
-  color: #FFFFFF;
+.about-fit-card {
+  background: #1f1f1f;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 44px 48px;
+  max-width: 900px;
+  transition: border-color 0.25s ease;
 }
 
-.about-fit-subhead {
-  font-family: 'Manrope', sans-serif;
-  font-size: 0.85rem;
+.about-fit-card:hover {
+  border-color: rgba(2, 168, 85, 0.4);
+}
+
+.about-fit-card-header h3 {
+  font-family: var(--font-heading, 'Manrope', sans-serif);
+  font-size: 1.35rem;
   font-weight: 700;
   color: #FFFFFF;
-  margin-bottom: 16px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  margin: 0 0 24px;
+  letter-spacing: -0.01em;
 }
 
-.about-fit-checklist {
+.about-fit-list {
   list-style: none;
   padding: 0;
-  margin: 0 0 32px 0;
+  margin: 0 0 36px 0;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 16px;
 }
 
-.about-fit-checklist li {
+.about-fit-item {
   display: flex;
   align-items: flex-start;
-  gap: 12px;
-  font-size: 0.92rem;
-  color: rgba(255, 255, 255, 0.72);
+  gap: 16px;
+  font-family: var(--font-body, 'DM Sans', sans-serif);
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.85);
   line-height: 1.6;
 }
 
-.about-fit-bullet {
-  color: var(--accent-green, #02A855);
-  font-weight: bold;
-  font-size: 1rem;
-  line-height: 1.4;
+.about-fit-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: rgba(2, 168, 85, 0.15);
+  border: 1px solid rgba(2, 168, 85, 0.35);
+  color: #02A855;
   flex-shrink: 0;
+  margin-top: 2px;
 }
 
-.about-fit-callout {
-  padding: 24px;
-  background: #1f1f1f;
-  border-radius: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+.about-fit-footer-box {
+  padding-top: 28px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
 }
 
-.about-fit-callout p {
-  font-size: 0.92rem;
-  color: rgba(255, 255, 255, 0.85);
+.about-fit-footer-text {
+  font-family: var(--font-body, 'DM Sans', sans-serif);
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.88);
   line-height: 1.65;
+  max-width: 520px;
   margin: 0;
-}
-
-.about-fit-callout strong {
-  color: var(--accent-green, #02A855);
 }
 
 /* ==========================================================================
@@ -2354,6 +2372,28 @@ body#top {
     padding: 48px 0;
   }
 
+  .about-fit-section {
+    padding: 48px 0;
+  }
+
+  .about-fit-card {
+    padding: 32px 24px;
+  }
+
+  .about-fit-footer-box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .about-fit-footer-cta {
+    width: 100%;
+  }
+
+  .about-fit-footer-cta .btn-primary {
+    width: 100%;
+  }
+
   .about-hero-grid {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -2469,6 +2509,10 @@ body#top {
   }
 
   .about-services-fit-section {
+    padding: 36px 0;
+  }
+
+  .about-fit-section {
     padding: 36px 0;
   }
 

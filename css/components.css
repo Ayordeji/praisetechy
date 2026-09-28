@@ -1276,8 +1276,8 @@
 .deck-card-btn-mini {
   padding: 5px 11px;
   border-radius: var(--radius-full);
-  background: rgba(2, 168, 85, 0.12);
-  color: #018c46;
+  background: #181818;
+  color: #05cc68;
   font-size: 0.72rem;
   font-weight: 700;
   white-space: nowrap;
@@ -2288,8 +2288,8 @@
 /* Responsive adjustments for mobile and tablets */
 @media (max-width: 991px) {
   .services-glance-container {
-    padding-top: 64px;
-    padding-bottom: 52px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .services-glance-hero,
@@ -2299,7 +2299,8 @@
   }
 
   .services-glance-hero {
-    margin-bottom: 64px;
+    padding-top: 0;
+    margin-bottom: 36px;
   }
 
   .services-glance-hero h2 {
@@ -3850,8 +3851,23 @@
   }
 
   .hero-container {
-    padding: 8px 14px 8px 14px;
+    padding: 40px 14px 8px 14px;
     gap: 14px;
+  }
+
+  .section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .services-glance-container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .services-glance-hero {
+    padding-top: 0;
+    margin-bottom: 24px;
   }
 
   .hero-availability-pill {
@@ -4380,9 +4396,16 @@
 }
 
 #work .project-tag {
-  background: rgba(2, 168, 85, 0.12);
-  border: 1px solid rgba(2, 168, 85, 0.25);
-  color: #6EE7B7;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.88);
+  transition: all 0.22s ease;
+}
+
+#work .project-tag:hover {
+  background: #02A855;
+  border-color: #02A855;
+  color: #FFFFFF;
 }
 
 /* 6. Skills Section */
@@ -4413,7 +4436,7 @@
 #skills .skill-theme-tag {
   background: rgba(2, 168, 85, 0.14);
   border: 1px solid rgba(2, 168, 85, 0.25);
-  color: #6EE7B7;
+  color: #05cc68;
 }
 
 #skills .skill-pill {

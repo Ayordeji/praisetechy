@@ -9,15 +9,17 @@ High-performance, handcrafted web portfolio and multi-page platform built with v
 ```text
 PORTFOLIO/
 ├── index.html            # Main Landing / Home Page
+├── about.html            # Dedicated About Page (/about)
+├── contact.html          # Dedicated Contact Page (/contact)
+├── pricing.html          # Dedicated Transparent Pricing Page (/pricing)
+├── style-guide.html      # Design tokens and style preview (/style-guide)
 │
-├── pages/                # Dedicated Website Subpages
-│   ├── about.html        # Dedicated About Praise Page
-│   ├── work.html         # Dedicated Selected Works & Case Studies Page
-│   ├── contact.html      # Dedicated Contact & 30-min Strategy Call Page
-│   ├── pricing.html      # Dedicated Transparent Pricing Page
-│   ├── style-guide.html  # Design tokens and style preview
-│   ├── project-template.html # Master Case Study Template Blueprint
-│   └── project-*.html    # Individual Case Studies (Collxx, Tobams Colors, etc.)
+├── work/                 # Portfolio & Project Case Studies
+│   ├── index.html        # Works listing page (/work)
+│   ├── template.html     # Master Case Study Template Blueprint
+│   ├── collxx.html       # Collxx Case Study (/work/collxx)
+│   ├── tobams-colors.html# Tobams Colors Case Study (/work/tobams-colors)
+│   └── *.html            # Individual Case Studies
 │
 ├── css/
 │   ├── main.css          # Design tokens, color palette, @font-face rules, typography & resets

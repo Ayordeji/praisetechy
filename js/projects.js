@@ -6,20 +6,20 @@
 const portfolioProjects = [
   {
     id: 'collxx',
-    title: 'Collxx Studio',
+    title: 'Collxx',
     category: 'E-Commerce & Fashion',
-    tagline: 'High-converting luxury e-commerce experience with sub-3s load times',
-    description: 'Collxx required a sophisticated, high-performance digital storefront capable of blending luxury brand storytelling with ultra-fast, frictionless mobile checkout.',
-    challenge: 'The original store suffered from high cart abandonment, bloated legacy scripts, and slow mobile render speeds exceeding 6.4 seconds.',
-    solution: 'Engineered an ultra-lean custom architecture with optimized asset pipelines, instant predictive search, and high-converting, mobile-first product pages.',
+    tagline: 'How I converted a Figma design into a secure, high performing WordPress store that showcases COLLXX’s curated collections',
+    description: 'COLLXX needed a site that showcased products from many local designers, with clean navigation so users could easily browse categories like Clothing, Accessories, Fragrance, etc.',
+    challenge: 'Convert complex Figma components into reliable WordPress templates, organize 100+ products with filters, integrate secure payment options, and improve mobile SEO performance.',
+    solution: 'Collaborated within a three-person delivery team to build responsive WordPress templates, 100+ product catalog structure, payment gateways, and SEO improvements.',
     metrics: [
       { value: '98/100', label: 'Lighthouse Speed Score' },
       { value: '1.2s', label: 'Average Load Time' },
-      { value: '+142%', label: 'Mobile Conversion Rate' }
+      { value: '100+', label: 'Products Structured' }
     ],
-    techStack: ['WordPress', 'WooCommerce', 'Custom CSS/JS', 'Performance Optimization'],
+    techStack: ['WordPress', 'WooCommerce', 'Figma to WordPress', 'SEO & Performance'],
     image: 'images/collxx.webp',
-    liveUrl: 'https://praisetechy.com/collxx/'
+    liveUrl: 'https://collxx.com/'
   },
   {
     id: 'all-can-thrive',
@@ -58,34 +58,34 @@ const portfolioProjects = [
   {
     id: 'tobams-colors',
     title: 'Tobams Colors',
-    category: 'E-Commerce & Creative Print',
-    tagline: 'Vibrant, bespoke print platform with seamless custom product workflows',
-    description: 'A global custom print and creative media brand delivering bespoke design products and merchandise worldwide.',
-    challenge: 'Complex variant configurators and heavy product mockups were slowing down page interactions and causing customer drop-off on mobile devices.',
-    solution: 'Engineered a streamlined visual configurator with deferred heavy assets, optimized image delivery pipelines, and high-impact visual design.',
+    category: 'E-Commerce & African Fashion',
+    tagline: 'How I transformed a vibrant Figma design into a secure, SEO-ready WordPress shop for a modern African fashion brand',
+    description: 'Tobams Colors is a bold and colorful fashion label inspired by African heritage and modern design. Turned a static Figma design into a fast, secure, and visually expressive WordPress website.',
+    challenge: 'Bring a bold Figma design to life, structure over 50 products for easy browsing, integrate secure payment gateways, and optimize for Google search visibility.',
+    solution: 'Built responsive templates directly from Figma, organized 50+ products with smart filtering, integrated secure checkout, and applied caching and compression.',
     metrics: [
       { value: '96/100', label: 'Performance Score' },
-      { value: '1.4s', label: 'First Contentful Paint' },
-      { value: '+85%', label: 'Organic Search Traffic' }
+      { value: '50+', label: 'Products Structured' },
+      { value: '+85%', label: 'Search Traffic Growth' }
     ],
-    techStack: ['Framer', 'Custom Integrations', 'SEO Strategy', 'UI/UX Design'],
+    techStack: ['WordPress', 'WooCommerce', 'Figma to WordPress', 'SEO & Speed Optimization'],
     image: 'images/tobams-colors.webp',
-    liveUrl: 'https://praisetechy.com/tobams-colors/'
+    liveUrl: 'https://tobamscolors.com/'
   },
   {
     id: 'gho-media',
-    title: 'GHO Media & Publications',
+    title: 'Global Health Otherwise Media',
     category: 'B2B Digital Media & Publishing',
-    tagline: 'High-performance publishing hub for investigative digital journalism',
-    description: 'The multimedia editorial arm of Global Health Otherwise, delivering in-depth reports, interviews, and investigative digital series across global health topics.',
-    challenge: 'High-resolution editorial media and rich multimedia embeds were creating layout shifts and dragging page performance on mobile readers.',
-    solution: 'Implemented responsive image srcset handling, deferred media hydration, and an editorial magazine layout with reading time estimates and smooth category navigation.',
+    tagline: 'How I built a dynamic media platform that amplifies African voices in global health, policy, and data storytelling',
+    description: 'Global Health Otherwise needed a dedicated home for their growing media and storytelling arm, a place to publish articles, podcasts, and research-driven stories.',
+    challenge: 'Create a separate platform maintaining parent visual identity, support podcasts/videos/reports, meet tight editorial deadlines, and build a flexible structure.',
+    solution: 'Designed a media-focused WordPress site with category-specific layouts, podcast/video support, SEO & analytics, and ongoing platform management.',
     metrics: [
-      { value: '0.00', label: 'Cumulative Layout Shift (CLS)' },
-      { value: '1.2s', label: 'First Meaningful Paint' },
-      { value: '+95%', label: 'Reader Retention' }
+      { value: '100%', label: 'Brand Alignment' },
+      { value: '1.2s', label: 'First Contentful Paint' },
+      { value: 'Full', label: 'Podcast & Media Support' }
     ],
-    techStack: ['WordPress', 'Editorial Design', 'Performance Tuning', 'SEO'],
+    techStack: ['WordPress', 'Editorial Design', 'Podcast Integration', 'SEO & Analytics'],
     image: 'images/gho-media.webp',
     liveUrl: 'https://globalhealthotherwisemedia.org/'
   },
@@ -93,52 +93,52 @@ const portfolioProjects = [
     id: 'global-health-otherwise',
     title: 'Global Health Otherwise',
     category: 'B2B Healthcare & Non-Profit',
-    tagline: 'Authoritative digital platform for global health research & advocacy',
-    description: 'A forward-thinking global health organization dedicated to transforming health equity through research and community initiatives.',
-    challenge: 'The organization had a dense library of publications, podcasts, and research papers that were difficult to navigate on mobile devices.',
-    solution: 'Designed an intuitive content architecture with streamlined category filtering, lightning-fast document access, and accessible typography.',
+    tagline: 'How I transformed Global Health Otherwise into a sleek, user-friendly website that strengthens their voice in global health research and awareness',
+    description: 'Global Health Otherwise needed an urgent redesign of their website to better reflect their mission and improve user experience.',
+    challenge: 'Cluttered layout, non-functional links/buttons, incomplete publications and donate pages, with an urgent 10-day launch timeline.',
+    solution: 'Rebuilt the experience on WordPress with clean intuitive layout, functional donation/publication flows, SEO optimization, and full ongoing website management.',
     metrics: [
-      { value: '< 1.5s', label: 'Document Load Speed' },
+      { value: '10 Days', label: 'Turnaround Time' },
       { value: '97/100', label: 'Accessibility Score' },
-      { value: '+160%', label: 'Resource Downloads' }
+      { value: '100%', label: 'Link Integrity & Uptime' }
     ],
-    techStack: ['WordPress', 'Custom Theme', 'SEO Optimization', 'Responsive Architecture'],
+    techStack: ['WordPress', 'UI Redesign', 'Donation Integration', 'Website Management'],
     image: 'https://praisetechy.com/wp-content/uploads/2025/10/GHO-scaled.jpg',
-    liveUrl: 'https://praisetechy.com/global-health-otherwise/'
+    liveUrl: 'http://globalhealthotherwise.com/'
   },
   {
     id: 'quantum-leap',
     title: 'Quantum Leap Data Consult',
     category: 'B2B Analytics & Consulting',
-    tagline: 'High-authority digital presence for elite enterprise data consultancy',
-    description: 'An enterprise data consulting firm helping corporations turn raw numbers into strategic growth insights and automated intelligence.',
-    challenge: 'Needed a sleek, high-trust corporate identity that positioned the firm as premier data consultants for institutional decision-makers.',
-    solution: 'Built a dark modern aesthetic with interactive service breakdowns, lead capture funnels, and clear case study presentations.',
+    tagline: 'How I helped Quantum Leap Data Consult establish a strong digital presence with a sleek one-page WordPress site',
+    description: 'Quantum Leap Data Consult needed a professional online space to showcase their expertise in data analytics and consulting.',
+    challenge: 'No prior online presence, needing a clean, one-page website that presents services clearly, loads fast, and provides long-term maintainability.',
+    solution: 'Designed and developed a modern one-page WordPress site guiding visitors from awareness to contact, with performance, SEO, and ongoing maintenance.',
     metrics: [
-      { value: '3.5x', label: 'Lead Inquiry Increase' },
-      { value: '98/100', label: 'SEO & Performance' },
-      { value: '100%', label: 'Mobile Optimized' }
+      { value: '1-Page', label: 'Seamless Flow' },
+      { value: '98/100', label: 'Performance Score' },
+      { value: '100%', label: 'Managed & Maintained' }
     ],
-    techStack: ['Framer', 'UI/UX Design', 'Lead Funnels', 'Brand Identity'],
+    techStack: ['WordPress', 'One-Page Design', 'SEO Foundations', 'Website Management'],
     image: 'https://praisetechy.com/wp-content/uploads/2025/10/quantum-leap-scaled-1.webp',
-    liveUrl: 'https://praisetechy.com/quantum-leap-data-consult/'
+    liveUrl: 'https://quantumleapdataconsult.com/'
   },
   {
     id: 'alluring-beauty',
     title: 'Alluring Beauty Solutions',
-    category: 'B2B Aesthetics & Wellness',
-    tagline: 'Premium brand experience and automated booking for clinical beauty',
-    description: 'A medical-grade aesthetics and wellness brand offering advanced skincare, cosmetic solutions, and personalized consultations.',
-    challenge: 'Client bookings were handled manually via fragmented chat channels, leading to missed client inquiries and schedule conflicts.',
-    solution: 'Engineered an integrated booking workflow with automated calendar confirmations, mobile service menus, and luxury visual storytelling.',
+    category: 'Project Management & Government Contracting',
+    tagline: 'Bringing a government contracting brand to life with modern animations and sleek one-page design',
+    description: 'Alluring Beauty Solutions is a project management and government contracting firm that needed a refreshed website to match its professionalism.',
+    challenge: 'Redesign an existing one-page site with smooth scroll effects and refined animations inspired by finologee.com while optimizing for all devices.',
+    solution: 'Reworked the layout for clear visual hierarchy, integrated smooth scroll-based animations, updated typography and colors, and optimized responsiveness.',
     metrics: [
-      { value: '+185%', label: 'Direct Online Bookings' },
-      { value: '0', label: 'Scheduling Friction' },
-      { value: '95+', label: 'Performance Rating' }
+      { value: 'Sleek', label: 'Modern Animations' },
+      { value: '100%', label: 'Responsive Flow' },
+      { value: 'Premium', label: 'Brand Experience' }
     ],
-    techStack: ['WordPress', 'Booking Engine', 'Custom CSS', 'Speed Tuning'],
+    techStack: ['WordPress', 'Custom Animations', 'Scroll Effects', 'Responsive UI'],
     image: 'images/alluring-beauty.png',
-    liveUrl: 'https://praisetechy.com/alluring-beauty-solutions/'
+    liveUrl: 'https://www.alluringbeautysolutions.com/'
   },
   {
     id: 'pearlwood-hotels',
@@ -161,18 +161,18 @@ const portfolioProjects = [
     id: 'emily-sparkles',
     title: 'Emily Sparkles',
     category: 'E-Commerce & Fashion',
-    tagline: 'High-converting luxury fashion & apparel storefront with bespoke brand storytelling',
-    description: 'A contemporary fashion and lifestyle apparel brand delivering bespoke collections to style-conscious customers worldwide.',
-    challenge: 'Needed a high-performance, mobile-first shopping experience that highlights seasonal lookbooks, streamlines variant selection, and reduces mobile cart abandonment.',
-    solution: 'Engineered a lightweight, ultra-responsive e-commerce architecture with instant search, fluid product galleries, optimized variant selectors, and a streamlined 1-click checkout flow.',
+    tagline: 'How I turned a dropshipping vision into a full brand experience and seamless WordPress store',
+    description: 'Emily Sparkles started as an idea to make trendy fashion and accessories accessible through dropshipping with a full brand identity from scratch.',
+    challenge: 'Create a cohesive brand guide and logo from scratch, build a WooCommerce dropshipping store with AliExpress integration, secure payments, and SEO fundamentals.',
+    solution: 'Designed logo and brand guide, developed WooCommerce store with AliExpress product imports, simplified checkout flow, and conducted SEO optimization.',
     metrics: [
-      { value: '96/100', label: 'Performance Score' },
-      { value: '< 1.3s', label: 'Average Load Time' },
-      { value: '+135%', label: 'Mobile Add-to-Cart' }
+      { value: 'Full', label: 'Brand Identity Built' },
+      { value: 'WooCommerce', label: 'AliExpress Dropship' },
+      { value: 'Optimized', label: 'SEO & Checkout Flow' }
     ],
-    techStack: ['WordPress', 'WooCommerce', 'Custom CSS/JS', 'Performance Optimization'],
+    techStack: ['WordPress', 'WooCommerce', 'AliExpress Dropshipping', 'Brand Identity & SEO'],
     image: 'images/emily-sparkles.jpg',
-    liveUrl: 'https://emilysparkles.com/'
+    liveUrl: null
   }
 ];
 

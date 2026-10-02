@@ -114,6 +114,44 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }, 100);
 
+  // High Performance Video Facades (Vimeo / YouTube)
+  function initVideoFacades() {
+    const facades = document.querySelectorAll('.video-facade');
+    facades.forEach(facade => {
+      const playVideo = () => {
+        if (facade.classList.contains('is-loaded')) return;
+        const vimeoId = facade.dataset.vimeoId;
+        const youtubeId = facade.dataset.youtubeId;
+        
+        const iframe = document.createElement('iframe');
+        iframe.setAttribute('allow', 'autoplay; fullscreen; picture-in-picture');
+        iframe.setAttribute('allowfullscreen', 'true');
+        iframe.setAttribute('loading', 'lazy');
+        
+        if (vimeoId) {
+          iframe.src = `https://player.vimeo.com/video/${vimeoId}?autoplay=1&muted=0&loop=0&autopause=0&color=02A855`;
+          iframe.title = facade.getAttribute('aria-label') || 'Vimeo video player';
+        } else if (youtubeId) {
+          iframe.src = `https://www.youtube.com/embed/${youtubeId}?autoplay=1&rel=0`;
+          iframe.title = facade.getAttribute('aria-label') || 'YouTube video player';
+        }
+        
+        facade.appendChild(iframe);
+        facade.classList.add('is-loaded');
+      };
+
+      facade.addEventListener('click', playVideo);
+      facade.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          playVideo();
+        }
+      });
+    });
+  }
+
+  initVideoFacades();
+
   // Smooth scroll for anchor links (fallback when Lenis is not active)
   if (!window.lenis) {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {

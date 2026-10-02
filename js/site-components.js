@@ -147,7 +147,7 @@ const SITE_FAQS_DATA = [
   {
     id: 'speed-guarantee',
     question: 'How fast will my website be?',
-    answer: 'I build with speed in mind and test key pages before launch. Load times and performance scores depend on your content, hosting, and site features.'
+    answer: 'I build with speed in mind and test key pages before launch. I optimize your images, code, and hosting setup to keep your website loading quickly.'
   },
   {
     id: 'framer-vs-wordpress',

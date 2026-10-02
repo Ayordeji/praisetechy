@@ -13,8 +13,8 @@ body#top {
   background-size: 100% 100%, 28px 28px !important;
   background-attachment: fixed !important;
   --bg-canvas: #0f0f0f;
-  --bg-surface: #171717;
-  --bg-card: #171717;
+  --bg-surface: #000000;
+  --bg-card: #000000;
   --bg-card-alt: #1f1f1f;
   --bg-card-hover: #242424;
   --text-primary: #FFFFFF;

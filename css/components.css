@@ -14,16 +14,23 @@
   z-index: 1000;
   display: flex;
   justify-content: center;
-  padding: 0 24px;
+  padding: 0 2rem;
   pointer-events: none;
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (max-width: 991px) {
+  .site-header {
+    padding: 0 1.25rem;
+    top: 12px;
+  }
 }
 
 .header-lumon-bar,
 .header-container {
   pointer-events: auto;
   width: 100%;
-  max-width: var(--container-max, 1280px);
+  max-width: var(--container-max, 85rem);
   height: 54px;
   background: rgba(18, 18, 18, 0.88);
   border: 1px solid rgba(255, 255, 255, 0.12);
@@ -551,9 +558,15 @@
   position: relative;
   z-index: 5;
   width: 100%;
-  max-width: 1320px;
+  max-width: var(--container-max, 85rem);
   margin: 0 auto;
-  padding: 40px 32px 14px 32px;
+  padding: 40px 2rem 14px 2rem;
+}
+
+@media (max-width: 991px) {
+  .hero-container {
+    padding: 24px 1.25rem 10px 1.25rem;
+  }
 }
 
 .hero-content {

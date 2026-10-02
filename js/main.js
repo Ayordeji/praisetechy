@@ -129,10 +129,10 @@ document.addEventListener('DOMContentLoaded', () => {
         iframe.setAttribute('loading', 'lazy');
         
         if (vimeoId) {
-          iframe.src = `https://player.vimeo.com/video/${vimeoId}?autoplay=1&muted=0&loop=0&autopause=0&color=02A855`;
+          iframe.src = `https://player.vimeo.com/video/${vimeoId}?autoplay=1&muted=0&loop=1&autopause=0&color=02A855&title=0&byline=0&portrait=0&dnt=1`;
           iframe.title = facade.getAttribute('aria-label') || 'Vimeo video player';
         } else if (youtubeId) {
-          iframe.src = `https://www.youtube.com/embed/${youtubeId}?autoplay=1&rel=0`;
+          iframe.src = `https://www.youtube.com/embed/${youtubeId}?autoplay=1&loop=1&playlist=${youtubeId}&rel=0`;
           iframe.title = facade.getAttribute('aria-label') || 'YouTube video player';
         }
         

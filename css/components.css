@@ -4634,9 +4634,10 @@
 
 .video-facade.is-mobile-aspect {
   aspect-ratio: 9 / 16;
-  max-width: 340px;
+  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
-  border-radius: 20px;
+  border-radius: inherit;
 }
 
 .video-facade-poster {

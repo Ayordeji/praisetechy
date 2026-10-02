@@ -35,7 +35,7 @@ const portfolioProjects = [
       { value: '4 Pillars', label: 'Integrated Impact' }
     ],
     techStack: ['WordPress', 'Custom UI/UX', 'SEO Optimization', 'Responsive Architecture'],
-    image: 'images/all-can-thrive.webp',
+    image: 'images/all-can-thrive.png',
     liveUrl: 'https://allcanthrive.com/'
   },
   {
@@ -154,7 +154,7 @@ const portfolioProjects = [
       { value: '4.9★', label: 'Guest Satisfaction Rating' }
     ],
     techStack: ['WordPress', 'Booking Engine', 'Custom UI/UX', 'Performance Optimization'],
-    image: 'images/pearlwood-hotels.webp',
+    image: 'images/pearlwood-hotels.png',
     liveUrl: 'https://pearlwoodhotelsikeja.com/'
   },
   {

@@ -389,7 +389,7 @@
   right: 0;
   width: min(85vw, 360px);
   height: 100%;
-  background: #141414;
+  background: #000000;
   color: #FFFFFF;
   border-left: 1px solid rgba(255, 255, 255, 0.12);
   z-index: 1200;
@@ -1289,7 +1289,7 @@
 .deck-card-btn-mini {
   padding: 5px 11px;
   border-radius: var(--radius-full);
-  background: #181818;
+  background: #000000;
   color: #05cc68;
   font-size: 0.72rem;
   font-weight: 700;
@@ -2824,7 +2824,7 @@
 }
 
 .testimonials-filter-btn {
-  background: #181818;
+  background: #000000;
   border: 1px solid rgba(255, 255, 255, 0.12);
   color: rgba(255, 255, 255, 0.72);
   font-family: var(--font-body, 'DM Sans', sans-serif);
@@ -2967,7 +2967,7 @@
 }
 
 .faq-item {
-  background: #1c1c1c;
+  background: #000000;
   border: 1px solid rgba(255, 255, 255, 0.09);
   border-radius: 18px;
   overflow: hidden;
@@ -2977,7 +2977,7 @@
 
 .faq-item:hover {
   border-color: rgba(2, 168, 85, 0.35);
-  background: #202020;
+  background: #000000;
   transform: translateY(-1px);
 }
 
@@ -4267,11 +4267,11 @@
 #testimonials,
 #faqs,
 .dark-section {
-  background-color: #181818 !important;
-  background: #181818 !important;
-  --bg-canvas: #181818;
-  --bg-surface: #1f1f1f;
-  --bg-card: #1f1f1f;
+  background-color: #000000 !important;
+  background: #000000 !important;
+  --bg-canvas: #000000;
+  --bg-surface: #000000;
+  --bg-card: #000000;
   --bg-card-alt: #262626;
   --bg-card-hover: #2a2a2a;
   --text-primary: #FFFFFF;
@@ -4363,7 +4363,7 @@
 }
 
 .services-about-stats {
-  background: #1f1f1f;
+  background: #000000;
   border-color: rgba(255, 255, 255, 0.08);
 }
 
@@ -4384,12 +4384,12 @@
 }
 
 .services-glance-card {
-  background: #1f1f1f;
+  background: #000000;
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .services-glance-card:hover {
-  background: #262626;
+  background: #000000;
   border-color: #02A855;
 }
 
@@ -4420,7 +4420,7 @@
 
 /* 5. Selected Works Section */
 #work .project-card {
-  background: #1f1f1f;
+  background: #000000;
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: none;
 }
@@ -4469,7 +4469,7 @@
 }
 
 #skills .skill-card {
-  background: #1f1f1f;
+  background: #000000;
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: none;
 }
@@ -4523,7 +4523,7 @@
 
 /* 7. Approach Section */
 #approach .approach-card {
-  background: #1f1f1f;
+  background: #000000;
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: none;
 }
@@ -4554,7 +4554,7 @@
 }
 
 #testimonials .testimonial-card {
-  background: #1f1f1f;
+  background: #000000;
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: none;
 }
@@ -4588,7 +4588,7 @@
 }
 
 #faqs .faq-item {
-  background: #1c1c1c;
+  background: #000000;
   border: 1px solid rgba(255, 255, 255, 0.09);
   border-radius: 18px;
   margin-bottom: 0;
@@ -4598,7 +4598,7 @@
 
 #faqs .faq-item:hover {
   border-color: rgba(2, 168, 85, 0.35);
-  background: #202020;
+  background: #000000;
   transform: translateY(-1px);
 }
 

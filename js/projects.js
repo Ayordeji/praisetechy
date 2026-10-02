@@ -35,7 +35,7 @@ const portfolioProjects = [
       { value: '4 Pillars', label: 'Integrated Impact' }
     ],
     techStack: ['WordPress', 'Custom UI/UX', 'SEO Optimization', 'Responsive Architecture'],
-    image: 'images/all-can-thrive.png',
+    image: 'images/all-can-thrive.webp',
     liveUrl: 'https://allcanthrive.com/'
   },
   {
@@ -52,7 +52,7 @@ const portfolioProjects = [
       { value: '+175%', label: 'Qualified Inquiries' }
     ],
     techStack: ['WordPress', 'Conversion Architecture', 'Interactive Lead Forms', 'Speed Optimization'],
-    image: 'images/codex-property.png',
+    image: 'images/codex-property.webp',
     liveUrl: 'https://codexproperty.com.au/'
   },
   {
@@ -154,7 +154,7 @@ const portfolioProjects = [
       { value: '4.9★', label: 'Guest Satisfaction Rating' }
     ],
     techStack: ['WordPress', 'Booking Engine', 'Custom UI/UX', 'Performance Optimization'],
-    image: 'images/pearlwood-hotels.png',
+    image: 'images/pearlwood-hotels.webp',
     liveUrl: 'https://pearlwoodhotelsikeja.com/'
   },
   {

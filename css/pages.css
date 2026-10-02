@@ -2145,25 +2145,69 @@ body#top {
 }
 
 .cs-process-card {
-  background: #1f1f1f;
+  background: #1c1c1c;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 14px;
-  padding: 28px;
+  border-radius: 18px;
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
 }
 
+.cs-process-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(2, 168, 85, 0.4);
+  background: #202020;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(2, 168, 85, 0.15);
+}
+
+.cs-process-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.cs-process-phase-badge {
+  font-family: var(--font-heading, 'Manrope', sans-serif);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-green, #02A855);
+  background: rgba(2, 168, 85, 0.12);
+  border: 1px solid rgba(2, 168, 85, 0.25);
+  padding: 3px 10px;
+  border-radius: 999px;
+}
+
+.cs-process-phase-num {
+  font-family: var(--font-heading, 'Manrope', sans-serif);
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.cs-process-card-title,
+.cs-process-card h3,
 .cs-process-card h4 {
-  font-family: 'Manrope', sans-serif;
-  font-size: 1.05rem;
+  font-family: var(--font-heading, 'Manrope', sans-serif);
+  font-size: 1.22rem;
   font-weight: 700;
   color: #FFFFFF !important;
-  margin: 0 0 10px;
+  margin: 0;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
 }
 
+.cs-process-card-desc,
 .cs-process-card p {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.9rem;
-  line-height: 1.6;
-  color: rgba(255, 255, 255, 0.7);
+  font-family: var(--font-body, 'DM Sans', sans-serif);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.78);
   margin: 0;
 }
 

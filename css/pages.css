@@ -2,21 +2,21 @@
    AYOMIDE / PRAISE TECHY - INNER PAGES STYLING (Multi-Page System)
    ========================================================================== */
 
-/* Apply Portavia-inspired dark #0f0f0f theme with dot mesh & ambient glow to all pages */
+/* Apply dark #000000 pure black theme with dot mesh & ambient glow to all pages */
 body:not(.home-dark-theme),
 body#top {
-  background-color: #0f0f0f !important;
+  background-color: #000000 !important;
   color: #FFFFFF !important;
   background-image: 
     radial-gradient(circle at 50% 0%, rgba(2, 168, 85, 0.09) 0%, transparent 65%),
     radial-gradient(rgba(255, 255, 255, 0.055) 1px, transparent 1px) !important;
   background-size: 100% 100%, 28px 28px !important;
   background-attachment: fixed !important;
-  --bg-canvas: #0f0f0f;
+  --bg-canvas: #000000;
   --bg-surface: #000000;
   --bg-card: #000000;
-  --bg-card-alt: #1f1f1f;
-  --bg-card-hover: #242424;
+  --bg-card-alt: #111111;
+  --bg-card-hover: #161616;
   --text-primary: #FFFFFF;
   --text-heading: #FFFFFF;
   --text-secondary: rgba(255, 255, 255, 0.75);
@@ -188,7 +188,7 @@ body#top {
 
 /* Page Section Alternating Backgrounds */
 .page-section-alt {
-  background-color: #181818 !important;
+  background-color: #000000 !important;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
@@ -197,13 +197,13 @@ body#top {
    Dark Background Theme for Non-Hero Sections (praisetechy.com style)
    ========================================================================== */
 .dark-section {
-  background-color: #181818 !important;
+  background-color: #000000 !important;
   color: #FFFFFF;
-  --bg-canvas: #181818;
-  --bg-surface: #1f1f1f;
-  --bg-card: #1f1f1f;
-  --bg-card-alt: #262626;
-  --bg-card-hover: #2a2a2a;
+  --bg-canvas: #000000;
+  --bg-surface: #000000;
+  --bg-card: #000000;
+  --bg-card-alt: #111111;
+  --bg-card-hover: #161616;
   --text-primary: #FFFFFF;
   --text-heading: #FFFFFF;
   --text-secondary: rgba(255, 255, 255, 0.75);
@@ -427,8 +427,8 @@ body#top {
   margin: 0 auto;
 }
 .dark-section .faq-item {
-  background: #1c1c1c;
-  border: 1px solid rgba(255, 255, 255, 0.09);
+  background: #000000;
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 18px;
   margin-bottom: 0;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
@@ -436,12 +436,12 @@ body#top {
 }
 .dark-section .faq-item:hover {
   border-color: rgba(2, 168, 85, 0.35);
-  background: #202020;
+  background: #050505;
   transform: translateY(-1px);
 }
 .dark-section .faq-item.open {
   border-color: rgba(2, 168, 85, 0.55);
-  background: #1b221e;
+  background: #000000;
   box-shadow: 0 10px 32px rgba(2, 168, 85, 0.1), 0 4px 18px rgba(0, 0, 0, 0.35);
 }
 .dark-section .faq-question {
@@ -2145,8 +2145,8 @@ body#top {
 }
 
 .cs-process-card {
-  background: #1c1c1c;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #000000;
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 18px;
   padding: 32px 28px;
   display: flex;
@@ -2158,8 +2158,8 @@ body#top {
 
 .cs-process-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(2, 168, 85, 0.4);
-  background: #202020;
+  border-color: rgba(2, 168, 85, 0.5);
+  background: #050505;
   box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(2, 168, 85, 0.15);
 }
 
@@ -2221,7 +2221,7 @@ body#top {
   border-radius: 12px;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  background: #1f1f1f;
+  background: #000000;
 }
 
 .cs-screen-img {
@@ -2236,7 +2236,7 @@ body#top {
    ========================================================================== */
 
 .cs-results-cta-section {
-  background: #181818 !important;
+  background: #000000 !important;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   padding: 70px 0;
   position: relative;

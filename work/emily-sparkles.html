@@ -211,9 +211,20 @@
             </div>
           </div>
 
-          <div class="cs-col-right">
-            <div class="cs-device-mockup">
-              <img src="../images/emily-sparkles.jpg" alt="Emily Sparkles Mobile UI Mockup" class="cs-device-img" loading="lazy">
+          <div class="cs-col-right" style="display: flex; justify-content: center; align-items: center;">
+            <div class="cs-device-mockup" style="width: 100%; max-width: 290px; border-radius: 24px; border: 1px solid rgba(255, 255, 255, 0.12); background: #0c0c0c; padding: 0; overflow: hidden; box-shadow: 0 20px 48px rgba(0, 0, 0, 0.5);">
+              <div class="video-facade is-mobile-aspect" data-vimeo-id="1125129077" role="button" tabindex="0" aria-label="Play Emily Sparkles Mobile Walkthrough Video" style="width: 100%; aspect-ratio: 9 / 16;">
+                <img src="../images/emily-video-mobile-poster.jpg" alt="Emily Sparkles Mobile Walkthrough" class="video-facade-poster" loading="lazy">
+                <div class="video-facade-overlay">
+                  <div class="video-facade-play-btn" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                  </div>
+                  <span class="video-facade-badge">
+                    <span class="header-status-dot" style="background:#02A855;box-shadow:0 0 8px #02A855;"></span>
+                    Mobile Walkthrough
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -221,7 +232,7 @@
       </div>
     </section>
 
-    <!-- Detailed Desktop / Interface Showcase (Browser Viewport) -->
+    <!-- Detailed Desktop / Interface Showcase (Browser Viewport with Video Walkthrough Facade) -->
     <section class="cs-section" id="interface-showcase">
       <div class="container">
         <div class="reveal">
@@ -232,9 +243,22 @@
                 <span class="cs-browser-dot yellow"></span>
                 <span class="cs-browser-dot green"></span>
               </div>
-              <div class="cs-browser-url">emilysparkles.com</div>
+              <div class="cs-browser-url">emilysparkles.com — Store Walkthrough (Desktop)</div>
             </div>
-            <img src="../images/emily-sparkles.jpg" alt="Emily Sparkles Desktop Experience" class="cs-browser-content-img" loading="lazy">
+            <div class="video-facade-container">
+              <div class="video-facade" data-vimeo-id="1125261396" role="button" tabindex="0" aria-label="Play Emily Sparkles Desktop Walkthrough Video">
+                <img src="../images/emily-video-desktop-poster.jpg" alt="Emily Sparkles Desktop Experience" class="video-facade-poster" loading="lazy">
+                <div class="video-facade-overlay">
+                  <div class="video-facade-play-btn" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                  </div>
+                  <span class="video-facade-badge">
+                    <span class="header-status-dot" style="background:#02A855;box-shadow:0 0 8px #02A855;"></span>
+                    Watch Desktop Store Walkthrough
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -251,26 +275,46 @@
 
         <div class="cs-process-grid reveal">
           <div class="cs-process-card">
-            <h4>Research &amp; Planning</h4>
-            <p>Analyzed fashion dropshipping trends and competitor pricing to identify a profitable niche. Outlined product categories and mapped the user journey from homepage to checkout.</p>
+            <div class="cs-process-card-header">
+              <span class="cs-process-phase-badge">Phase 01</span>
+              <span class="cs-process-phase-num">01</span>
+            </div>
+            <h3 class="cs-process-card-title">Research &amp; Planning</h3>
+            <p class="cs-process-card-desc">Analyzed fashion dropshipping trends and competitor pricing to identify a profitable niche. Outlined product categories and mapped the user journey from homepage to checkout.</p>
           </div>
           <div class="cs-process-card">
-            <h4>Design &amp; Prototyping</h4>
-            <p>Created a simple and stylish brand identity system. Prototyped the site layout with focus on clarity, accessibility, and fast browsing experience across devices.</p>
+            <div class="cs-process-card-header">
+              <span class="cs-process-phase-badge">Phase 02</span>
+              <span class="cs-process-phase-num">02</span>
+            </div>
+            <h3 class="cs-process-card-title">Design &amp; Prototyping</h3>
+            <p class="cs-process-card-desc">Created a simple and stylish brand identity system. Prototyped the site layout with focus on clarity, accessibility, and fast browsing experience across devices.</p>
           </div>
           <div class="cs-process-card">
-            <h4>Development &amp; Implementation</h4>
-            <p>Built the site using WordPress and WooCommerce, configured dropshipping plugins, uploaded and optimized products, set up payment integrations, and finalized SEO settings before launch.</p>
+            <div class="cs-process-card-header">
+              <span class="cs-process-phase-badge">Phase 03</span>
+              <span class="cs-process-phase-num">03</span>
+            </div>
+            <h3 class="cs-process-card-title">Development &amp; Implementation</h3>
+            <p class="cs-process-card-desc">Built the site using WordPress and WooCommerce, configured dropshipping plugins, uploaded and optimized products, set up payment integrations, and finalized SEO settings before launch.</p>
           </div>
         </div>
 
         <!-- 2-Column Side-by-Side Screen Layout -->
         <div class="cs-two-screens reveal">
           <div class="cs-screen-item">
-            <img src="../images/emily-sparkles.jpg" alt="Emily Sparkles Apparel Showcase" class="cs-screen-img" loading="lazy">
+            <img src="../images/emily-sparkles-products.webp" alt="Emily Sparkles Product Showcase" class="cs-screen-img" loading="lazy">
+            <div class="cs-screen-caption">
+              <span>Curated Product Catalog</span>
+              <span style="color: #02A855; font-size: 0.82rem; font-weight: 700;">WooCommerce Store</span>
+            </div>
           </div>
           <div class="cs-screen-item">
-            <img src="../images/collxx.webp" alt="Collxx Studio Interface" class="cs-screen-img" loading="lazy">
+            <img src="../images/emily-sparkles-contact.webp" alt="Emily Sparkles Customer Support" class="cs-screen-img" loading="lazy">
+            <div class="cs-screen-caption">
+              <span>Customer Inquiries &amp; Support</span>
+              <span style="color: #02A855; font-size: 0.82rem; font-weight: 700;">Direct Contact</span>
+            </div>
           </div>
         </div>
 

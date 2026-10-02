@@ -231,9 +231,20 @@
             </div>
           </div>
 
-          <div class="cs-col-right">
-            <div class="cs-device-mockup">
-              <img src="../images/tobams-colors.webp" alt="Tobams Colors Responsive View" class="cs-device-img" loading="lazy">
+          <div class="cs-col-right" style="display: flex; justify-content: center; align-items: center;">
+            <div class="cs-device-mockup" style="width: 100%; max-width: 290px; border-radius: 24px; border: 1px solid rgba(255, 255, 255, 0.12); background: #0c0c0c; padding: 0; overflow: hidden; box-shadow: 0 20px 48px rgba(0, 0, 0, 0.5);">
+              <div class="video-facade is-mobile-aspect" data-vimeo-id="1125025591" role="button" tabindex="0" aria-label="Play Tobams Colors Mobile Walkthrough Video" style="width: 100%; aspect-ratio: 9 / 16;">
+                <img src="../images/tobams-video-mobile-poster.jpg" alt="Tobams Colors Mobile Walkthrough" class="video-facade-poster" loading="lazy">
+                <div class="video-facade-overlay">
+                  <div class="video-facade-play-btn" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                  </div>
+                  <span class="video-facade-badge">
+                    <span class="header-status-dot" style="background:#02A855;box-shadow:0 0 8px #02A855;"></span>
+                    Mobile Walkthrough
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -241,7 +252,7 @@
       </div>
     </section>
 
-    <!-- Detailed Desktop Browser Mockup -->
+    <!-- Detailed Desktop Browser Mockup with Video Walkthrough Facade -->
     <section class="cs-section" id="interface-showcase">
       <div class="container">
         <div class="reveal">
@@ -252,9 +263,22 @@
                 <span class="cs-browser-dot yellow"></span>
                 <span class="cs-browser-dot green"></span>
               </div>
-              <div class="cs-browser-url">tobamscolors.com</div>
+              <div class="cs-browser-url">tobamscolors.com — Store Walkthrough (Desktop)</div>
             </div>
-            <img src="../images/tobams-colors.webp" alt="Tobams Colors Desktop Experience" class="cs-browser-content-img" loading="lazy">
+            <div class="video-facade-container">
+              <div class="video-facade" data-vimeo-id="1125024004" role="button" tabindex="0" aria-label="Play Tobams Colors Desktop Walkthrough Video">
+                <img src="../images/tobams-video-desktop-poster.jpg" alt="Tobams Colors Desktop Experience" class="video-facade-poster" loading="lazy">
+                <div class="video-facade-overlay">
+                  <div class="video-facade-play-btn" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                  </div>
+                  <span class="video-facade-badge">
+                    <span class="header-status-dot" style="background:#02A855;box-shadow:0 0 8px #02A855;"></span>
+                    Watch Desktop Store Walkthrough
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -271,25 +295,45 @@
 
         <div class="cs-process-grid reveal">
           <div class="cs-process-card">
-            <h4>Research &amp; Planning</h4>
-            <p>Reviewed Figma layouts, defined site structure and taxonomy, and set up a development plan with milestones under Tobams Group’s workflow.</p>
+            <div class="cs-process-card-header">
+              <span class="cs-process-phase-badge">Phase 01</span>
+              <span class="cs-process-phase-num">01</span>
+            </div>
+            <h3 class="cs-process-card-title">Research &amp; Planning</h3>
+            <p class="cs-process-card-desc">Reviewed Figma layouts, defined site structure and taxonomy, and set up a development plan with milestones under Tobams Group’s workflow.</p>
           </div>
           <div class="cs-process-card">
-            <h4>Design &amp; Prototyping</h4>
-            <p>Collaborated with the UI/UX designer to validate mobile navigation, refine interactions, and ensure the site captured the brand’s lively feel before coding began.</p>
+            <div class="cs-process-card-header">
+              <span class="cs-process-phase-badge">Phase 02</span>
+              <span class="cs-process-phase-num">02</span>
+            </div>
+            <h3 class="cs-process-card-title">Design &amp; Prototyping</h3>
+            <p class="cs-process-card-desc">Collaborated with the UI/UX designer to validate mobile navigation, refine interactions, and ensure the site captured the brand’s lively feel before coding began.</p>
           </div>
           <div class="cs-process-card">
-            <h4>Development &amp; Implementation</h4>
-            <p>Developed custom WordPress templates, configured payments, implemented security protocols, and optimized the entire site for performance and visibility. The final result was a store that looked great, loaded fast, and ranked well.</p>
+            <div class="cs-process-card-header">
+              <span class="cs-process-phase-badge">Phase 03</span>
+              <span class="cs-process-phase-num">03</span>
+            </div>
+            <h3 class="cs-process-card-title">Development &amp; Implementation</h3>
+            <p class="cs-process-card-desc">Developed custom WordPress templates, configured payments, implemented security protocols, and optimized the entire site for performance and visibility. The final result was a store that looked great, loaded fast, and ranked well.</p>
           </div>
         </div>
 
         <div class="cs-two-screens reveal">
           <div class="cs-screen-item">
-            <img src="../images/tobams-colors.webp" alt="Tobams Colors Visual Interface" class="cs-screen-img" loading="lazy">
+            <img src="../images/tobams-haute-couture.webp" alt="Tobams Colors Haute Couture Collection" class="cs-screen-img" loading="lazy">
+            <div class="cs-screen-caption">
+              <span>Haute Couture &amp; Print Collections</span>
+              <span style="color: #02A855; font-size: 0.82rem; font-weight: 700;">Custom Apparel</span>
+            </div>
           </div>
           <div class="cs-screen-item">
-            <img src="../images/tobams-colors.webp" alt="Tobams Colors Store Catalog" class="cs-screen-img" loading="lazy">
+            <img src="../images/tobams-mens-fashion.webp" alt="Tobams Colors Mens Fashion Catalog" class="cs-screen-img" loading="lazy">
+            <div class="cs-screen-caption">
+              <span>Menswear &amp; Bespoke Styling</span>
+              <span style="color: #02A855; font-size: 0.82rem; font-weight: 700;">Filterable Catalog</span>
+            </div>
           </div>
         </div>
 

@@ -219,9 +219,20 @@
             </div>
           </div>
 
-          <div class="cs-col-right">
-            <div class="cs-device-mockup">
-              <img src="../images/alluring-beauty.png" alt="Alluring Beauty Mobile UI Mockup" class="cs-device-img" loading="lazy">
+          <div class="cs-col-right" style="display: flex; justify-content: center; align-items: center;">
+            <div class="cs-device-mockup" style="width: 100%; max-width: 290px; border-radius: 24px; border: 1px solid rgba(255, 255, 255, 0.12); background: #0c0c0c; padding: 0; overflow: hidden; box-shadow: 0 20px 48px rgba(0, 0, 0, 0.5);">
+              <div class="video-facade is-mobile-aspect" data-vimeo-id="1125026053" role="button" tabindex="0" aria-label="Play Alluring Beauty Mobile Walkthrough Video" style="width: 100%; aspect-ratio: 9 / 16;">
+                <img src="../images/alluring-video-mobile-poster.jpg" alt="Alluring Beauty Mobile Walkthrough" class="video-facade-poster" loading="lazy">
+                <div class="video-facade-overlay">
+                  <div class="video-facade-play-btn" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                  </div>
+                  <span class="video-facade-badge">
+                    <span class="header-status-dot" style="background:#02A855;box-shadow:0 0 8px #02A855;"></span>
+                    Mobile Walkthrough
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -229,7 +240,7 @@
       </div>
     </section>
 
-    <!-- Detailed Desktop / Interface Showcase (Browser Viewport) -->
+    <!-- Detailed Desktop / Interface Showcase (Browser Viewport with Video Walkthrough Facade) -->
     <section class="cs-section" id="interface-showcase">
       <div class="container">
         <div class="reveal">
@@ -240,9 +251,22 @@
                 <span class="cs-browser-dot yellow"></span>
                 <span class="cs-browser-dot green"></span>
               </div>
-              <div class="cs-browser-url">alluringbeautysolutions.com</div>
+              <div class="cs-browser-url">alluringbeautysolutions.com — Store Walkthrough (Desktop)</div>
             </div>
-            <img src="../images/alluring-beauty.png" alt="Alluring Beauty Desktop Experience" class="cs-browser-content-img" loading="lazy">
+            <div class="video-facade-container">
+              <div class="video-facade" data-vimeo-id="1125035872" role="button" tabindex="0" aria-label="Play Alluring Beauty Desktop Walkthrough Video">
+                <img src="../images/alluring-video-desktop-poster.jpg" alt="Alluring Beauty Desktop Experience" class="video-facade-poster" loading="lazy">
+                <div class="video-facade-overlay">
+                  <div class="video-facade-play-btn" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                  </div>
+                  <span class="video-facade-badge">
+                    <span class="header-status-dot" style="background:#02A855;box-shadow:0 0 8px #02A855;"></span>
+                    Watch Desktop Store Walkthrough
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -259,26 +283,46 @@
 
         <div class="cs-process-grid reveal">
           <div class="cs-process-card">
-            <h4>Research &amp; Planning</h4>
-            <p>Mapped Figma screens to WordPress templates, defined product taxonomy, and planned the content upload process so the team could scale product entry without errors. Coordinated requirements and launch timeline with Tobams Group stakeholders.</p>
+            <div class="cs-process-card-header">
+              <span class="cs-process-phase-badge">Phase 01</span>
+              <span class="cs-process-phase-num">01</span>
+            </div>
+            <h3 class="cs-process-card-title">Research &amp; Planning</h3>
+            <p class="cs-process-card-desc">Reviewed competitor aesthetics and client expectations to define the booking flow, treatment categorization, and trust indicators for luxury beauty clients.</p>
           </div>
           <div class="cs-process-card">
-            <h4>Design &amp; Prototyping</h4>
-            <p>Worked with the UI/UX designer to validate interactions and mobile layouts. Built quick prototypes for product lists and checkout flows to confirm usability before development.</p>
+            <div class="cs-process-card-header">
+              <span class="cs-process-phase-badge">Phase 02</span>
+              <span class="cs-process-phase-num">02</span>
+            </div>
+            <h3 class="cs-process-card-title">Design &amp; Prototyping</h3>
+            <p class="cs-process-card-desc">Crafted an elegant, serene aesthetic with soft gold accents and clean typography. Prototyped seamless appointment booking and interactive service menus.</p>
           </div>
           <div class="cs-process-card">
-            <h4>Development &amp; Implementation</h4>
-            <p>Converted components into WordPress templates, set up product imports, configured payment integrations, and hardened site security. Applied performance fixes, ran cross-device testing and SEO checks, then completed final QA before launch.</p>
+            <div class="cs-process-card-header">
+              <span class="cs-process-phase-badge">Phase 03</span>
+              <span class="cs-process-phase-num">03</span>
+            </div>
+            <h3 class="cs-process-card-title">Development &amp; Implementation</h3>
+            <p class="cs-process-card-desc">Built custom responsive WordPress templates, configured appointment scheduling, optimized high-res imagery, and hardened site security with active SEO configuration.</p>
           </div>
         </div>
 
         <!-- 2-Column Side-by-Side Screen Layout -->
         <div class="cs-two-screens reveal">
           <div class="cs-screen-item">
-            <img src="../images/alluring-beauty.png" alt="Alluring Beauty Treatment Catalog" class="cs-screen-img" loading="lazy">
+            <img src="../images/alluring-beauty-1.webp" alt="Alluring Beauty Treatment Catalog" class="cs-screen-img" loading="lazy">
+            <div class="cs-screen-caption">
+              <span>Treatment Menu &amp; Booking Flow</span>
+              <span style="color: #02A855; font-size: 0.82rem; font-weight: 700;">Luxury Experience</span>
+            </div>
           </div>
           <div class="cs-screen-item">
-            <img src="../images/pearlwood-hotels.png" alt="Pearlwood Hotels Booking Interface" class="cs-screen-img" loading="lazy">
+            <img src="../images/alluring-beauty-2.webp" alt="Alluring Beauty Consultation Portal" class="cs-screen-img" loading="lazy">
+            <div class="cs-screen-caption">
+              <span>Consultation &amp; Client Inquiries</span>
+              <span style="color: #02A855; font-size: 0.82rem; font-weight: 700;">Online Booking</span>
+            </div>
           </div>
         </div>
 

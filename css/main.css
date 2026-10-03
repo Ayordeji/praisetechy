@@ -47,8 +47,8 @@
   --text-dim: #608F74;
 
   /* Borders & Dividers */
-  --border-subtle: rgba(2, 168, 85, 0.12);
-  --border-medium: rgba(2, 168, 85, 0.22);
+  --border-subtle: rgba(255, 255, 255, 0.18);
+  --border-medium: rgba(255, 255, 255, 0.28);
   --border-highlight: rgba(2, 168, 85, 0.42);
 
   /* Buttons & CTAs */

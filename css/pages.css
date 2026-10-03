@@ -22,7 +22,7 @@ body#top {
   --text-secondary: rgba(255, 255, 255, 0.75);
   --text-muted: rgba(255, 255, 255, 0.60);
   --text-dim: rgba(255, 255, 255, 0.40);
-  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-subtle: rgba(255, 255, 255, 0.18);
   --border-medium: rgba(2, 168, 85, 0.28);
   --border-highlight: #02A855;
   --shadow-card: none;
@@ -114,7 +114,7 @@ body#top {
   background-color: #000000 !important;
   position: relative;
   overflow: hidden;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .page-hero::before {
@@ -189,8 +189,8 @@ body#top {
 /* Page Section Alternating Backgrounds */
 .page-section-alt {
   background-color: #000000 !important;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 /* ==========================================================================
@@ -209,7 +209,7 @@ body#top {
   --text-secondary: rgba(255, 255, 255, 0.75);
   --text-muted: rgba(255, 255, 255, 0.60);
   --text-dim: rgba(255, 255, 255, 0.40);
-  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-subtle: rgba(255, 255, 255, 0.18);
   --border-medium: rgba(2, 168, 85, 0.28);
   --border-highlight: #02A855;
   --shadow-card: 0 16px 36px rgba(0, 0, 0, 0.5);
@@ -262,7 +262,7 @@ body#top {
 /* Services Glance / About (Homepage) */
 .dark-section .services-about-stats {
   background: #000000;
-  border-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.18);
 }
 .dark-section .services-about-stats div {
   border-color: rgba(255, 255, 255, 0.1);
@@ -278,7 +278,7 @@ body#top {
 }
 .dark-section .services-glance-card {
   background: #000000;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 .dark-section .services-glance-card:hover {
   background: #000000;
@@ -298,7 +298,7 @@ body#top {
 /* Homepage Work Section */
 .dark-section .project-card {
   background: #000000;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: none;
 }
 .dark-section .project-card:hover {
@@ -320,7 +320,7 @@ body#top {
   color: #02A855;
 }
 .dark-section .project-tag {
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.16);
   border: 1px solid rgba(255, 255, 255, 0.12);
   color: rgba(255, 255, 255, 0.88);
   transition: all 0.22s ease;
@@ -334,7 +334,7 @@ body#top {
 /* Skills Section */
 .dark-section .skill-card {
   background: #000000;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: none;
 }
 .dark-section .skill-card:hover {
@@ -353,7 +353,7 @@ body#top {
   color: #05cc68;
 }
 .dark-section .skill-pill {
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.16);
   border: 1px solid rgba(255, 255, 255, 0.12);
   color: rgba(255, 255, 255, 0.88);
 }
@@ -378,7 +378,7 @@ body#top {
 /* Approach Section */
 .dark-section .approach-card {
   background: #000000;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: none;
 }
 .dark-section .approach-card:hover {
@@ -400,7 +400,7 @@ body#top {
 /* Testimonials Section */
 .dark-section .testimonial-card {
   background: #000000;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: none;
 }
 .dark-section .testimonial-card:hover {
@@ -462,8 +462,8 @@ body#top {
 
 /* About Page Elements in dark sections */
 .dark-section.about-stats-section {
-  border-top-color: rgba(255, 255, 255, 0.08);
-  border-bottom-color: rgba(255, 255, 255, 0.08);
+  border-top-color: rgba(255, 255, 255, 0.18);
+  border-bottom-color: rgba(255, 255, 255, 0.18);
 }
 .dark-section .about-stat-num {
   color: #02A855;
@@ -476,7 +476,7 @@ body#top {
 }
 .dark-section .pillar-item {
   background: #000000;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 .dark-section .pillar-item strong {
   color: #FFFFFF;
@@ -486,7 +486,7 @@ body#top {
 }
 .dark-section .about-skill-card {
   background: #000000;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 .dark-section .about-skill-card:hover {
   border-color: #02A855;
@@ -499,10 +499,10 @@ body#top {
   color: rgba(255, 255, 255, 0.7);
 }
 .dark-section .about-value-row {
-  border-bottom-color: rgba(255, 255, 255, 0.08);
+  border-bottom-color: rgba(255, 255, 255, 0.18);
 }
 .dark-section .about-value-row:first-child {
-  border-top-color: rgba(255, 255, 255, 0.08);
+  border-top-color: rgba(255, 255, 255, 0.18);
 }
 .dark-section .about-value-num {
   color: #02A855;
@@ -522,7 +522,7 @@ body#top {
 
 /* Work Page Elements in dark sections */
 .dark-section .work-project-item {
-  border-bottom-color: rgba(255, 255, 255, 0.08);
+  border-bottom-color: rgba(255, 255, 255, 0.18);
 }
 .dark-section .work-project-title {
   color: #FFFFFF;
@@ -550,7 +550,7 @@ body#top {
 }
 .dark-section .work-cta-inner {
   background: #000000;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: var(--radius-lg);
   padding: 48px;
 }
@@ -559,7 +559,7 @@ body#top {
 .dark-section .pricing-card,
 .pricing-card {
   background: #000000;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: none;
 }
 .dark-section .pricing-card.featured,
@@ -585,7 +585,7 @@ body#top {
 }
 .dark-section .pricing-card .btn-pricing-secondary,
 .pricing-card .btn-pricing-secondary {
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.16);
   color: #FFFFFF;
   border: 1px solid rgba(255, 255, 255, 0.12);
 }
@@ -612,7 +612,7 @@ body#top {
 .dark-section .service-detail-card,
 .service-detail-card {
   background: #000000;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: none;
 }
 .dark-section .service-detail-card:hover,
@@ -659,8 +659,8 @@ body#top {
 
 .style-guide-section-alt {
   background: #000000 !important;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .style-guide-section-heading {
@@ -698,7 +698,7 @@ body#top {
 
 .style-guide-type-sample {
   padding: 28px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 14px;
   background: #000000 !important;
 }
@@ -729,7 +729,7 @@ body#top {
 
 .style-guide-heading-specimens > div {
   padding: 26px 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .style-guide-heading-specimens h1,
@@ -749,7 +749,7 @@ body#top {
 }
 
 .style-guide-type-scale {
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .style-guide-type-scale div {
@@ -758,7 +758,7 @@ body#top {
   gap: 18px;
   align-items: center;
   padding: 14px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .style-guide-type-scale strong {
@@ -860,7 +860,7 @@ body#top {
   position: relative;
   min-height: 220px;
   padding: 24px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 14px;
   background: #000000 !important;
   box-shadow: none;
@@ -957,7 +957,7 @@ body#top {
   padding: 140px 0 50px;
   background: #000000 !important;
   position: relative;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .work-hero-split-inner {
@@ -1068,7 +1068,7 @@ body#top {
 .work-card-divider {
   border: none;
   height: 1px;
-  background: rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.20);
   margin: 0;
 }
 
@@ -1116,7 +1116,7 @@ body#top {
 /* Work CTA Section */
 .work-cta-section {
   background: #000000 !important;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .work-cta-inner {
@@ -1171,7 +1171,7 @@ body#top {
   gap: 10px;
   padding: 8px 18px;
   border-radius: 100px;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.15);
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.9);
   font-family: 'DM Sans', sans-serif;
@@ -1195,7 +1195,7 @@ body#top {
   background: #000000 !important;
   position: relative;
   overflow: hidden;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .about-top-bar {
@@ -1271,7 +1271,7 @@ body#top {
   border-radius: 18px;
   overflow: hidden;
   background: #000000;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .about-portrait-card img {
@@ -1289,7 +1289,7 @@ body#top {
 .about-services-fit-section {
   padding: 80px 0;
   background: #000000 !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .about-side-by-side-grid {
@@ -1342,7 +1342,7 @@ body#top {
 
 .about-service-card {
   background: #000000;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 16px;
   padding: 24px 26px;
   display: flex;
@@ -1383,7 +1383,7 @@ body#top {
 
 .about-fit-card {
   background: #000000;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 18px;
   padding: 36px 32px;
   display: flex;
@@ -1442,7 +1442,7 @@ body#top {
 
 .about-fit-footer-box {
   padding-top: 24px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -1472,7 +1472,7 @@ body#top {
 .about-proof-section {
   padding: 80px 0 90px;
   background: #000000 !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .about-proof-header {
@@ -1509,7 +1509,7 @@ body#top {
 
 .about-proof-card {
   background: #000000;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 16px;
   padding: 32px 28px;
   display: flex;
@@ -1578,7 +1578,7 @@ body#top {
   background: #000000 !important;
   text-align: center;
   position: relative;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .contact-hero-inner {
@@ -1621,7 +1621,7 @@ body#top {
   max-width: 1060px;
   margin: 0 auto;
   background: #000000;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 20px;
   overflow: hidden;
   box-shadow: none;
@@ -1638,7 +1638,7 @@ body#top {
 .contact-booking-footer {
   padding: 18px 24px;
   background: rgba(255, 255, 255, 0.02);
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1662,7 +1662,7 @@ body#top {
 .contact-channels-section {
   padding: 50px 0 80px;
   background: #000000 !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .contact-channels-grid {
@@ -1675,7 +1675,7 @@ body#top {
 
 .contact-channel-card {
   background: #000000;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 16px;
   padding: 28px;
   display: flex;
@@ -1829,7 +1829,7 @@ body#top {
 .cs-hero-section {
   padding: 140px 0 50px;
   background: #000000 !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .cs-hero-section .section-num-tag {
@@ -1871,7 +1871,7 @@ body#top {
   border-radius: 20px;
   overflow: hidden;
   background: #000000;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   margin-bottom: 56px;
   aspect-ratio: 16 / 9;
   display: flex;
@@ -1948,7 +1948,7 @@ body#top {
 .cs-section {
   padding: 85px 0;
   background: #000000 !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .cs-two-col {
@@ -1995,7 +1995,7 @@ body#top {
   display: flex;
   gap: 22px;
   padding: 22px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
   align-items: flex-start;
 }
 
@@ -2029,7 +2029,7 @@ body#top {
   border-radius: 16px;
   overflow: hidden;
   background: #000000;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2054,7 +2054,7 @@ body#top {
 .cs-browser-topbar {
   padding: 14px 20px;
   background: rgba(255, 255, 255, 0.04);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
   display: flex;
   align-items: center;
   gap: 16px;
@@ -2077,7 +2077,7 @@ body#top {
 .cs-browser-dot.green { background: #27c93f; }
 
 .cs-browser-url {
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.16);
   border-radius: 6px;
   padding: 6px 16px;
   font-family: 'DM Sans', sans-serif;
@@ -2099,7 +2099,7 @@ body#top {
 .cs-process-section {
   padding: 85px 0;
   background: #000000 !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .cs-heading-left {
@@ -2265,7 +2265,7 @@ body#top {
   width: 100%;
   padding: 18px 24px;
   background: rgba(255, 255, 255, 0.03);
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -2282,7 +2282,7 @@ body#top {
 
 .cs-results-cta-section {
   background: #000000 !important;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
   padding: 70px 0;
   position: relative;
   overflow: hidden;
@@ -2323,7 +2323,7 @@ body#top {
   padding: 0 36px;
   border: 1.5px solid rgba(255, 255, 255, 0.4);
   border-radius: var(--radius-full, 9999px);
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.18);
   color: #FFFFFF !important;
   font-family: var(--font-body, 'DM Sans', sans-serif);
   font-size: 1rem;
@@ -2704,7 +2704,7 @@ body#top {
   min-height: 50px;
   padding: 0 26px;
   border-radius: 9999px;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.18);
   color: #FFFFFF !important;
   font-family: var(--font-body, 'DM Sans', sans-serif);
   font-size: 0.95rem;

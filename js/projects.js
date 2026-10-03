@@ -35,7 +35,7 @@ const portfolioProjects = [
       { value: '4 Pillars', label: 'Integrated Impact' }
     ],
     techStack: ['WordPress', 'Custom UI/UX', 'SEO Optimization', 'Responsive Architecture'],
-    image: 'images/all-can-thrive.png',
+    image: 'images/all-can-thrive.webp',
     liveUrl: 'https://allcanthrive.com/'
   },
   {
@@ -137,7 +137,7 @@ const portfolioProjects = [
       { value: 'Premium', label: 'Brand Experience' }
     ],
     techStack: ['WordPress', 'Custom Animations', 'Scroll Effects', 'Responsive UI'],
-    image: 'images/alluring-beauty.png',
+    image: 'images/alluring-beauty.webp',
     liveUrl: 'https://www.alluringbeautysolutions.com/'
   },
   {
@@ -154,7 +154,7 @@ const portfolioProjects = [
       { value: '4.9★', label: 'Guest Satisfaction Rating' }
     ],
     techStack: ['WordPress', 'Booking Engine', 'Custom UI/UX', 'Performance Optimization'],
-    image: 'images/pearlwood-hotels.png',
+    image: 'images/pearlwood-hotels.webp',
     liveUrl: 'https://pearlwoodhotelsikeja.com/'
   },
   {
@@ -171,7 +171,7 @@ const portfolioProjects = [
       { value: 'Optimized', label: 'SEO & Checkout Flow' }
     ],
     techStack: ['WordPress', 'WooCommerce', 'AliExpress Dropshipping', 'Brand Identity & SEO'],
-    image: 'images/emily-sparkles.jpg',
+    image: 'images/emily-sparkles.webp',
     liveUrl: null
   }
 ];

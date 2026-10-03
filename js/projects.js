@@ -173,6 +173,23 @@ const portfolioProjects = [
     techStack: ['WordPress', 'WooCommerce', 'AliExpress Dropshipping', 'Brand Identity & SEO'],
     image: 'images/emily-sparkles.webp',
     liveUrl: null
+  },
+  {
+    id: 'luchuo-engelbert-bain',
+    title: 'Dr. Luchuo Engelbert Bain',
+    category: 'Healthcare Leadership, Public Health & Research',
+    tagline: 'Distinguished personal brand, research archive, and executive advisory portal',
+    description: 'Dr. Luchuo Engelbert Bain is an international physician-researcher, bioethicist, and global health leader with extensive advisory engagements across Africa and Europe.',
+    challenge: 'Needed an authoritative digital hub to present 150+ peer-reviewed papers, keynote speaking engagements, executive consulting services, and training programs.',
+    solution: 'Designed and built a scholarly, high-converting digital platform with publication archives, advisory booking funnels, and sub-1.4s global performance.',
+    metrics: [
+      { value: '150+', label: 'Indexed Publications' },
+      { value: '100%', label: 'Responsive & Accessible' },
+      { value: '1.4s', label: 'Global Load Speed' }
+    ],
+    techStack: ['WordPress', 'Scholarly UI Architecture', 'Research Archive', 'SEO Optimization'],
+    image: 'images/luchuo-featured.webp',
+    liveUrl: 'https://luchuoengelbertbain.com/'
   }
 ];
 

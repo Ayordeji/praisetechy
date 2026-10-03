@@ -2216,7 +2216,7 @@ body#top {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 36px;
-  align-items: stretch;
+  align-items: start;
   width: 100%;
   max-width: 100%;
   margin: 56px 0 0 0;
@@ -2239,6 +2239,8 @@ body#top {
   flex-direction: column;
   width: 100%;
   max-width: 100%;
+  height: fit-content;
+  align-self: start;
   margin: 0;
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -2254,9 +2256,7 @@ body#top {
   max-width: 100%;
   height: auto;
   display: block;
-  image-rendering: -webkit-optimize-contrast;
-  image-rendering: crisp-edges;
-  transform: translateZ(0);
+  image-rendering: auto;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }

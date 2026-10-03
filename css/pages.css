@@ -2214,32 +2214,39 @@ body#top {
 
 .cs-two-screens {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 32px;
-  justify-content: center;
-  align-items: start;
-  max-width: 980px;
-  margin: 48px auto 0 auto;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 36px;
+  align-items: stretch;
+  width: 100%;
+  max-width: 100%;
+  margin: 56px 0 0 0;
+}
+
+@media (max-width: 900px) {
+  .cs-two-screens {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
 }
 
 .cs-screen-item {
-  border-radius: 18px;
+  border-radius: 20px;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: #0a0a0a;
-  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: #0d0d0d;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.7);
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 100%;
-  max-width: 440px;
-  margin: 0 auto;
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+  max-width: 100%;
+  margin: 0;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .cs-screen-item:hover {
-  transform: translateY(-4px);
-  border-color: rgba(2, 168, 85, 0.45);
+  transform: translateY(-6px);
+  border-color: rgba(2, 168, 85, 0.5);
+  box-shadow: 0 32px 70px rgba(0, 0, 0, 0.8), 0 0 30px rgba(2, 168, 85, 0.15);
 }
 
 .cs-screen-img {
@@ -2248,14 +2255,15 @@ body#top {
   height: auto;
   display: block;
   image-rendering: -webkit-optimize-contrast;
-  image-rendering: high-quality;
-  object-fit: cover;
-  object-position: top center;
+  image-rendering: crisp-edges;
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .cs-screen-caption {
   width: 100%;
-  padding: 16px 20px;
+  padding: 18px 24px;
   background: rgba(255, 255, 255, 0.03);
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   display: flex;

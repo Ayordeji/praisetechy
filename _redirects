@@ -1,3 +1,4 @@
 # Cloudflare Pages Redirects
 /work.html /work/ 301
 /work /work/ 301
+/sitemap_index.xml /sitemap.xml 301

@@ -1,6 +1,18 @@
-# Ayodeji Praise Eluyemi (Praise Techy) — Portfolio & Multi-Page Platform
+# Ayodeji Praise Eluyemi (Praise Techy) — Portfolio & Platform
 
-High-performance, handcrafted web portfolio and multi-page platform built with vanilla HTML5, modern CSS3 (Custom Properties & Design Tokens), and modular JavaScript.
+> **Live Website:** [praisetechy.com](https://praisetechy.com)  
+> High-performance, handcrafted web portfolio and 15-project multi-page case study platform built with semantic HTML5, modular CSS3 design tokens, modern ES6+ JavaScript, and deployed on Cloudflare Pages.
+
+---
+
+## ⚡ Highlights & Engineering Philosophy
+
+- **Zero-Framework Speed**: Handcrafted without heavy React, Vue, or WordPress runtimes for instantaneous global loading, sub-100ms TTFB, and crisp 60fps scrolling.
+- **Editorial Aesthetic & Noir Theming**: Dark obsidian canvas (`#000000` / `#0C0C0C`) with emerald accents (`#02A855`), bespoke glassmorphic navigation, fluid typography (`DM Sans`, `Manrope`, `Outfit`), and rolling link interactions.
+- **15 In-Depth Case Studies**: Detailed breakdowns spanning e-commerce, healthcare advocacy, digital media publishing, and AI tooling with interactive Vimeo facades and high-resolution WebP mockups.
+- **Enterprise SEO & Structured Data**: Multi-entity linked data graph (`Person`, `WebSite`, `ProfessionalService`, `ItemList`, `CreativeWork`) with canonical URLs, Open Graph / Twitter Cards, and XML sitemaps.
+- **Telemetry & Booking Gating**: Google Analytics 4 (`G-1P6627E2T2`) with strict production-hostname gating (zero dev/preview pollution) and custom Cal.com booking intent tracking.
+- **Static Edge Delivery**: Optimized for Cloudflare Pages with custom `_headers`, `_redirects`, automated 404 fallbacks, and a lightweight Node.js build pipeline (`build.js`).
 
 ---
 
@@ -8,81 +20,86 @@ High-performance, handcrafted web portfolio and multi-page platform built with v
 
 ```text
 PORTFOLIO/
-├── index.html            # Main Landing / Home Page
-├── about.html            # Dedicated About Page (/about)
-├── contact.html          # Dedicated Contact Page (/contact)
-├── pricing.html          # Dedicated Transparent Pricing Page (/pricing)
-├── style-guide.html      # Design tokens and style preview (/style-guide)
+├── index.html              # Main Showcase & Hero Experience
+├── about.html              # Biography, Engineering Philosophy & Credentials (/about)
+├── pricing.html            # Transparent Pricing Packages & Add-ons (/pricing)
+├── contact.html            # Direct Inquiries & Booking Hub (/contact)
+├── style-guide.html        # Design Tokens, Color Palette & UI Elements (/style-guide)
+├── 404.html                # Custom 404 Error Page
 │
-├── work/                 # Portfolio & Project Case Studies
-│   ├── index.html        # Works listing page (/work)
-│   ├── template.html     # Master Case Study Template Blueprint
-│   ├── collxx.html       # Collxx Case Study (/work/collxx)
-│   ├── tobams-colors.html# Tobams Colors Case Study (/work/tobams-colors)
-│   └── *.html            # Individual Case Studies
+├── work/                   # Portfolio & Case Studies Hub
+│   ├── index.html          # Works Grid & Filter Hub (/work/)
+│   ├── collxx.html         # Collxx Luxury Storefront (/work/collxx)
+│   ├── gho-media.html      # GHO Media Digital Publication (/work/gho-media)
+│   ├── crevian-studios.html# Crevian Studios Digital Agency (/work/crevian-studios)
+│   ├── tobams-colors.html  # Tobams Colors Custom Print Platform (/work/tobams-colors)
+│   ├── luchuo-engelbert-bain.html # Dr. Luchuo Global Health Platform (/work/luchuo-engelbert-bain)
+│   ├── data-with-bimmy.html# DatawithBimmy Career Platform (/work/data-with-bimmy)
+│   ├── pearlwood-hotels.html # Pearlwood Hotels Luxury Booking (/work/pearlwood-hotels)
+│   ├── all-can-thrive.html # All Can Thrive Foundation Portal (/work/all-can-thrive)
+│   ├── prime-global-initiatives.html # Prime Global Initiatives Portal (/work/prime-global-initiatives)
+│   ├── alluring-beauty.html# Alluring Beauty Brand & Store (/work/alluring-beauty)
+│   ├── emily-sparkles.html # Emily Sparkles WooCommerce Store (/work/emily-sparkles)
+│   ├── global-health-otherwise.html # Global Health Otherwise Portal (/work/global-health-otherwise)
+│   ├── quantum-leap.html   # Quantum Leap Data Consult (/work/quantum-leap)
+│   ├── no-border-thoughts.html # No Border Thoughts Coaching (/work/no-border-thoughts)
+│   ├── codex-property.html # Codex Property Buyers Agent (/work/codex-property)
+│   └── template.html       # Master Case Study Blueprint (Authoring reference)
 │
 ├── css/
-│   ├── main.css          # Design tokens, color palette, @font-face rules, typography & resets
-│   ├── components.css    # Header, navigation, cards, footer, accordion, modal & buttons
-│   ├── pages.css         # Inner subpage heroes, breadcrumbs, and subpage layout grids
-│   └── animations.css    # Masked heading reveals, keyframes, and micro-interactions
+│   ├── main.css            # Base tokens, theme variables, reset & rolling link utilities
+│   ├── components.css      # Floating header, mobile drawer, buttons, cards, modals & footer
+│   ├── pages.css           # Subpage heroes, 2-column breakdowns, pricing cards & FAQs
+│   └── animations.css      # Masked typography reveals, keyframes & smooth transitions
 │
 ├── js/
-│   ├── main.js           # DOM orchestrator & scroll intersection observer
-│   ├── interactions.js   # Mobile drawer, active link spy, currency switch, FAQ accordions
-│   ├── site-components.js# Universal Testimonials & FAQ components manager
-│   ├── smooth-scroll.js  # GSAP + Lenis butter-smooth momentum scrolling
-│   ├── projects.js       # Case study catalog data & dynamic interactive modal viewer
-│   └── vendor/           # GSAP, ScrollTrigger & Lenis smooth scroll libraries
+│   ├── analytics.js        # Hostname-gated GA4 tracking & booking click intent engine
+│   ├── main.js             # Intersection observers, reveal animations & DOM coordinator
+│   ├── interactions.js     # Offcanvas drawer, video facades & interactive accordion controls
+│   ├── site-components.js  # Universal testimonials carousel & FAQ accordion engine
+│   ├── smooth-scroll.js    # Lenis momentum smooth scrolling coordinator
+│   └── vendor/             # GSAP, ScrollTrigger & Lenis dependencies
 │
-├── fonts/
-│   ├── TiemposFine-Light.woff   # Editorial serif headline font
-│   └── Manrope-Medium.ttf       # Modern body & UI font
-│
-└── images/               # Optimized WebP/PNG project case studies & portrait assets
+├── images/                 # WebP/PNG project case studies, avatars & hero imagery
+├── _headers                # Cloudflare Pages security & cache headers
+├── _redirects              # Clean URL rewrite rules & legacy redirects
+├── robots.txt              # Production crawling rules & sitemap declaration
+├── sitemap.xml             # Search engine canonical XML sitemap (20 URLs)
+├── package.json            # NPM project scripts & metadata
+├── build.js                # Static site compiler targeting dist/
+└── dev-server.js           # Zero-dependency local Node.js development server
 ```
 
 ---
 
-## 🎨 Design Tokens & Palette System
+## 🛠️ Development & Build Commands
 
-The site uses a unified emerald palette configured in `css/main.css`:
-
-- **Canvas Background**: `#FFFFFF` (pure clean white)
-- **Surface Background**: `#E0EFE5` (toned sage/emerald surface for alternating sections)
-- **Primary Brand Green**: `#02A855`
-- **Text Headings**: `#000000` / `#0A2316` (deep forest obsidian)
-- **Text Secondary / Muted**: `#4B5563` / `#244734`
-- **Header & Footer**: Clean `#FFFFFF` studio white with subtle `rgba(0, 0, 0, 0.08)` borders.
-- **Watermark Text**: Animated flowing emerald & deep forest gradient (`#02A855` ↔ `#0A2316` ↔ `#059669` ↔ `#56ba79` ↔ `#047857`).
-
----
-
-## 🚀 Adding New Pages
-
-To create a new subpage:
-1. Duplicate `about.html` or `contact.html`.
-2. Update the `<title>`, `<meta name="description">`, and `.page-breadcrumb`.
-3. Keep the shared `<header class="site-header">` and `<footer class="site-footer">`.
-4. Include the stylesheet links:
-   ```html
-   <link rel="stylesheet" href="css/main.css">
-   <link rel="stylesheet" href="css/components.css">
-   <link rel="stylesheet" href="css/pages.css">
-   <link rel="stylesheet" href="css/animations.css">
-   ```
-5. Include the scripts at the bottom:
-   ```html
-   <script src="js/interactions.js"></script>
-   <script src="js/main.js"></script>
-   ```
-
----
-
-## 💻 Local Development Server
-
-Run local preview using Python:
+### 1. Run Local Development Server
+Start the built-in local development server:
 ```bash
-python3 -m http.server 8080
+npm run dev
+# or: node dev-server.js
 ```
-Open: `http://localhost:8080`
+Open: [http://localhost:8080](http://localhost:8080)
+
+### 2. Compile Production Bundle
+Build all static assets and configuration files into the `dist/` distribution folder:
+```bash
+npm run build
+# or: node build.js
+```
+
+---
+
+## 🚀 Deployment
+
+The project is configured for continuous static deployment via **Cloudflare Pages**:
+1. Every commit pushed to the `main` branch automatically triggers a deployment build.
+2. Cloudflare Pages serves files from `dist/` or the repository root with edge caching, HTTP/3, and global SSL.
+
+---
+
+## 📄 License & Ownership
+
+Designed, developed, and maintained by **Ayodeji Praise Eluyemi (Praise Techy)**.  
+All brand assets, project designs, and case studies are proprietary.

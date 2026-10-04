@@ -1,0 +1,6 @@
+# robots.txt for https://praisetechy.com
+User-agent: *
+Allow: /
+
+# XML Sitemap
+Sitemap: https://praisetechy.com/sitemap.xml

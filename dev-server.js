@@ -33,9 +33,10 @@ const server = http.createServer((req, res) => {
   }
 
   const filePath = path.normalize(path.join(ROOT, safePath));
+  const relPath = path.relative(ROOT, filePath);
 
-  // Security check: prevent path traversal
-  if (!filePath.startsWith(ROOT)) {
+  // Security check: prevent path traversal outside root
+  if (relPath.startsWith('..') || path.isAbsolute(relPath)) {
     res.statusCode = 403;
     res.end('Access Denied');
     return;
@@ -78,6 +79,6 @@ function serveFile(filePath, res) {
   stream.pipe(res);
 }
 
-server.listen(PORT, '0.0.0.0', () => {
+server.listen(PORT, '127.0.0.1', () => {
   console.log(`Development server running at http://localhost:${PORT}/ and http://127.0.0.1:${PORT}/`);
 });

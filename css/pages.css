@@ -733,6 +733,7 @@ body#top {
 }
 
 .style-guide-heading-specimens h1,
+.style-guide-heading-specimens .h1-specimen,
 .style-guide-heading-specimens h2,
 .style-guide-heading-specimens h3 {
   max-width: 980px;
@@ -740,8 +741,14 @@ body#top {
   color: #FFFFFF !important;
 }
 
-.style-guide-heading-specimens h1 {
+.style-guide-heading-specimens h1,
+.style-guide-heading-specimens .h1-specimen {
   color: #02A855 !important;
+  font-family: var(--font-heading, 'Manrope', sans-serif);
+  font-size: clamp(2.8rem, 3.8vw, 6rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
 }
 
 .style-guide-type-scale-wrap {

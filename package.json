@@ -1,0 +1,11 @@
+{
+  "name": "praisetechy-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Ayodeji Praise Eluyemi (Praise Techy) Portfolio Website",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "node dev-server.js",
+    "start": "node dev-server.js"
+  }
+}

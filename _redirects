@@ -1,4 +1,41 @@
-# Cloudflare Pages Redirects
+# Cloudflare Pages Redirects & Legacy WordPress Migration Rules
+
+# Core Pages & Canonical Normalization
 /work.html /work/ 301
 /work /work/ 301
+/home / 301
+/home/ / 301
+/index.html / 301
 /sitemap_index.xml /sitemap.xml 301
+
+# Legacy WordPress Project URLs -> New /work/* Structure
+/collxx /work/collxx 301
+/collxx/ /work/collxx 301
+/quantum-leap-data-consult /work/quantum-leap 301
+/quantum-leap-data-consult/ /work/quantum-leap 301
+/tobams-colors /work/tobams-colors 301
+/tobams-colors/ /work/tobams-colors 301
+/global-health-otherwise /work/global-health-otherwise 301
+/global-health-otherwise/ /work/global-health-otherwise 301
+/global-health-otherwise-media /work/gho-media 301
+/global-health-otherwise-media/ /work/gho-media 301
+/alluring-beauty-solutions /work/alluring-beauty 301
+/alluring-beauty-solutions/ /work/alluring-beauty 301
+/emily-sparkles /work/emily-sparkles 301
+/emily-sparkles/ /work/emily-sparkles 301
+/crevian-studios /work/crevian-studios 301
+/crevian-studios/ /work/crevian-studios 301
+/data-with-bimmy /work/data-with-bimmy 301
+/data-with-bimmy/ /work/data-with-bimmy 301
+/pearlwood-hotels /work/pearlwood-hotels 301
+/pearlwood-hotels/ /work/pearlwood-hotels 301
+/all-can-thrive /work/all-can-thrive 301
+/all-can-thrive/ /work/all-can-thrive 301
+/prime-global-initiatives /work/prime-global-initiatives 301
+/prime-global-initiatives/ /work/prime-global-initiatives 301
+/no-border-thoughts /work/no-border-thoughts 301
+/no-border-thoughts/ /work/no-border-thoughts 301
+/codex-property /work/codex-property 301
+/codex-property/ /work/codex-property 301
+/luchuo-engelbert-bain /work/luchuo-engelbert-bain 301
+/luchuo-engelbert-bain/ /work/luchuo-engelbert-bain 301

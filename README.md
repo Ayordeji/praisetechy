@@ -53,7 +53,7 @@ PORTFOLIO/
 │   └── animations.css      # Masked typography reveals, keyframes & smooth transitions
 │
 ├── js/
-│   ├── analytics.js        # Hostname-gated GA4 tracking & booking click intent engine
+│   ├── analytics.js        # Hostname-gated GA4 tracking, real-time visitor alert engine & booking click intent
 │   ├── main.js             # Intersection observers, reveal animations & DOM coordinator
 │   ├── interactions.js     # Offcanvas drawer, video facades & interactive accordion controls
 │   ├── site-components.js  # Universal testimonials carousel & FAQ accordion engine
